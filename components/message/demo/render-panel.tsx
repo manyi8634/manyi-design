@@ -1,5 +1,5 @@
 import React from 'react';
-import { message } from 'antd';
+import { message } from 'manyid';
 
 /** Test usage. Do not use in your production. */
 const { _InternalPanelDoNotUseOrYouWillBeFired: InternalPanel } = message;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { message, Popconfirm, Switch } from 'antd';
+import { message, Popconfirm, Switch } from 'manyid';
 
 const App: React.FC = () => {
   const [open, setOpen] = useState(false);

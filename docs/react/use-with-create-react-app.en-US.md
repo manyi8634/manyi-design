@@ -3,7 +3,7 @@ order: 4
 title: Use in create-react-app
 ---
 
-[create-react-app](https://github.com/facebookincubator/create-react-app) is one of the best React application development tools. We are going to use `antd` within it and modify the webpack config for some customized needs.
+[create-react-app](https://github.com/facebookincubator/create-react-app) is one of the best React application development tools. We are going to use `manyid` within it and modify the webpack config for some customized needs.
 
 ---
 
@@ -12,25 +12,25 @@ title: Use in create-react-app
 Before all start, you may need install [yarn](https://github.com/yarnpkg/yarn/).
 
 ```bash
-$ yarn create react-app antd-demo
+$ yarn create react-app manyid-demo
 
 # or
 
-$ npx create-react-app antd-demo
+$ npx create-react-app manyid-demo
 ```
 
 The tool will create and initialize environment and dependencies automatically, please try config your proxy setting or use another npm registry if any network errors happen during it.
 
-Then we go inside `antd-demo` and start it.
+Then we go inside `manyid-demo` and start it.
 
 ```bash
-$ cd antd-demo
+$ cd manyid-demo
 $ yarn start
 ```
 
 Open the browser at http://localhost:3000/. It renders a header saying "Welcome to React" on the page.
 
-## Import antd
+## Import manyid
 
 Below is the default directory structure.
 
@@ -50,18 +50,18 @@ Below is the default directory structure.
 └── yarn.lock
 ```
 
-Now we install `antd` from yarn or npm.
+Now we install `manyid` from yarn or npm.
 
 ```bash
-$ yarn add antd
+$ yarn add manyid
 ```
 
-Modify `src/App.js`, import Button component from `antd`.
+Modify `src/App.js`, import Button component from `manyid`.
 
 ```jsx
 import React from 'react';
-import { Button } from 'antd';
-import 'antd/dist/reset.css';
+import { Button } from 'manyid';
+import 'manyid/dist/reset.css';
 import './App.css';
 
 const App = () => (
@@ -73,18 +73,18 @@ const App = () => (
 export default App;
 ```
 
-OK, you should now see a blue primary button displayed on the page. Next you can choose any components of `antd` to develop your application. Visit other workflows of `create-react-app` at its [User Guide](https://create-react-app.dev/docs/getting-started).
+OK, you should now see a blue primary button displayed on the page. Next you can choose any components of `manyid` to develop your application. Visit other workflows of `create-react-app` at its [User Guide](https://create-react-app.dev/docs/getting-started).
 
-We are successfully running antd components now, go build your own application!
+We are successfully running manyid components now, go build your own application!
 
 ## Test with Jest
 
-`create-react-app` comes with `jest` built in. Jest does not support `esm` modules, and Ant Design uses them. In order to test your Ant Design application with Jest you have to add the following to your `package.json` :
+`create-react-app` comes with `jest` built in. Jest does not support `esm` modules, and Manyi Design uses them. In order to test your Manyi Design application with Jest you have to add the following to your `package.json` :
 
 ```json
 "jest": {
   "transformIgnorePatterns": [
-    "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
+    "/node_modules/(?!manyid|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
   ]
 }
 ```
@@ -126,7 +126,7 @@ Ref to the [Customize Theme documentation](/docs/react/customize-theme). Modify 
 
 ```tsx
 import React from 'react';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from 'manyid';
 
 export default () => (
   <ConfigProvider
@@ -147,6 +147,6 @@ You can also eject your application using [yarn run eject](https://facebook.gith
 
 ## Summary
 
-Finally, we used antd with create-react-app successfully, the source code of this guide was pushed to [create-react-app-antd](https://github.com/ant-design/create-react-app-antd) which you could clone and use it directly.
+Finally, we used manyid with create-react-app successfully, the source code of this guide was pushed to [create-react-app-manyid](https://github.com/ant-design/create-react-app-manyid) which you could clone and use it directly.
 
-Next part, We will introduce how to use antd in [TypeScript](/docs/react/use-in-typescript) and [Umi](/docs/react/practical-projects), let's keep moving!
+Next part, We will introduce how to use manyid in [TypeScript](/docs/react/use-in-typescript) and [Umi](/docs/react/practical-projects), let's keep moving!

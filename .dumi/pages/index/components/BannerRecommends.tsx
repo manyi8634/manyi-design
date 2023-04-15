@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography, Skeleton, Carousel } from 'antd';
+import { Typography, Skeleton, Carousel } from 'manyid';
 import type { SerializedStyles } from '@emotion/react';
 import { css } from '@emotion/react';
 import type { Extra, Icon } from './util';

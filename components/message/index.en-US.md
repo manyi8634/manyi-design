@@ -112,7 +112,7 @@ message.config({
 
 ### Why I can not access context, redux, ConfigProvider `locale/prefixCls/theme` in message?
 
-antd will dynamic create React instance by `ReactDOM.render` when call message methods. Whose context is different with origin code located context.
+manyid will dynamic create React instance by `ReactDOM.render` when call message methods. Whose context is different with origin code located context.
 
 When you need context info (like ConfigProvider context), you can use `message.useMessage` to get `api` instance and `contextHolder` node. And put it in your children:
 

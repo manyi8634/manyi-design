@@ -17,7 +17,7 @@ console.log(chalk.green(`🔥 Checking CSS-in-JS...`));
 let errorCount = 0;
 const originError = console.error;
 console.error = (msg) => {
-  if (msg.includes('Warning: [Ant Design CSS-in-JS]')) {
+  if (msg.includes('Warning: [Manyi Design CSS-in-JS]')) {
     errorCount += 1;
     console.log(chalk.red(`❌ `), msg.slice(msg.indexOf('Error in')).replace(/\s+/g, ' '));
   } else {

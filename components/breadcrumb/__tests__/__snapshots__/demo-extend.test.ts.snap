@@ -245,7 +245,7 @@ exports[`renders components/breadcrumb/demo/overlay.tsx extend context correctly
       <span
         class="ant-breadcrumb-link"
       >
-        Ant Design
+        Manyi Design
       </span>
     </li>
     <li

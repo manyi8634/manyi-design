@@ -3,7 +3,7 @@ import type { CSSProperties } from 'react';
 import { Link, useIntl, useSidebarData, useLocation } from 'dumi';
 import { css } from '@emotion/react';
 import debounce from 'lodash/debounce';
-import { Card, Col, Divider, Input, Row, Space, Tag, Typography, Affix } from 'antd';
+import { Card, Col, Divider, Input, Row, Space, Tag, Typography, Affix } from 'manyid';
 import { SearchOutlined } from '@ant-design/icons';
 import type { Component } from './ProComponentsList';
 import proComponentsList from './ProComponentsList';

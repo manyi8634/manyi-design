@@ -1,5 +1,5 @@
 import { HomeOutlined } from '@ant-design/icons';
-import { Button, Result } from 'antd';
+import { Button, Result } from 'manyid';
 import { Link, useLocation } from 'dumi';
 import React, { useEffect } from 'react';
 import * as utils from '../../theme/utils';
@@ -46,7 +46,7 @@ const NotFoundPage: React.FC<NotFoundProps> = ({ router }) => {
       extra={
         <Link to={utils.getLocalizedPathname('/', isZhCN)}>
           <Button type="primary" icon={<HomeOutlined />}>
-            {isZhCN ? '返回 Ant Design 首页' : 'Back to home page'}
+            {isZhCN ? '返回 Manyi Design 首页' : 'Back to home page'}
           </Button>
         </Link>
       }

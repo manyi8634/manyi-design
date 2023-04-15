@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Button, ConfigProvider, Drawer } from 'antd';
+import { Button, ConfigProvider, Drawer } from 'manyid';
 
 const App: React.FC = () => {
   const domRef = useRef<HTMLDivElement>(null);

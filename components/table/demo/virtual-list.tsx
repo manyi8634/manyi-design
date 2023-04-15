@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Table, theme } from 'antd';
-import type { TableProps } from 'antd';
+import { Table, theme } from 'manyid';
+import type { TableProps } from 'manyid';
 import classNames from 'classnames';
 import ResizeObserver from 'rc-resize-observer';
 import { VariableSizeGrid as Grid } from 'react-window';

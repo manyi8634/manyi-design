@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spin } from 'antd';
+import { Spin } from 'manyid';
 
 const App: React.FC = () => (
   <div className="example">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Space, Table, Tag } from 'antd';
+import { Space, Table, Tag } from 'manyid';
 
 const { Column, ColumnGroup } = Table;
 

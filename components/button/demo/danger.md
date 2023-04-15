@@ -4,4 +4,4 @@
 
 ## en-US
 
-`danger` is a property of button after antd 4.0.
+`danger` is a property of button after manyid 4.0.

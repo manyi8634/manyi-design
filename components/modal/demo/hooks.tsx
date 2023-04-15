@@ -1,5 +1,5 @@
 import React, { createContext } from 'react';
-import { Button, Modal, Space } from 'antd';
+import { Button, Modal, Space } from 'manyid';
 
 const ReachableContext = createContext<string | null>(null);
 const UnreachableContext = createContext<string | null>(null);

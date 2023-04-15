@@ -17,7 +17,7 @@ exports[`renders components/typography/demo/basic.tsx extend context correctly 1
   <div
     class="ant-typography"
   >
-    After massive project practice and summaries, Ant Design, a design language for background applications, is refined by Ant UED Team, which aims to
+    After massive project practice and summaries, Manyi Design, a design language for background applications, is refined by Ant UED Team, which aims to
     <span
       class="ant-typography"
     >
@@ -113,7 +113,7 @@ exports[`renders components/typography/demo/basic.tsx extend context correctly 1
   <div
     class="ant-typography"
   >
-    随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁金服体验技术部）经过大量的项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 Ant Design。基于
+    随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁金服体验技术部）经过大量的项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 Manyi Design。基于
     <span
       class="ant-typography"
     >
@@ -240,13 +240,13 @@ Array [
   <div
     class="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line"
   >
-    Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team.
+    Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team.
   </div>,
   <div
-    aria-label="Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team."
+    aria-label="Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team."
     class="ant-typography ant-typography-ellipsis"
   >
-    Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team.
+    Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team. Manyi Design, a design language for background applications, is refined by Ant UED Team.
     <span
       aria-hidden="true"
       style="position: fixed; display: block; left: 0px; top: 0px; z-index: -9999; visibility: hidden; pointer-events: none; font-size: 0px; word-break: keep-all; white-space: nowrap;"
@@ -274,7 +274,7 @@ Array [
     class="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line"
     style="width: 100px;"
   >
-    Ant Design, a design language for background applications, is refined by Ant UED Team.
+    Manyi Design, a design language for background applications, is refined by Ant UED Team.
   </span>,
   <div
     class="ant-tooltip ant-zoom-big-fast-appear ant-zoom-big-fast-appear-prepare ant-zoom-big-fast ant-tooltip-placement-top"
@@ -428,7 +428,7 @@ Array [
   <div
     class="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line"
   >
-    Ant Design, a design language for background applications, is refined by Ant UED Team. This is a nest sample
+    Manyi Design, a design language for background applications, is refined by Ant UED Team. This is a nest sample
     <span
       class="ant-typography"
     >
@@ -791,11 +791,11 @@ Array [
   </span>,
   <br />,
   <span
-    aria-label="Ant Design is a design language for background applications, is refined by Ant UED Team."
+    aria-label="Manyi Design is a design language for background applications, is refined by Ant UED Team."
     class="ant-typography ant-typography-ellipsis ant-typography-single-line"
     style="width: 100px;"
   >
-    Ant Design is a design language for background applications, is refined by Ant UED Team.
+    Manyi Design is a design language for background applications, is refined by Ant UED Team.
     <div
       aria-label="Copy"
       class="ant-typography-copy"
@@ -1512,7 +1512,7 @@ Array [
     class="ant-typography"
     style="margin: 0px;"
   >
-    h1. Ant Design
+    h1. Manyi Design
     <div
       aria-label="Edit"
       class="ant-typography-edit"
@@ -1564,7 +1564,7 @@ Array [
     class="ant-typography"
     style="margin: 0px;"
   >
-    h2. Ant Design
+    h2. Manyi Design
     <div
       aria-label="Edit"
       class="ant-typography-edit"
@@ -1616,7 +1616,7 @@ Array [
     class="ant-typography"
     style="margin: 0px;"
   >
-    h3. Ant Design
+    h3. Manyi Design
     <div
       aria-label="Edit"
       class="ant-typography-edit"
@@ -1668,7 +1668,7 @@ Array [
     class="ant-typography"
     style="margin: 0px;"
   >
-    h4. Ant Design
+    h4. Manyi Design
     <div
       aria-label="Edit"
       class="ant-typography-edit"
@@ -1720,7 +1720,7 @@ Array [
     class="ant-typography"
     style="margin: 0px;"
   >
-    h5. Ant Design
+    h5. Manyi Design
     <div
       aria-label="Edit"
       class="ant-typography-edit"
@@ -1992,7 +1992,7 @@ Array [
   <div
     class="ant-typography"
   >
-    After massive project practice and summaries, Ant Design, a design language for background applications, is refined by Ant UED Team, which aims to
+    After massive project practice and summaries, Manyi Design, a design language for background applications, is refined by Ant UED Team, which aims to
     <span
       class="ant-typography"
     >
@@ -2069,7 +2069,7 @@ Array [
   <div
     class="ant-typography"
   >
-    随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁金服体验技术部）经过大量的项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 Ant Design。基于
+    随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁金服体验技术部）经过大量的项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 Manyi Design。基于
     <span
       class="ant-typography"
     >
@@ -2267,7 +2267,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
     <span
       class="ant-typography"
     >
-      Ant Design (default)
+      Manyi Design (default)
     </span>
   </div>
   <div
@@ -2277,7 +2277,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
     <span
       class="ant-typography ant-typography-secondary"
     >
-      Ant Design (secondary)
+      Manyi Design (secondary)
     </span>
   </div>
   <div
@@ -2287,7 +2287,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
     <span
       class="ant-typography ant-typography-success"
     >
-      Ant Design (success)
+      Manyi Design (success)
     </span>
   </div>
   <div
@@ -2297,7 +2297,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
     <span
       class="ant-typography ant-typography-warning"
     >
-      Ant Design (warning)
+      Manyi Design (warning)
     </span>
   </div>
   <div
@@ -2307,7 +2307,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
     <span
       class="ant-typography ant-typography-danger"
     >
-      Ant Design (danger)
+      Manyi Design (danger)
     </span>
   </div>
   <div
@@ -2317,7 +2317,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
     <span
       class="ant-typography ant-typography-disabled"
     >
-      Ant Design (disabled)
+      Manyi Design (disabled)
     </span>
   </div>
   <div
@@ -2328,7 +2328,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       class="ant-typography"
     >
       <mark>
-        Ant Design (mark)
+        Manyi Design (mark)
       </mark>
     </span>
   </div>
@@ -2340,7 +2340,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       class="ant-typography"
     >
       <code>
-        Ant Design (code)
+        Manyi Design (code)
       </code>
     </span>
   </div>
@@ -2352,7 +2352,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       class="ant-typography"
     >
       <kbd>
-        Ant Design (keyboard)
+        Manyi Design (keyboard)
       </kbd>
     </span>
   </div>
@@ -2364,7 +2364,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       class="ant-typography"
     >
       <u>
-        Ant Design (underline)
+        Manyi Design (underline)
       </u>
     </span>
   </div>
@@ -2376,7 +2376,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       class="ant-typography"
     >
       <del>
-        Ant Design (delete)
+        Manyi Design (delete)
       </del>
     </span>
   </div>
@@ -2388,7 +2388,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       class="ant-typography"
     >
       <strong>
-        Ant Design (strong)
+        Manyi Design (strong)
       </strong>
     </span>
   </div>
@@ -2400,7 +2400,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       class="ant-typography"
     >
       <i>
-        Ant Design (italic)
+        Manyi Design (italic)
       </i>
     </span>
   </div>
@@ -2413,7 +2413,7 @@ exports[`renders components/typography/demo/text.tsx extend context correctly 1`
       rel="noopener noreferrer"
       target="_blank"
     >
-      Ant Design (Link)
+      Manyi Design (Link)
     </a>
   </div>
 </div>
@@ -2424,27 +2424,27 @@ Array [
   <h1
     class="ant-typography"
   >
-    h1. Ant Design
+    h1. Manyi Design
   </h1>,
   <h2
     class="ant-typography"
   >
-    h2. Ant Design
+    h2. Manyi Design
   </h2>,
   <h3
     class="ant-typography"
   >
-    h3. Ant Design
+    h3. Manyi Design
   </h3>,
   <h4
     class="ant-typography"
   >
-    h4. Ant Design
+    h4. Manyi Design
   </h4>,
   <h5
     class="ant-typography"
   >
-    h5. Ant Design
+    h5. Manyi Design
   </h5>,
 ]
 `;

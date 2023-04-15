@@ -81,7 +81,7 @@ describe('Typography', () => {
       render(<Title level={false as unknown as TitleProps['level']} />);
 
       expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Typography.Title] Title only accept `1 | 2 | 3 | 4 | 5` as `level` value. And `5` need 4.6.0+ version.',
+        'Warning: [manyid: Typography.Title] Title only accept `1 | 2 | 3 | 4 | 5` as `level` value. And `5` need 4.6.0+ version.',
       );
     });
   });
@@ -450,7 +450,7 @@ describe('Typography', () => {
     const setContentRef = { setContentRef() {} } as any;
     render(<Typography {...setContentRef} />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Typography] `setContentRef` is deprecated. Please use `ref` instead.',
+      'Warning: [manyid: Typography] `setContentRef` is deprecated. Please use `ref` instead.',
     );
   });
 

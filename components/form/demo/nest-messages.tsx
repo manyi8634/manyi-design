@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Input, InputNumber } from 'antd';
+import { Button, Form, Input, InputNumber } from 'manyid';
 
 const layout = {
   labelCol: { span: 8 },

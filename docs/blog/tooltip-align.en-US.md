@@ -10,7 +10,7 @@ In the `5.3.0` version, we will update the underlying dependency `@rc-component/
 
 Tooltip is append to `body` by default, and it will scroll along with it when scrolling in full screen. But when the target element of the Tooltip is placed in the scrolling container, it will not follow the scrolling because the scrolling container is different:
 
-[<img height="300" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*IkOIQK69T5gAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-antd-5-2-0-forked-mo31wr?file=/demo.tsx)
+[<img height="300" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*IkOIQK69T5gAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-manyid-5-2-0-forked-mo31wr?file=/demo.tsx)
 
 We suggest to use `getPopupContainer` in FAQ, allowing developers to insert the popup element into the parent container of the target element through this method. But this solution is not perfect, because it requires the developer to determine which of the parent containers of the target element is the scrolling container. In a reused component, the component that uses the Tooltip may not be the same as the component it scrolls, which makes it not easy to set the target scroll container.
 
@@ -18,7 +18,7 @@ We suggest to use `getPopupContainer` in FAQ, allowing developers to insert the 
 
 Tooltip supports edge display within the scrolling range. But because the pop-up layer is a whole, the centered arrow cannot point to the target position after offset:
 
-[<img height="160" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*E3RmTZG3vhQAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-antd-5-2-0-forked-z6frnr?file=/demo.tsx)
+[<img height="160" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*E3RmTZG3vhQAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-manyid-5-2-0-forked-z6frnr?file=/demo.tsx)
 
 We recommend using the `placement` property and configure `topLeft` to align the popup layer to the left to solve this problem before:
 
@@ -32,11 +32,11 @@ Tooltip uses the `dom-align` library for align, which will directly add `left` |
 
 `dom-align` calculates the respective coordinate positions of the target element and the pop-up layer by traversing the parent layer nodes, and then calculates the difference according to the alignment rules. When the parent layer node has a `transform` style, it will cause the calculated coordinate position to be inaccurate, resulting in incorrect alignment:
 
-[<img height="200" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*CVysTIq-y6UAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-antd-5-2-0-forked-znqgc6?file=/demo.tsx)
+[<img height="200" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*CVysTIq-y6UAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-manyid-5-2-0-forked-znqgc6?file=/demo.tsx)
 
 ## New Align Way
 
-The above problems such as scrolling and margining can be avoided in some ways, but the scaling problem cannot be solved. We hope that these problems can be solved by antd, rather than by the developers themselves. To this end, we rewrote the `@rc-component/trigger` component to integrate alignment logic and arrow logic. No longer depend on `rc-align` and `dom-align`. At the same time, use the new calculation method to avoid calculation problems caused by the `transform` style.
+The above problems such as scrolling and margining can be avoided in some ways, but the scaling problem cannot be solved. We hope that these problems can be solved by manyid, rather than by the developers themselves. To this end, we rewrote the `@rc-component/trigger` component to integrate alignment logic and arrow logic. No longer depend on `rc-align` and `dom-align`. At the same time, use the new calculation method to avoid calculation problems caused by the `transform` style.
 
 ### Position Calculation
 

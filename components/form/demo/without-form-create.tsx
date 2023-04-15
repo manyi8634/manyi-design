@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, InputNumber } from 'antd';
+import { Form, InputNumber } from 'manyid';
 
 type ValidateStatus = Parameters<typeof Form.Item>[0]['validateStatus'];
 

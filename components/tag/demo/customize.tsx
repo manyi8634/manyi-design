@@ -1,6 +1,6 @@
 import React from 'react';
 import { CloseCircleOutlined } from '@ant-design/icons';
-import { Tag } from 'antd';
+import { Tag } from 'manyid';
 
 const App: React.FC = () => (
   <>

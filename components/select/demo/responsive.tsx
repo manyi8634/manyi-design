@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import type { SelectProps } from 'antd';
-import { Select, Space } from 'antd';
+import type { SelectProps } from 'manyid';
+import { Select, Space } from 'manyid';
 
 interface ItemProps {
   label: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SettingOutlined } from '@ant-design/icons';
-import { Input, Space, Button } from 'antd';
+import { Input, Space, Button } from 'manyid';
 
 const App: React.FC = () => (
   <Space direction="vertical">

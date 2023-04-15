@@ -1,5 +1,5 @@
 import React from 'react';
-import { Watermark } from 'antd';
+import { Watermark } from 'manyid';
 
 const App: React.FC = () => (
   <Watermark

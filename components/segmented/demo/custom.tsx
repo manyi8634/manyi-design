@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Segmented, Space } from 'antd';
+import { Avatar, Segmented, Space } from 'manyid';
 import { UserOutlined } from '@ant-design/icons';
 
 const App: React.FC = () => (

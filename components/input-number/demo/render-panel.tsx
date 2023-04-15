@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputNumber } from 'antd';
+import { InputNumber } from 'manyid';
 
 /** Test usage. Do not use in your production. */
 const { _InternalPanelDoNotUseOrYouWillBeFired: InternalInputNumber } = InputNumber;

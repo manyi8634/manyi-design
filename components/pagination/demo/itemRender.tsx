@@ -1,6 +1,6 @@
 import React from 'react';
-import type { PaginationProps } from 'antd';
-import { Pagination } from 'antd';
+import type { PaginationProps } from 'manyid';
+import { Pagination } from 'manyid';
 
 const itemRender: PaginationProps['itemRender'] = (_, type, originalElement) => {
   if (type === 'prev') {

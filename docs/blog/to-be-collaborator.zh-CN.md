@@ -4,7 +4,7 @@ date: 2022-12-22
 author: heiyu4585
 ---
 
-大家好，我是[黑雨](https://github.com/heiyu4585)。关于 Ant Design，相信大家都非常熟悉，我在很多后台管理系统项目使用过 Ant Design，给我最大的感觉就是好用、好看、简单、稳定。现在 `v5` 版本已经发布，强烈推荐大家试使用，我也有幸开发了 `v5` 版本的 `Tour` 组件和 `App` 组件，以及一些其他维护工作。下面给大家分享一下 Ant Design 的 PR 流程，希望能给有兴趣为社区共建的同学提供一份参考。
+大家好，我是[黑雨](https://github.com/heiyu4585)。关于 Manyi Design，相信大家都非常熟悉，我在很多后台管理系统项目使用过 Manyi Design，给我最大的感觉就是好用、好看、简单、稳定。现在 `v5` 版本已经发布，强烈推荐大家试使用，我也有幸开发了 `v5` 版本的 `Tour` 组件和 `App` 组件，以及一些其他维护工作。下面给大家分享一下 Manyi Design 的 PR 流程，希望能给有兴趣为社区共建的同学提供一份参考。
 
 ## 一. 阅读相关文章熟悉相关概念
 
@@ -18,12 +18,12 @@ author: heiyu4585
 
 [使用 git 创建 PR 的一些建议](https://github.com/ant-design/ant-design/discussions/37051)
 
-## 二. 拉取 Ant Design 代码到本地
+## 二. 拉取 Manyi Design 代码到本地
 
 ### 1. Fork 项目
 
 - 首先需要 fork 项目，进入[项目页面](https://github.com/ant-design/ant-design)，点击右上角的 [Fork 按钮](https://github.com/ant-design/ant-design/fork)
-- 你的 github 帐号中会出现 Ant Design 链接是 https://github.com/heiyu4585/ant-design 这个项目
+- 你的 github 帐号中会出现 Manyi Design 链接是 https://github.com/heiyu4585/ant-design 这个项目
 - 在本地电脑上项目地址使用以下命令：得到一个 github 文件夹
 
 ```bash
@@ -34,7 +34,7 @@ git clone https://github.com/[yourGithubAccount]/ant-design.git
 
 ### 2. 添加远端分支地址
 
-- 进入 Ant Design 文件夹，添加 Ant Design 的远程地址
+- 进入 Manyi Design 文件夹，添加 Manyi Design 的远程地址
 
 ```bash
 cd ant-design
@@ -62,7 +62,7 @@ git checkout fix-branch
 
 现在我们可以在分支上更改代码了
 
-## 三. 在[Ant Design 的 issue](https://github.com/ant-design/ant-design/issues)页找到 issue 并分析选择
+## 三. 在[Manyi Design 的 issue](https://github.com/ant-design/ant-design/issues)页找到 issue 并分析选择
 
 为了能帮助你开始你的第一次尝试，我们用 [good first issues](https://github.com/ant-design/ant-design/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue") 标记了一些比较容易修复的 bug 和小功能，这些 issue 可以很好地作为你的首次尝试。[help wanted](https://github.com/ant-design/ant-design/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) 是作为开发者比较容易接手的一些问题。
 
@@ -70,7 +70,7 @@ git checkout fix-branch
 
 ## 四. 开发流程
 
-1. `npm start` 在本地运行 Ant Design 的网站
+1. `npm start` 在本地运行 Manyi Design 的网站
 2. 按照 issue 描述调试、修复问题或者开发新的 feature
 
 ## 五. 运行测试用例及规范检查
@@ -160,6 +160,6 @@ npm run test componet/XXX
 
 ## 相关资源
 
-了解更多 Ant Design 的开发流程和和注意事项，可以参考：
+了解更多 Manyi Design 的开发流程和和注意事项，可以参考：
 
 - [贡献者开发维护指南](/docs/blog/contributor-development-maintenance-guide-cn)

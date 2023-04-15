@@ -689,7 +689,7 @@ Array [
   </div>,
   <div
     class="ant-tooltip ant-tooltip-pure ant-tooltip-placement-top"
-    style="--antd-arrow-background-color:#f50"
+    style="--manyid-arrow-background-color:#f50"
   >
     <div
       class="ant-tooltip-arrow"

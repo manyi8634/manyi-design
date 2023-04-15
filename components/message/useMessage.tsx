@@ -133,7 +133,7 @@ export function useInternalMessage(
       let mergedKey: React.Key = key!;
       if (mergedKey === undefined || mergedKey === null) {
         keyIndex += 1;
-        mergedKey = `antd-message-${keyIndex}`;
+        mergedKey = `manyid-message-${keyIndex}`;
       }
 
       return wrapPromiseFn((resolve) => {

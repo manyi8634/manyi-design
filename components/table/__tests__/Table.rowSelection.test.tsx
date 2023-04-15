@@ -191,7 +191,7 @@ describe('Table.rowSelection', () => {
     render(createTable({ rowSelection }));
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Table] Do not set `checked` or `defaultChecked` in `getCheckboxProps`. Please use `selectedRowKeys` instead.',
+      'Warning: [manyid: Table] Do not set `checked` or `defaultChecked` in `getCheckboxProps`. Please use `selectedRowKeys` instead.',
     );
   });
 
@@ -1540,7 +1540,7 @@ describe('Table.rowSelection', () => {
         }),
       );
       expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Table] set `indeterminate` using `rowSelection.getCheckboxProps` is not allowed with tree structured dataSource.',
+        'Warning: [manyid: Table] set `indeterminate` using `rowSelection.getCheckboxProps` is not allowed with tree structured dataSource.',
       );
     });
   });

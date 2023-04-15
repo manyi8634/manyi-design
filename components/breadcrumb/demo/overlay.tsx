@@ -1,5 +1,5 @@
 import React from 'react';
-import { Breadcrumb } from 'antd';
+import { Breadcrumb } from 'manyid';
 
 const menuItems = [
   {
@@ -32,7 +32,7 @@ const App: React.FC = () => (
   <Breadcrumb
     items={[
       {
-        title: 'Ant Design',
+        title: 'Manyi Design',
       },
       {
         title: <a href="">Component</a>,

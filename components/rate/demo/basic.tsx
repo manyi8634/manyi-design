@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rate } from 'antd';
+import { Rate } from 'manyid';
 
 const App: React.FC = () => <Rate />;
 

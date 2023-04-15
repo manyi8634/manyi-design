@@ -1,6 +1,6 @@
 import React from 'react';
 import { SearchOutlined } from '@ant-design/icons';
-import { AutoComplete, Button, Form, Input, TreeSelect } from 'antd';
+import { AutoComplete, Button, Form, Input, TreeSelect } from 'manyid';
 
 const formItemLayout = {
   labelCol: {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DatePicker, Space } from 'antd';
+import { DatePicker, Space } from 'manyid';
 import dayjs from 'dayjs';
 import type { Dayjs } from 'dayjs';
 

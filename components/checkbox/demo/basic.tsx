@@ -1,6 +1,6 @@
 import React from 'react';
-import { Checkbox } from 'antd';
-import type { CheckboxChangeEvent } from 'antd/es/checkbox';
+import { Checkbox } from 'manyid';
+import type { CheckboxChangeEvent } from 'manyid/es/checkbox';
 
 const onChange = (e: CheckboxChangeEvent) => {
   console.log(`checked = ${e.target.checked}`);

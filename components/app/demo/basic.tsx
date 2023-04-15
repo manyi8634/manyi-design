@@ -1,5 +1,5 @@
 import React from 'react';
-import { App, Button, Space } from 'antd';
+import { App, Button, Space } from 'manyid';
 
 // Sub page
 const MyPage = () => {
@@ -19,7 +19,7 @@ const MyPage = () => {
   const showNotification = () => {
     notification.info({
       message: `Notification topLeft`,
-      description: 'Hello, Ant Design!!',
+      description: 'Hello, Manyi Design!!',
       placement: 'topLeft',
     });
   };

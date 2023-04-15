@@ -119,13 +119,13 @@ describe('Typography.Ellipsis', () => {
   });
 
   it('string with parentheses', async () => {
-    const parenthesesStr = `Ant Design, a design language (for background applications, is refined by
-        Ant UED Team. Ant Design, a design language for background applications,
-        is refined by Ant UED Team. Ant Design, a design language for background
-        applications, is refined by Ant UED Team. Ant Design, a design language
-        for background applications, is refined by Ant UED Team. Ant Design, a
+    const parenthesesStr = `Manyi Design, a design language (for background applications, is refined by
+        Ant UED Team. Manyi Design, a design language for background applications,
+        is refined by Ant UED Team. Manyi Design, a design language for background
+        applications, is refined by Ant UED Team. Manyi Design, a design language
+        for background applications, is refined by Ant UED Team. Manyi Design, a
         design language for background applications, is refined by Ant UED Team.
-        Ant Design, a design language for background applications, is refined by
+        Manyi Design, a design language for background applications, is refined by
         Ant UED Team.`;
     const ref = React.createRef<HTMLElement>();
     const onEllipsis = jest.fn();
@@ -138,7 +138,7 @@ describe('Typography.Ellipsis', () => {
     triggerResize(ref.current!);
     await waitFakeTimer();
 
-    expect(wrapper.firstChild?.textContent).toEqual('Ant Design, a des...');
+    expect(wrapper.firstChild?.textContent).toEqual('Manyi Design, a des...');
     const ellipsisSpans = wrapper.querySelectorAll('span[aria-hidden]');
     expect(ellipsisSpans[ellipsisSpans.length - 1].textContent).toEqual('...');
     onEllipsis.mockReset();
@@ -421,7 +421,7 @@ describe('Typography.Ellipsis', () => {
     const ref = React.createRef<HTMLElement>();
     const { container, baseElement } = render(
       <Base component={undefined} ellipsis={{ tooltip: 'This is tooltip', rows: 2 }} ref={ref}>
-        Ant Design, a design language for background applications, is refined by Ant UED Team.
+        Manyi Design, a design language for background applications, is refined by Ant UED Team.
       </Base>,
     );
     triggerResize(ref.current!);

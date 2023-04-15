@@ -1,6 +1,6 @@
-import { theme } from 'antd';
+import { theme } from 'manyid';
 import { useContext } from 'react';
-import { ConfigContext } from 'antd/es/config-provider';
+import { ConfigContext } from 'manyid/es/config-provider';
 
 const { useToken } = theme;
 

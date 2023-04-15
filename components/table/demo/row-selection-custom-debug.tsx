@@ -1,7 +1,7 @@
 import React from 'react';
-import { Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
-import type { TableRowSelection } from 'antd/es/table/interface';
+import { Table } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
+import type { TableRowSelection } from 'manyid/es/table/interface';
 
 interface DataType {
   key: React.Key;

@@ -12,7 +12,7 @@ describe('Icon', () => {
   it('should throw Error', () => {
     const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Icon />);
-    expect(errSpy).toHaveBeenCalledWith('Warning: [antd: Icon] Empty Icon');
+    expect(errSpy).toHaveBeenCalledWith('Warning: [manyid: Icon] Empty Icon');
     errSpy.mockRestore();
   });
 });

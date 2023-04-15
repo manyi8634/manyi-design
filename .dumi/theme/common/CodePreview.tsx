@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs } from 'antd';
+import { Tabs } from 'manyid';
 
 const LANGS = {
   tsx: 'TypeScript',

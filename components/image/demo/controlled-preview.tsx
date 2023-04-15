@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, InputNumber, Image } from 'antd';
+import { Button, InputNumber, Image } from 'manyid';
 
 const App: React.FC = () => {
   const [visible, setVisible] = useState(false);

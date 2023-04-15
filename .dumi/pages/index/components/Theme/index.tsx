@@ -7,7 +7,7 @@ import {
   HomeOutlined,
   QuestionCircleOutlined,
 } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
+import type { MenuProps } from 'manyid';
 import {
   Breadcrumb,
   Button,
@@ -20,7 +20,7 @@ import {
   Space,
   theme,
   Typography,
-} from 'antd';
+} from 'manyid';
 import useLocale from '../../../../hooks/useLocale';
 import useSiteToken from '../../../../hooks/useSiteToken';
 import type { THEME } from './ThemePicker';
@@ -47,7 +47,7 @@ const TokenChecker = () => {
 const locales = {
   cn: {
     themeTitle: '定制主题，随心所欲',
-    themeDesc: 'Ant Design 5.0 开放更多样式算法，让你定制主题更简单',
+    themeDesc: 'Manyi Design 5.0 开放更多样式算法，让你定制主题更简单',
 
     customizeTheme: '定制主题',
     myTheme: '我的主题',
@@ -64,7 +64,7 @@ const locales = {
   },
   en: {
     themeTitle: 'Flexible theme customization',
-    themeDesc: 'Ant Design 5.0 enable extendable algorithm, make custom theme easier',
+    themeDesc: 'Manyi Design 5.0 enable extendable algorithm, make custom theme easier',
 
     customizeTheme: 'Customize Theme',
     myTheme: 'My Theme',
@@ -409,7 +409,7 @@ export default function Theme() {
                   alt=""
                 />
               </div>
-              <h1>Ant Design 5.0</h1>
+              <h1>Manyi Design 5.0</h1>
             </div>
 
             <Space css={style.menu} size="middle">

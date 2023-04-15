@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Checkbox, Form, Input } from 'manyid';
 
 const formItemLayout = {
   labelCol: { span: 4 },

@@ -5,7 +5,7 @@ import {
   TwitterOutlined,
   YoutubeOutlined,
 } from '@ant-design/icons';
-import { Space, Tag } from 'antd';
+import { Space, Tag } from 'manyid';
 
 const App: React.FC = () => (
   <Space size={[0, 8]} wrap>

@@ -24,7 +24,7 @@ describe('QRCode test', () => {
     const { container } = render(<QRCode value={undefined as unknown as string} />);
     expect(container.firstChild).toBe(null);
     expect(container.firstChild).toMatchSnapshot();
-    expect(errSpy).toHaveBeenCalledWith('Warning: [antd: QRCode] need to receive `value` props');
+    expect(errSpy).toHaveBeenCalledWith('Warning: [manyid: QRCode] need to receive `value` props');
     errSpy.mockRestore();
   });
 
@@ -84,7 +84,7 @@ describe('QRCode test', () => {
     const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<QRCode value="test" icon="test" errorLevel="L" />);
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: QRCode] ErrorLevel `L` is not recommended to be used with `icon`, for scanning result would be affected by low level.',
+      'Warning: [manyid: QRCode] ErrorLevel `L` is not recommended to be used with `icon`, for scanning result would be affected by low level.',
     );
     errSpy.mockRestore();
   });

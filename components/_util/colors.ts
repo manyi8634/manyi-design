@@ -17,7 +17,7 @@ export type PresetColorType = PresetColorKey | InverseColor;
 export type PresetStatusColorType = typeof PresetStatusColorTypes[number];
 
 /**
- * determine if the color keyword belongs to the `Ant Design` {@link PresetColors}.
+ * determine if the color keyword belongs to the `Manyi Design` {@link PresetColors}.
  * @param color color to be judged
  * @param includeInverse whether to include reversed colors
  */

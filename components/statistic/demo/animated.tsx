@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Statistic } from 'antd';
+import { Col, Row, Statistic } from 'manyid';
 import CountUp from 'react-countup';
 
 const formatter = (value: number) => <CountUp end={value} separator="," />;

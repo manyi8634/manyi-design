@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackTop } from 'antd';
+import { BackTop } from 'manyid';
 
 const style: React.CSSProperties = {
   height: 40,

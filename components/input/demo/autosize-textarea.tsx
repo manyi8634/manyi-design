@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Input } from 'antd';
+import { Input } from 'manyid';
 
 const { TextArea } = Input;
 

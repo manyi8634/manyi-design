@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Input, Select, Segmented, Space } from 'antd';
+import { Button, Input, Select, Segmented, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space direction="vertical">

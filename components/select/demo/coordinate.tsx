@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Select, Space } from 'antd';
+import { Select, Space } from 'manyid';
 
 const provinceData = ['Zhejiang', 'Jiangsu'];
 

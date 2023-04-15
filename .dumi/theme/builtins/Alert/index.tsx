@@ -1,5 +1,5 @@
-import type { AlertProps } from 'antd';
-import { Alert } from 'antd';
+import type { AlertProps } from 'manyid';
+import { Alert } from 'manyid';
 import React from 'react';
 
 const MdAlert: React.FC<AlertProps> = ({ style, ...props }) => (

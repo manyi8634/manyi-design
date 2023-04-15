@@ -1,6 +1,6 @@
-import { Upload } from 'antd';
+import { Upload } from 'manyid';
 import ImgCrop from 'antd-img-crop';
-import type { RcFile, UploadFile, UploadProps } from 'antd/es/upload/interface';
+import type { RcFile, UploadFile, UploadProps } from 'manyid/es/upload/interface';
 import React, { useState } from 'react';
 
 const App: React.FC = () => {

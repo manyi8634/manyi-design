@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Watermark, Popover, Typography, Form, Input, Slider, Space, InputNumber } from 'antd';
+import { Watermark, Popover, Typography, Form, Input, Slider, Space, InputNumber } from 'manyid';
 import { SketchPicker } from 'react-color';
 import type { RGBColor } from 'react-color';
 
@@ -44,7 +44,7 @@ const ColorPicker: React.FC<ColorPickerProps> = ({ value, onChange }) => {
 const App: React.FC = () => {
   const [form] = Form.useForm();
   const [config, setConfig] = useState({
-    content: 'Ant Design',
+    content: 'Manyi Design',
     color: { r: 0, g: 0, b: 0, a: 0.15 },
     fontSize: 16,
     zIndex: 11,
@@ -77,7 +77,7 @@ const App: React.FC = () => {
             The light-speed iteration of the digital world makes products more complex. However,
             human consciousness and attention resources are limited. Facing this design
             contradiction, the pursuit of natural interaction will be the consistent direction of
-            Ant Design.
+            Manyi Design.
           </Paragraph>
           <Paragraph>
             Natural user cognition: According to cognitive psychology, about 80% of external

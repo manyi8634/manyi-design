@@ -1,5 +1,5 @@
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import { Avatar, Card, Skeleton, Switch } from 'antd';
+import { Avatar, Card, Skeleton, Switch } from 'manyid';
 import React, { useState } from 'react';
 
 const { Meta } = Card;

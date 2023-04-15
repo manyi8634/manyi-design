@@ -128,10 +128,10 @@ describe('Dropdown', () => {
       </div>,
     );
     expect(error).toHaveBeenCalledWith(
-      expect.stringContaining("[antd: Dropdown] You are using 'bottomCenter'"),
+      expect.stringContaining("[manyid: Dropdown] You are using 'bottomCenter'"),
     );
     expect(error).toHaveBeenCalledWith(
-      expect.stringContaining("[antd: Dropdown] You are using 'topCenter'"),
+      expect.stringContaining("[manyid: Dropdown] You are using 'topCenter'"),
     );
     error.mockRestore();
   });
@@ -231,10 +231,10 @@ describe('Dropdown', () => {
 
     expect(document.querySelector('.bamboo')).toBeTruthy();
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Dropdown] `visible` is deprecated, please use `open` instead.',
+      'Warning: [manyid: Dropdown] `visible` is deprecated, please use `open` instead.',
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Dropdown] `onVisibleChange` is deprecated, please use `onOpenChange` instead.',
+      'Warning: [manyid: Dropdown] `onVisibleChange` is deprecated, please use `onOpenChange` instead.',
     );
 
     fireEvent.click(container.querySelector('.little')!);
@@ -247,7 +247,7 @@ describe('Dropdown', () => {
       </Dropdown>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Dropdown] `overlay` is deprecated. Please use `menu` instead.',
+      'Warning: [manyid: Dropdown] `overlay` is deprecated. Please use `menu` instead.',
     );
 
     errorSpy.mockRestore();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Card, Space } from 'antd';
+import { Badge, Card, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space direction="vertical" style={{ width: '100%' }}>

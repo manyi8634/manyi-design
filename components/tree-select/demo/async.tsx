@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import type { TreeSelectProps } from 'antd';
-import { TreeSelect } from 'antd';
-import type { DefaultOptionType } from 'antd/es/select';
+import type { TreeSelectProps } from 'manyid';
+import { TreeSelect } from 'manyid';
+import type { DefaultOptionType } from 'manyid/es/select';
 
 const App: React.FC = () => {
   const [value, setValue] = useState<string>();

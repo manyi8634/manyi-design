@@ -57,8 +57,8 @@ const columns = [
 
 ## 相关推荐
 
-- [Kitchen Sketch 插件 💎](https://kitchen.alipay.com/)：设计师神器，两步自动生成 Ant Design 表格组件。
-- [ProTable](https://procomponents.ant.design/components/table-cn) 高级表格：在 `antd` Table 之上扩展了更多便捷易用的功能，内置搜索、筛选、刷新等常用表格行为，并为多种类型数据展示提供了内置格式化。
+- [Kitchen Sketch 插件 💎](https://kitchen.alipay.com/)：设计师神器，两步自动生成 Manyi Design 表格组件。
+- [ProTable](https://procomponents.ant.design/components/table-cn) 高级表格：在 `manyid` Table 之上扩展了更多便捷易用的功能，内置搜索、筛选、刷新等常用表格行为，并为多种类型数据展示提供了内置格式化。
 - [S2](https://s2.antv.vision/zh) 多维交叉分析表格：[AntV S2 和 Antd Table 有什么区别？](https://zhuanlan.zhihu.com/p/494995642)
 
 ## 代码演示
@@ -285,8 +285,8 @@ const columns = [
 ## 在 TypeScript 中使用
 
 ```tsx
-import { Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
+import { Table } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
 import React from 'react';
 
 interface User {

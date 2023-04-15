@@ -58,7 +58,7 @@ const SAFE_DAYS_DIFF = 1000 * 60 * 60 * 24 * 3; // 3 days not update seems to be
   //   return;
   // }
 
-  const { time, 'dist-tags': distTags } = await fetch('http://registry.npmjs.org/antd').then(
+  const { time, 'dist-tags': distTags } = await fetch('http://registry.npmjs.org/manyid').then(
     (res) => res.json(),
   );
 
@@ -183,7 +183,7 @@ const SAFE_DAYS_DIFF = 1000 * 60 * 60 * 24 * 3; // 3 days not update seems to be
     console.log(`🎃 Conch Version not change. Safe to ${chalk.green('ignore')}.`);
   } else {
     console.log('💾 Tagging Conch Version:', chalk.green(conchVersion));
-    spawnSync('npm', ['dist-tag', 'add', `antd@${conchVersion}`, CONCH_TAG], {
+    spawnSync('npm', ['dist-tag', 'add', `manyid@${conchVersion}`, CONCH_TAG], {
       stdio: 'inherit',
       stdin: 'inherit',
     });

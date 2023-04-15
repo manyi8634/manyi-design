@@ -1,8 +1,8 @@
 import { SmileOutlined } from '@ant-design/icons';
-import { Button, ConfigProvider, Select } from 'antd';
+import { Button, ConfigProvider, Select } from 'manyid';
 import React, { useState } from 'react';
 
-// Ant Design site use `es` module for view
+// Manyi Design site use `es` module for view
 // but do not replace related lib `lib` with `es`
 // which do not show correct in site.
 // We may need do convert in site also.

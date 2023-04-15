@@ -1,8 +1,8 @@
 /* eslint import/no-unresolved: 0 */
-import { ConfigProvider, Table } from 'antd';
+import { ConfigProvider, Table } from 'manyid';
 import { getDesignToken } from 'antd-token-previewer';
-import tokenMeta from 'antd/es/version/token-meta.json';
-import tokenData from 'antd/es/version/token.json';
+import tokenMeta from 'manyid/es/version/token-meta.json';
+import tokenData from 'manyid/es/version/token.json';
 import React from 'react';
 import useLocale from '../../../hooks/useLocale';
 import useSiteToken from '../../../hooks/useSiteToken';

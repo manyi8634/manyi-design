@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Form, Input, Select } from 'antd';
+import { Button, Form, Input, Select } from 'manyid';
 
 const { Option } = Select;
 

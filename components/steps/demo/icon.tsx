@@ -1,6 +1,6 @@
 import React from 'react';
 import { LoadingOutlined, SmileOutlined, SolutionOutlined, UserOutlined } from '@ant-design/icons';
-import { Steps } from 'antd';
+import { Steps } from 'manyid';
 
 const App: React.FC = () => (
   <Steps

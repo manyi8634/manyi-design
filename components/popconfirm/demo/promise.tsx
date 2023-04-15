@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Popconfirm } from 'antd';
+import { Button, Popconfirm } from 'manyid';
 
 const App: React.FC = () => {
   const confirm = () =>

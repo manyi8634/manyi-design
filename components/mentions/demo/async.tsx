@@ -1,5 +1,5 @@
 import React, { useCallback, useRef, useState } from 'react';
-import { Mentions } from 'antd';
+import { Mentions } from 'manyid';
 import debounce from 'lodash/debounce';
 
 const App: React.FC = () => {
@@ -42,7 +42,7 @@ const App: React.FC = () => {
       options={users.map(({ login, avatar_url: avatar }) => ({
         key: login,
         value: login,
-        className: 'antd-demo-dynamic-option',
+        className: 'manyid-demo-dynamic-option',
         label: (
           <>
             <img src={avatar} alt={login} />

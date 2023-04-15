@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Space, Typography } from 'antd';
+import { Divider, Space, Typography } from 'manyid';
 
 const App: React.FC = () => (
   <Space split={<Divider type="vertical" />}>

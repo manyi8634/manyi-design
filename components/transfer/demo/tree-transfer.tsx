@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Transfer, Tree, theme } from 'antd';
-import type { TransferDirection, TransferItem } from 'antd/es/transfer';
-import type { DataNode } from 'antd/es/tree';
+import { Transfer, Tree, theme } from 'manyid';
+import type { TransferDirection, TransferItem } from 'manyid/es/transfer';
+import type { DataNode } from 'manyid/es/tree';
 
 interface TreeTransferProps {
   dataSource: DataNode[];

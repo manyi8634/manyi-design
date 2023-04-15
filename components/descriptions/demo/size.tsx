@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import type { RadioChangeEvent } from 'antd';
-import { Button, Descriptions, Radio } from 'antd';
+import type { RadioChangeEvent } from 'manyid';
+import { Button, Descriptions, Radio } from 'manyid';
 
 const App: React.FC = () => {
   const [size, setSize] = useState<'default' | 'middle' | 'small'>('default');

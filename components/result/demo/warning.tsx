@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Result } from 'antd';
+import { Button, Result } from 'manyid';
 
 const App: React.FC = () => (
   <Result

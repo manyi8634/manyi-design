@@ -94,7 +94,7 @@ describe('Descriptions', () => {
       </Descriptions>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Descriptions] Sum of column `span` in a line not match `column` of Descriptions.',
+      'Warning: [manyid: Descriptions] Sum of column `span` in a line not match `column` of Descriptions.',
     );
   });
 

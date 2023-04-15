@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeartOutlined } from '@ant-design/icons';
-import { Rate } from 'antd';
+import { Rate } from 'manyid';
 
 const App: React.FC = () => (
   <>

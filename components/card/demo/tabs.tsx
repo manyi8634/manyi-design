@@ -1,4 +1,4 @@
-import { Card } from 'antd';
+import { Card } from 'manyid';
 import React, { useState } from 'react';
 
 const tabList = [

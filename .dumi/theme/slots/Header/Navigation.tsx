@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FormattedMessage, Link, useFullSidebarData, useLocation } from 'dumi';
-import type { MenuProps } from 'antd';
-import { Menu } from 'antd';
+import type { MenuProps } from 'manyid';
+import { Menu } from 'manyid';
 import { MenuOutlined } from '@ant-design/icons';
 import { css } from '@emotion/react';
 import { getEcosystemGroup } from './More';

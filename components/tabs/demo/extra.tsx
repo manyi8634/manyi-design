@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Button, Checkbox, Divider, Tabs } from 'antd';
+import { Button, Checkbox, Divider, Tabs } from 'manyid';
 
 const CheckboxGroup = Checkbox.Group;
 

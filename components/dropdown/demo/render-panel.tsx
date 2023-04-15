@@ -1,6 +1,6 @@
 import React from 'react';
 import { SmileOutlined } from '@ant-design/icons';
-import { Dropdown, Menu } from 'antd';
+import { Dropdown, Menu } from 'manyid';
 
 const { _InternalPanelDoNotUseOrYouWillBeFired: InternalDropdown } = Dropdown;
 

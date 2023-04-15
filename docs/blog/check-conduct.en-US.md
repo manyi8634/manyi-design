@@ -4,7 +4,7 @@ date: 2022-12-14
 author: zombieJ
 ---
 
-In the Tree or similar components (such as TreeSelect, Cascader), needs check function. It's unambiguous most of the time, but when a `disabled` node appears somewhere in the middle, it's worth talking about. This article will introduce the logic of check conduction in antd. It should be noted that in different scenarios, there will be various requirements, and antd has chosen the most commonly used check conduction logic. If you need a different custom style, you can implement it yourself through `checkStrictly`.
+In the Tree or similar components (such as TreeSelect, Cascader), needs check function. It's unambiguous most of the time, but when a `disabled` node appears somewhere in the middle, it's worth talking about. This article will introduce the logic of check conduction in manyid. It should be noted that in different scenarios, there will be various requirements, and manyid has chosen the most commonly used check conduction logic. If you need a different custom style, you can implement it yourself through `checkStrictly`.
 
 ## Some conduction strategies
 
@@ -36,7 +36,7 @@ When there is no scrolling, the user can't realize that the upper `disabled` is 
 
 ### Check only reachable checkable nodes
 
-This is also the current strategy of antd, when a node is checked, it will propagate upwards and downwards from the node until `disabled` stops. When there are multiple `disabled` in the node, they will each check the status management:
+This is also the current strategy of manyid, when a node is checked, it will propagate upwards and downwards from the node until `disabled` stops. When there are multiple `disabled` in the node, they will each check the status management:
 
 ![Tree](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*EIK0Rbq92CMAAAAAAAAAAAAADrJ8AQ/original)
 

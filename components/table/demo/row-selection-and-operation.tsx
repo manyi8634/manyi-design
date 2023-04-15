@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
+import { Button, Table } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
 
 interface DataType {
   key: React.Key;

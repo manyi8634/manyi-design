@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { AutoComplete, Input } from 'antd';
-import type { SelectProps } from 'antd/es/select';
+import { AutoComplete, Input } from 'manyid';
+import type { SelectProps } from 'manyid/es/select';
 
 const getRandomInt = (max: number, min = 0) => Math.floor(Math.random() * (max - min + 1)) + min;
 

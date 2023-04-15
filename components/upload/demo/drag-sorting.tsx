@@ -9,8 +9,8 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { css } from '@emotion/css';
-import { Button, Upload } from 'antd';
-import type { UploadFile, UploadProps } from 'antd/es/upload/interface';
+import { Button, Upload } from 'manyid';
+import type { UploadFile, UploadProps } from 'manyid/es/upload/interface';
 import React, { useState } from 'react';
 
 interface DraggableUploadListItemProps {

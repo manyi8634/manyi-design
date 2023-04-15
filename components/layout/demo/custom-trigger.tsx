@@ -6,7 +6,7 @@ import {
   UserOutlined,
   VideoCameraOutlined,
 } from '@ant-design/icons';
-import { Layout, Menu, theme } from 'antd';
+import { Layout, Menu, theme } from 'manyid';
 
 const { Header, Sider, Content } = Layout;
 

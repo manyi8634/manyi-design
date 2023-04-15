@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { message } from 'antd';
+import { message } from 'manyid';
 import { useIntl } from 'dumi';
 import CopyableIcon from './CopyableIcon';
 import type { ThemeType } from './index';

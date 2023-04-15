@@ -13,7 +13,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*YC4ERpGAddoAAA
 This component provides a configuration to all React components underneath itself via the [context API](https://facebook.github.io/react/docs/context.html). In the render tree all components will have access to the provided config.
 
 ```tsx
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from 'manyid';
 import React from 'react';
 
 // ...
@@ -51,8 +51,8 @@ Some components use dynamic style to support wave effect. You can config `csp` p
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | autoInsertSpaceInButton | Set false to remove space between 2 chinese characters on Button | boolean | true |  |
-| componentDisabled | Config antd component `disabled` | boolean | - | 4.21.0 |
-| componentSize | Config antd component size | `small` \| `middle` \| `large` | - |  |
+| componentDisabled | Config manyid component `disabled` | boolean | - | 4.21.0 |
+| componentSize | Config manyid component size | `small` \| `middle` \| `large` | - |  |
 | csp | Set [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) config | { nonce: string } | - |  |
 | direction | Set direction of layout. See [demo](#components-config-provider-demo-direction) | `ltr` \| `rtl` | `ltr` |  |
 | dropdownMatchSelectWidth | Determine whether the dropdown menu and the select input are the same width. Default set `min-width` same as input. Will ignore when value less than select width. `false` will disable virtual scroll | boolean \| number | - | 4.3.0 |
@@ -62,7 +62,7 @@ Some components use dynamic style to support wave effect. You can config `csp` p
 | iconPrefixCls | Set icon prefix className | string | `anticon` | 4.11.0 |
 | input | Set Input common props | { autoComplete?: string } | - | 4.2.0 |
 | select | Set Select common props | { showSearch?: boolean } | - |  |
-| locale | Language package setting, you can find the packages in [antd/locale](http://unpkg.com/antd/locale/) | object | - |  |
+| locale | Language package setting, you can find the packages in [manyid/locale](http://unpkg.com/manyid/locale/) | object | - |  |
 | prefixCls | Set prefix className | string | `ant` |  |
 | renderEmpty | Set empty content of components. Ref [Empty](/components/empty/) | function(componentName: string): ReactNode | - |  |
 | space | Set Space `size`, ref [Space](/components/space) | { size: `small` \| `middle` \| `large` \| `number` } | - | 4.1.0 |
@@ -93,8 +93,8 @@ const {
 
 | 返回值 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| componentDisabled | antd component disabled state | boolean | - | 5.3.0 |
-| componentSize | antd component size state | `small` \| `middle` \| `large` | - | 5.3.0 |
+| componentDisabled | manyid component disabled state | boolean | - | 5.3.0 |
+| componentSize | manyid component size state | `small` \| `middle` \| `large` | - | 5.3.0 |
 
 ## FAQ
 
@@ -110,7 +110,7 @@ See FAQ [Date-related-components-locale-is-not-working?](/docs/react/faq#date-re
 
 Related issue: <https://github.com/ant-design/ant-design/issues/19974>
 
-When you config `getPopupContainer` to parentNode globally, Modal will throw error of `triggerNode is undefined` because it did not have a triggerNode. You can try the [fix](https://github.com/afc163/feedback-antd/commit/3e4d1ad1bc1a38460dc3bf3c56517f737fe7d44a) below.
+When you config `getPopupContainer` to parentNode globally, Modal will throw error of `triggerNode is undefined` because it did not have a triggerNode. You can try the [fix](https://github.com/afc163/feedback-manyid/commit/3e4d1ad1bc1a38460dc3bf3c56517f737fe7d44a) below.
 
 ```diff
  <ConfigProvider
@@ -128,10 +128,10 @@ When you config `getPopupContainer` to parentNode globally, Modal will throw err
 
 #### Why can't ConfigProvider props (like `prefixCls` and `theme`) affect ReactNode inside `message.info`, `notification.open`, `Modal.confirm`?
 
-antd will dynamic create React instance by `ReactDOM.render` when call message methods. Whose context is different with origin code located context. We recommend `useMessage`, `useNotification` and `useModal` which , the methods came from `message/notification/Modal` has been deprecated in 5.x.
+manyid will dynamic create React instance by `ReactDOM.render` when call message methods. Whose context is different with origin code located context. We recommend `useMessage`, `useNotification` and `useModal` which , the methods came from `message/notification/Modal` has been deprecated in 5.x.
 
 #### Locale is not working with Vite in production mode?
 
 Related issue: [#39045](https://github.com/ant-design/ant-design/issues/39045)
 
-In production mode of Vite, default exports from cjs file should be used like this: `enUS.default`. So you can directly import locale from `es/` directory like `import enUS from 'antd/es/locale/en_US'` to make dev and production have the same behavior.
+In production mode of Vite, default exports from cjs file should be used like this: `enUS.default`. So you can directly import locale from `es/` directory like `import enUS from 'manyid/es/locale/en_US'` to make dev and production have the same behavior.

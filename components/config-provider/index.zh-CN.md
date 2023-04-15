@@ -14,7 +14,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*YC4ERpGAddoAAA
 ConfigProvider 使用 React 的 [context](https://facebook.github.io/react/docs/context.html) 特性，只需在应用外围包裹一次即可全局生效。
 
 ```tsx
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from 'manyid';
 import React from 'react';
 
 // ...
@@ -52,8 +52,8 @@ export default Demo;
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | autoInsertSpaceInButton | 设置为 `false` 时，移除按钮中 2 个汉字之间的空格 | boolean | true |  |
-| componentDisabled | 设置 antd 组件禁用状态 | boolean | - | 4.21.0 |
-| componentSize | 设置 antd 组件大小 | `small` \| `middle` \| `large` | - |  |
+| componentDisabled | 设置 manyid 组件禁用状态 | boolean | - | 4.21.0 |
+| componentSize | 设置 manyid 组件大小 | `small` \| `middle` \| `large` | - |  |
 | csp | 设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置 | { nonce: string } | - |  |
 | direction | 设置文本展示方向。 [示例](#components-config-provider-demo-direction) | `ltr` \| `rtl` | `ltr` |  |
 | dropdownMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。`false` 时会关闭虚拟滚动 | boolean \| number | - | 4.3.0 |
@@ -63,7 +63,7 @@ export default Demo;
 | iconPrefixCls | 设置图标统一样式前缀 | string | `anticon` | 4.11.0 |
 | input | 设置 Input 组件的通用属性 | { autoComplete?: string } | - | 4.2.0 |
 | select | 设置 Select 组件的通用属性 | { showSearch?: boolean } | - |  |
-| locale | 语言包配置，语言包可到 [antd/locale](http://unpkg.com/antd/locale/) 目录下寻找 | object | - |  |
+| locale | 语言包配置，语言包可到 [manyid/locale](http://unpkg.com/manyid/locale/) 目录下寻找 | object | - |  |
 | prefixCls | 设置统一样式前缀 | string | `ant` |  |
 | renderEmpty | 自定义组件空状态。参考 [空状态](/components/empty-cn) | function(componentName: string): ReactNode | - |  |
 | space | 设置 Space 的 `size`，参考 [Space](/components/space-cn) | { size: `small` \| `middle` \| `large` \| `number` } | - | 4.1.0 |
@@ -95,8 +95,8 @@ const {
 <!-- prettier-ignore -->
 | 返回值 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| componentDisabled | antd 组件禁用状态 | boolean | - | 5.3.0 |
-| componentSize | antd 组件大小状态 | `small` \| `middle` \| `large` | - | 5.3.0 |
+| componentDisabled | manyid 组件禁用状态 | boolean | - | 5.3.0 |
+| componentSize | manyid 组件大小状态 | `small` \| `middle` \| `large` | - | 5.3.0 |
 
 ## FAQ
 
@@ -112,7 +112,7 @@ const {
 
 相关 issue：<https://github.com/ant-design/ant-design/issues/19974>
 
-当如下全局设置 `getPopupContainer` 为触发节点的 parentNode 时，由于 Modal 的用法不存在 `triggerNode`，这样会导致 `triggerNode is undefined` 的报错，需要增加一个[判断条件](https://github.com/afc163/feedback-antd/commit/3e4d1ad1bc1a38460dc3bf3c56517f737fe7d44a)。
+当如下全局设置 `getPopupContainer` 为触发节点的 parentNode 时，由于 Modal 的用法不存在 `triggerNode`，这样会导致 `triggerNode is undefined` 的报错，需要增加一个[判断条件](https://github.com/afc163/feedback-manyid/commit/3e4d1ad1bc1a38460dc3bf3c56517f737fe7d44a)。
 
 ```diff
  <ConfigProvider
@@ -136,4 +136,4 @@ const {
 
 相关 issue：[#39045](https://github.com/ant-design/ant-design/issues/39045)
 
-由于 Vite 生产模式下打包与开发模式不同，cjs 格式的文件会多一层，需要 `zhCN.default` 来获取。推荐 Vite 用户直接从 `antd/es/locale` 目录下引入 esm 格式的 locale 文件。
+由于 Vite 生产模式下打包与开发模式不同，cjs 格式的文件会多一层，需要 `zhCN.default` 来获取。推荐 Vite 用户直接从 `manyid/es/locale` 目录下引入 esm 格式的 locale 文件。

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Slider, Switch } from 'antd';
+import { Slider, Switch } from 'manyid';
 
 const App: React.FC = () => {
   const [disabled, setDisabled] = useState(false);

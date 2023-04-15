@@ -1,5 +1,5 @@
 import { presetDarkPalettes } from '@ant-design/colors';
-import { message } from 'antd';
+import { message } from 'manyid';
 import React, { useEffect } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 

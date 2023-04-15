@@ -8,8 +8,8 @@ import {
   PictureTwoTone,
   PlusOutlined,
 } from '@ant-design/icons';
-import { Modal, Upload } from 'antd';
-import type { RcFile, UploadFile, UploadProps } from 'antd/es/upload/interface';
+import { Modal, Upload } from 'manyid';
+import type { RcFile, UploadFile, UploadProps } from 'manyid/es/upload/interface';
 
 const getBase64 = (file: RcFile): Promise<string> =>
   new Promise((resolve, reject) => {

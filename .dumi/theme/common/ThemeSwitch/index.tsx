@@ -1,5 +1,5 @@
 import React from 'react';
-import { FloatButton } from 'antd';
+import { FloatButton } from 'manyid';
 import { FormattedMessage, Link, useLocation } from 'dumi';
 import { DarkTheme, CompactTheme } from 'antd-token-previewer/es/icons';
 import { BgColorsOutlined } from '@ant-design/icons';

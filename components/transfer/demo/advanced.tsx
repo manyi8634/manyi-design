@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Transfer } from 'antd';
-import type { TransferDirection, TransferListProps } from 'antd/es/transfer';
+import { Button, Transfer } from 'manyid';
+import type { TransferDirection, TransferListProps } from 'manyid/es/transfer';
 
 interface RecordType {
   key: string;

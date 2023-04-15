@@ -148,7 +148,7 @@ describe('Tooltip', () => {
     expect(container.querySelector('.ant-tooltip-open')).toBeNull();
   });
 
-  describe('should hide when mouse leave antd disabled component', () => {
+  describe('should hide when mouse leave manyid disabled component', () => {
     function testComponent(name: string, Component: typeof Button | typeof Switch) {
       it(name, async () => {
         const onOpenChange = jest.fn();
@@ -494,7 +494,7 @@ describe('Tooltip', () => {
     await waitFakeTimer();
 
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Tooltip] `defaultVisible` is deprecated, please use `defaultOpen` instead.',
+      'Warning: [manyid: Tooltip] `defaultVisible` is deprecated, please use `defaultOpen` instead.',
     );
     expect(isTooltipOpen()).toBeTruthy();
 
@@ -505,7 +505,7 @@ describe('Tooltip', () => {
       </Tooltip>,
     );
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Tooltip] `visible` is deprecated, please use `open` instead.',
+      'Warning: [manyid: Tooltip] `visible` is deprecated, please use `open` instead.',
     );
 
     rerender(
@@ -526,7 +526,7 @@ describe('Tooltip', () => {
       </Tooltip>,
     );
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Tooltip] `onVisibleChange` is deprecated, please use `onOpenChange` instead.',
+      'Warning: [manyid: Tooltip] `onVisibleChange` is deprecated, please use `onOpenChange` instead.',
     );
 
     // afterVisibleChange
@@ -536,7 +536,7 @@ describe('Tooltip', () => {
       </Tooltip>,
     );
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Tooltip] `afterVisibleChange` is deprecated, please use `afterOpenChange` instead.',
+      'Warning: [manyid: Tooltip] `afterVisibleChange` is deprecated, please use `afterOpenChange` instead.',
     );
 
     // Event Trigger

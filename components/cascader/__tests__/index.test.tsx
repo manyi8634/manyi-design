@@ -361,7 +361,7 @@ describe('Cascader', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Cascader options={[{ label: 'a', value: 'a', children: [{ label: 'b' }] }]} />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Cascader] Not found `value` in `options`.',
+      'Warning: [manyid: Cascader] Not found `value` in `options`.',
     );
     errorSpy.mockRestore();
   });
@@ -550,7 +550,7 @@ describe('Cascader', () => {
       const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
       const { container } = render(<Cascader dropdownClassName="legacy" open />);
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Cascader] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
+        'Warning: [manyid: Cascader] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
       );
       expect(container.querySelector('.legacy')).toBeTruthy();
 

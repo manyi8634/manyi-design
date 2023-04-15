@@ -1,4 +1,4 @@
-import { Input, Space, Popover } from 'antd';
+import { Input, Space, Popover } from 'manyid';
 import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react';

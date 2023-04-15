@@ -250,7 +250,7 @@ describe('message.hooks', () => {
 
     expect(document.querySelector('.bamboo')).toBeFalsy();
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Message] You are calling notice in render which will break in React 18 concurrent mode. Please trigger in effect instead.',
+      'Warning: [manyid: Message] You are calling notice in render which will break in React 18 concurrent mode. Please trigger in effect instead.',
     );
 
     errorSpy.mockRestore();

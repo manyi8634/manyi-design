@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Button, Tabs } from 'antd';
+import { Button, Tabs } from 'manyid';
 
 type TargetKey = React.MouseEvent | React.KeyboardEvent | string;
 

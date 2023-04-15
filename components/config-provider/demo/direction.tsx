@@ -7,7 +7,7 @@ import {
   SearchOutlined as SearchIcon,
   SmileOutlined,
 } from '@ant-design/icons';
-import type { RadioChangeEvent } from 'antd';
+import type { RadioChangeEvent } from 'manyid';
 import {
   Badge,
   Button,
@@ -28,8 +28,8 @@ import {
   Switch,
   Tree,
   TreeSelect,
-} from 'antd';
-import type { DirectionType } from 'antd/es/config-provider';
+} from 'manyid';
+import type { DirectionType } from 'manyid/es/config-provider';
 import React, { useState } from 'react';
 
 const InputGroup = Input.Group;

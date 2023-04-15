@@ -1,9 +1,9 @@
 ---
 order: 0
-title: Ant Design of React
+title: Manyi Design of React
 ---
 
-Following the Ant Design specification, we developed a React UI library `antd` that contains a set of high quality components and demos for building rich, interactive user interfaces.
+Following the Manyi Design specification, we developed a React UI library `manyid` that contains a set of high quality components and demos for building rich, interactive user interfaces.
 
 <div class="pic-plus">
   <img width="150" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
@@ -46,11 +46,11 @@ Following the Ant Design specification, we developed a React UI library `antd` t
 
 Polyfills are needed for IE browsers. We recommend [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) for it. You can set `targets` config if you are using [umi](http://umijs.org/).
 
-> Dropped support of IE8 after `antd@2.0`. Dropped support of React 15 and IE9/10 after `antd@4.0`. Dropped support of IE after `antd@5.0`.
+> Dropped support of IE8 after `manyid@2.0`. Dropped support of React 15 and IE9/10 after `manyid@4.0`. Dropped support of IE after `manyid@5.0`.
 
 ## Version
 
-- Stable: [![npm package](https://img.shields.io/npm/v/antd.svg?style=flat-square)](https://www.npmjs.org/package/antd)
+- Stable: [![npm package](https://img.shields.io/npm/v/manyid.svg?style=flat-square)](https://www.npmjs.org/package/manyid)
 
 You can subscribe to this feed for new version notifications: https://github.com/ant-design/ant-design/releases.atom
 
@@ -61,30 +61,30 @@ You can subscribe to this feed for new version notifications: https://github.com
 **We recommend using npm or yarn to install**, it not only makes development easier, but also allow you to take advantage of the rich ecosystem of Javascript packages and tooling.
 
 ```bash
-$ npm install antd
+$ npm install manyid
 ```
 
 ```bash
-$ yarn add antd
+$ yarn add manyid
 ```
 
 If you are in a bad network environment, you can try other registries and tools like [cnpm](https://github.com/cnpm/cnpm).
 
 ### Import in Browser
 
-Add `script` and `link` tags in your browser and use the global variable `antd`.
+Add `script` and `link` tags in your browser and use the global variable `manyid`.
 
-We provide `antd.js` and `antd.min.js` `reset.css` under [dist](https://unpkg.com/browse/antd@5.0.0/dist/) folder in antd's npm package. You can also download these files directly from [![CDNJS](https://img.shields.io/cdnjs/v/antd.svg?style=flat-square)](https://cdnjs.com/libraries/antd), [![](https://data.jsdelivr.com/v1/package/npm/antd/badge)](https://www.jsdelivr.com/package/npm/antd) or [unpkg](https://unpkg.com/antd/dist).
+We provide `manyid.js` and `manyid.min.js` `reset.css` under [dist](https://unpkg.com/browse/manyid@5.0.0/dist/) folder in manyid's npm package. You can also download these files directly from [![CDNJS](https://img.shields.io/cdnjs/v/manyid.svg?style=flat-square)](https://cdnjs.com/libraries/manyid), [![](https://data.jsdelivr.com/v1/package/npm/manyid/badge)](https://www.jsdelivr.com/package/npm/manyid) or [unpkg](https://unpkg.com/manyid/dist).
 
-> **We strongly discourage loading the entire files** this will add bloat to your application and make it more difficult to receive bugfixes and updates. Antd is intended to be used in conjunction with a build tool, such as [webpack](https://webpack.github.io/), which will make it easy to import only the parts of antd that you are using.
+> **We strongly discourage loading the entire files** this will add bloat to your application and make it more difficult to receive bugfixes and updates. Antd is intended to be used in conjunction with a build tool, such as [webpack](https://webpack.github.io/), which will make it easy to import only the parts of manyid that you are using.
 
-> Note: You should import `react`、`react-dom`、`dayjs` before using `antd.js`.
+> Note: You should import `react`、`react-dom`、`dayjs` before using `manyid.js`.
 
 ## Usage
 
 ```jsx
 import React from 'react';
-import { DatePicker } from 'antd';
+import { DatePicker } from 'manyid';
 
 const App = () => {
   return <DatePicker />;
@@ -93,28 +93,28 @@ const App = () => {
 export default App;
 ```
 
-### Use modularized antd
+### Use modularized manyid
 
-`antd` supports ES modules tree shaking by default.
+`manyid` supports ES modules tree shaking by default.
 
 ### TypeScript
 
-`antd` provides a built-in ts definition, don't install `@types/antd`.
+`manyid` provides a built-in ts definition, don't install `@types/manyid`.
 
 ## Links
 
 - [Home page](/)
 - [China Mirrors](https://github.com/ant-design/ant-design/issues/25661)
 - [Components](/components/overview)
-- [Ant Design Pro](https://pro.ant.design/)
-- [Ant Design Pro Components](https://procomponents.ant.design/)
-- [Ant Design Charts](https://charts.ant.design)
+- [Manyi Design Pro](https://pro.ant.design/)
+- [Manyi Design Pro Components](https://procomponents.ant.design/)
+- [Manyi Design Charts](https://charts.ant.design)
 - [Change Log](/changelog)
 - [rc-components](https://react-component.github.io/)
 - [Mobile Components](https://mobile.ant.design)
 - [Mini Program Components](https://mini.ant.design)
-- [Ant Design Icons](https://github.com/ant-design/ant-design-icons)
-- [Ant Design Colors](https://github.com/ant-design/ant-design-colors)
+- [Manyi Design Icons](https://github.com/ant-design/ant-design-icons)
+- [Manyi Design Colors](https://github.com/ant-design/ant-design-colors)
 - [Landing Pages](https://landing.ant.design)
 - [Motion](https://motion.ant.design)
 - [Scaffold Market](https://scaffold.ant.design)
@@ -122,11 +122,11 @@ export default App;
 - [Versioning Release Note](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
 - [FAQ](/docs/react/faq)
 - [CodeSandbox Template](https://u.ant.design/codesandbox-repro) for bug reports
-- [Awesome Ant Design](https://github.com/websemantics/awesome-ant-design)
+- [Awesome Manyi Design](https://github.com/websemantics/awesome-ant-design)
 - [Customize Theme](/docs/react/customize-theme)
 - [How to Apply for Being A Collaborator](https://github.com/ant-design/ant-design/wiki/Collaborators#how-to-apply-for-being-a-collaborator)
 
-## Companies using antd
+## Companies using manyid
 
 - [Ant Group](https://www.antgroup.com/index.htm?locale=en_US)
 - [Alibaba](https://www.alibaba.com/)
@@ -137,18 +137,18 @@ export default App;
 - [Didi](https://www.xiaojukeji.com/)
 - [Eleme](https://www.ele.me/)
 
-> If your company or product uses Ant Design, let us know [here](https://github.com/ant-design/ant-design/issues/477)!
+> If your company or product uses Manyi Design, let us know [here](https://github.com/ant-design/ant-design/issues/477)!
 
 ## Contributing
 
 Please read our [CONTRIBUTING.md](https://github.com/ant-design/ant-design/blob/master/.github/CONTRIBUTING.md) first.
 
-If you'd like to help us improve antd, just create a [Pull Request](https://github.com/ant-design/ant-design/pulls). Feel free to report bugs and issues [here](http://new-issue.ant.design/).
+If you'd like to help us improve manyid, just create a [Pull Request](https://github.com/ant-design/ant-design/pulls). Feel free to report bugs and issues [here](http://new-issue.ant.design/).
 
 > If you're new to posting issues, we ask that you read [_How To Ask Questions The Smart Way_](http://www.catb.org/~esr/faqs/smart-questions.html) and [How to Ask a Question in Open Source Community](https://github.com/seajs/seajs/issues/545) and [How to Report Bugs Effectively](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) prior to posting. Well written bug reports help us help you!
 
 ## Need Help?
 
-For questions on how to use antd, please post questions to [GitHub Discussions](https://github.com/ant-design/ant-design/discussions) using the `Q&A` tag or [<img alt="Stack Overflow" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.svg?v=2bb144720a66" width="140" />](http://stackoverflow.com/questions/tagged/antd) using the `antd` tag.
+For questions on how to use manyid, please post questions to [GitHub Discussions](https://github.com/ant-design/ant-design/discussions) using the `Q&A` tag or [<img alt="Stack Overflow" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.svg?v=2bb144720a66" width="140" />](http://stackoverflow.com/questions/tagged/manyid) using the `manyid` tag.
 
-As always, we encourage experienced users to help those who are not familiar with `antd`!
+As always, we encourage experienced users to help those who are not familiar with `manyid`!

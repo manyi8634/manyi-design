@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState, Suspense, useLayoutEffect } from 'react';
 import { enUS, ThemeEditor, zhCN } from 'antd-token-previewer';
-import { Button, ConfigProvider, message, Modal, Spin, Typography } from 'antd';
-import type { ThemeConfig } from 'antd/es/config-provider/context';
+import { Button, ConfigProvider, message, Modal, Spin, Typography } from 'manyid';
+import type { ThemeConfig } from 'manyid/es/config-provider/context';
 import { Helmet } from 'dumi';
 import { css } from '@emotion/react';
 import type { JSONContent, TextContent } from 'vanilla-jsoneditor';
@@ -124,7 +124,7 @@ const CustomTheme = () => {
   }, [themeConfigContent]);
 
   const handleExport = () => {
-    const file = new File([JSON.stringify(theme, null, 2)], `Ant Design Theme.json`, {
+    const file = new File([JSON.stringify(theme, null, 2)], `Manyi Design Theme.json`, {
       type: 'text/json; charset=utf-8;',
     });
     const tmpLink = document.createElement('a');
@@ -142,8 +142,8 @@ const CustomTheme = () => {
   return (
     <div>
       <Helmet>
-        <title>{`${locale.title} - Ant Design`}</title>
-        <meta property="og:title" content={`${locale.title} - Ant Design`} />
+        <title>{`${locale.title} - Manyi Design`}</title>
+        <meta property="og:title" content={`${locale.title} - Manyi Design`} />
       </Helmet>
       {contextHolder}
       <ConfigProvider theme={{ inherit: false }}>

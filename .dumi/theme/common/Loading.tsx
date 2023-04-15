@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skeleton, Space, Spin } from 'antd';
+import { Skeleton, Space, Spin } from 'manyid';
 import { useLocation } from 'dumi';
 
 const Loading: React.FC = () => {

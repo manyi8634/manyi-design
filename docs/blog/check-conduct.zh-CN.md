@@ -4,7 +4,7 @@ date: 2022-12-14
 author: zombieJ
 ---
 
-在 Tree 组件以及类似的组件（如 TreeSelect、Cascader），都会需要勾选功能。在大部分情况下它都没有歧义，但是当中间的某个节点出现 `disabled` 节点时，这就值得讨论了。这篇文章会介绍 antd 中，勾选传导的逻辑。需要注意的是，在不同的场景下，会有各种不同的需求，antd 选择了其中最常用的一种勾选传导逻辑。如果你需要不同的定制款，可以通过 `checkStrictly` 来自行实现。
+在 Tree 组件以及类似的组件（如 TreeSelect、Cascader），都会需要勾选功能。在大部分情况下它都没有歧义，但是当中间的某个节点出现 `disabled` 节点时，这就值得讨论了。这篇文章会介绍 manyid 中，勾选传导的逻辑。需要注意的是，在不同的场景下，会有各种不同的需求，manyid 选择了其中最常用的一种勾选传导逻辑。如果你需要不同的定制款，可以通过 `checkStrictly` 来自行实现。
 
 ## 一些传导策略
 
@@ -36,7 +36,7 @@ author: zombieJ
 
 ### 只勾选可触达的可勾选节点
 
-这也是 antd 现在的策略，当节点被勾选时，它会从节点起向上向下传导，直到 `disabled` 停止。节点中存在多个 `disabled` 时会各自进行勾选状态管理：
+这也是 manyid 现在的策略，当节点被勾选时，它会从节点起向上向下传导，直到 `disabled` 停止。节点中存在多个 `disabled` 时会各自进行勾选状态管理：
 
 ![Tree](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*EIK0Rbq92CMAAAAAAAAAAAAADrJ8AQ/original)
 

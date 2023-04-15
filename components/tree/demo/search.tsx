@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { Input, Tree } from 'antd';
-import type { DataNode } from 'antd/es/tree';
+import { Input, Tree } from 'manyid';
+import type { DataNode } from 'manyid/es/tree';
 
 const { Search } = Input;
 

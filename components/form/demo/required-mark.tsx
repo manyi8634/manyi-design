@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InfoCircleOutlined } from '@ant-design/icons';
-import { Button, Form, Input, Radio } from 'antd';
+import { Button, Form, Input, Radio } from 'manyid';
 
 type RequiredMark = boolean | 'optional';
 

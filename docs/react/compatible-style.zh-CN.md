@@ -3,11 +3,11 @@ order: 6.5
 title: 样式兼容
 ---
 
-Ant Design 支持最近 2 个版本的现代浏览器。如果你需要兼容旧版浏览器，请根据实际需求进行降级处理：
+Manyi Design 支持最近 2 个版本的现代浏览器。如果你需要兼容旧版浏览器，请根据实际需求进行降级处理：
 
 ### `:where` 选择器
 
-Ant Design 的 CSS-in-JS 默认通过 `:where` 选择器降低 CSS Selector 优先级，以减少用户升级时额外调整自定义样式成本。在某些场景下你如果需要支持的旧版浏览器（或者如 TailwindCSS 优先级冲突），你可以使用 `@ant-design/cssinjs` 取消默认的降权操作（请注意版本保持与 antd 一致）：
+Manyi Design 的 CSS-in-JS 默认通过 `:where` 选择器降低 CSS Selector 优先级，以减少用户升级时额外调整自定义样式成本。在某些场景下你如果需要支持的旧版浏览器（或者如 TailwindCSS 优先级冲突），你可以使用 `@ant-design/cssinjs` 取消默认的降权操作（请注意版本保持与 manyid 一致）：
 
 ```tsx
 import React from 'react';
@@ -35,7 +35,7 @@ export default () => (
 
 ### CSS 逻辑属性
 
-为了统一 LTR 和 RTL 样式，Ant Design 使用了 CSS 逻辑属性。例如原 `margin-left` 使用 `margin-inline-start` 代替，使其在 LTR 和 RTL 下都为起始位置间距。如果你需要兼容旧版浏览器（如 360 浏览器、QQ 浏览器 等等），可以通过 `@ant-design/cssinjs` 的 `StyleProvider` 配置 `transformers` 将其转换：
+为了统一 LTR 和 RTL 样式，Manyi Design 使用了 CSS 逻辑属性。例如原 `margin-left` 使用 `margin-inline-start` 代替，使其在 LTR 和 RTL 下都为起始位置间距。如果你需要兼容旧版浏览器（如 360 浏览器、QQ 浏览器 等等），可以通过 `@ant-design/cssinjs` 的 `StyleProvider` 配置 `transformers` 将其转换：
 
 ```tsx
 import React from 'react';

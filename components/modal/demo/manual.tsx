@@ -1,4 +1,4 @@
-import { Button, Modal } from 'antd';
+import { Button, Modal } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => {

@@ -229,14 +229,14 @@ describe('Progress', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Progress percent={60} success={{ progress: 30 }} />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Progress] `success.progress` is deprecated. Please use `success.percent` instead.',
+      'Warning: [manyid: Progress] `success.progress` is deprecated. Please use `success.percent` instead.',
     );
   });
   it('should warnning if use `width` prop', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Progress percent={60} width={100} />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Progress] `width` is deprecated. Please use `size` instead.',
+      'Warning: [manyid: Progress] `width` is deprecated. Please use `size` instead.',
     );
   });
 
@@ -244,7 +244,7 @@ describe('Progress', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Progress percent={60} strokeWidth={10} />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Progress] `strokeWidth` is deprecated. Please use `size` instead.',
+      'Warning: [manyid: Progress] `strokeWidth` is deprecated. Please use `size` instead.',
     );
   });
 
@@ -252,7 +252,7 @@ describe('Progress', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Progress percent={60} success={{ progress: 30 }} type="circle" />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Progress] `success.progress` is deprecated. Please use `success.percent` instead.',
+      'Warning: [manyid: Progress] `success.progress` is deprecated. Please use `success.percent` instead.',
     );
   });
 
@@ -260,7 +260,7 @@ describe('Progress', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Progress size={[60, 20]} type="circle" />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Progress] Type "circle" and "dashbord" do not accept array as `size`, please use number or preset size instead.',
+      'Warning: [manyid: Progress] Type "circle" and "dashbord" do not accept array as `size`, please use number or preset size instead.',
     );
   });
 
@@ -268,7 +268,7 @@ describe('Progress', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Progress size={[60, 20]} type="dashboard" />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Progress] Type "circle" and "dashbord" do not accept array as `size`, please use number or preset size instead.',
+      'Warning: [manyid: Progress] Type "circle" and "dashbord" do not accept array as `size`, please use number or preset size instead.',
     );
   });
 

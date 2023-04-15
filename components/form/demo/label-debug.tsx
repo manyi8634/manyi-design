@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Typography } from 'antd';
+import { Form, Input, Typography } from 'manyid';
 
 const App: React.FC = () => (
   <Form

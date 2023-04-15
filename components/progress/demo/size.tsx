@@ -1,4 +1,4 @@
-import { Progress, Space } from 'antd';
+import { Progress, Space } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => (

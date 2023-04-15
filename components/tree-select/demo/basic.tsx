@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TreeSelect } from 'antd';
+import { TreeSelect } from 'manyid';
 
 const treeData = [
   {

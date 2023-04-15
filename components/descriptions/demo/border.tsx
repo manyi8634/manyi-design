@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Descriptions } from 'antd';
+import { Badge, Descriptions } from 'manyid';
 
 const App: React.FC = () => (
   <Descriptions title="User Info" bordered>

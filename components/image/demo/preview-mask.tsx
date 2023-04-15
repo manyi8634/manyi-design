@@ -1,6 +1,6 @@
 import React from 'react';
 import { ZoomInOutlined } from '@ant-design/icons';
-import { Image, Space } from 'antd';
+import { Image, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Image

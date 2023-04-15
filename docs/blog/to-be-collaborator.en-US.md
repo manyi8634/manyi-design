@@ -4,7 +4,7 @@ date: 2022-12-22
 author: heiyu4585
 ---
 
-Hello everyone, I am [heiyu](https://github.com/heiyu4585). About Ant Design, I believe everyone is very familiar with it. Before I contributed to Ant Design, I have used Ant Design in many background management system projects at work. The biggest feeling for me is that it is easy to use, beautiful, simple and stable. Now that the v5 version has been released, I strongly recommend everyone to try it. I am also fortunate to have developed the v5 version of the `Tour` component and `App` component, as well as some other maintenance work. Let me share with you the PR process of Ant Design, hoping to provide a reference for who are interested in building together for the community.
+Hello everyone, I am [heiyu](https://github.com/heiyu4585). About Manyi Design, I believe everyone is very familiar with it. Before I contributed to Manyi Design, I have used Manyi Design in many background management system projects at work. The biggest feeling for me is that it is easy to use, beautiful, simple and stable. Now that the v5 version has been released, I strongly recommend everyone to try it. I am also fortunate to have developed the v5 version of the `Tour` component and `App` component, as well as some other maintenance work. Let me share with you the PR process of Manyi Design, hoping to provide a reference for who are interested in building together for the community.
 
 ### Read related articles to familiarize yourself with related concepts
 
@@ -18,12 +18,12 @@ Hello everyone, I am [heiyu](https://github.com/heiyu4585). About Ant Design, I 
 
 [Some tips about git with PR](https://github.com/ant-design/ant-design/discussions/37051)
 
-## Pull Ant Design code to local
+## Pull Manyi Design code to local
 
 ### 1. Fork project
 
 - First you need to fork the project, enter the [project page](https://github.com/ant-design/ant-design), click the [Fork button](https://github.com/ant-design/ant-design/fork)
-- Ant Design link will appear in your github account is https://github.com/heiyu4585/ant-design this project
+- Manyi Design link will appear in your github account is https://github.com/heiyu4585/ant-design this project
 - Use the following command on the project address on the local computer: get a github folder
 
 ```bash
@@ -34,7 +34,7 @@ Note: `[yourGithubAccount]` changed to your own github username
 
 ### 2. Add remote branch address
 
-- Go to the Ant Design folder and add the remote address of Ant Design
+- Go to the Manyi Design folder and add the remote address of Manyi Design
 
 ```
 cd ant-design
@@ -62,7 +62,7 @@ git checkout fix-branch
 
 Now we can change the code on the branch
 
-## Find the issue on the [Ant Design issue](https://github.com/ant-design/ant-design/issues) page and analyze the selection
+## Find the issue on the [Manyi Design issue](https://github.com/ant-design/ant-design/issues) page and analyze the selection
 
 To help you start your first attempt, we use [good first issues](https://github.com/ant-design/ant-design/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue") marks bugs and small features that are relatively easy to fix, and these issues are good as your first try. [help wanted](https://github.com/ant-design/ant-design/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) After all, it is easy to take over as a developer some problems.
 
@@ -70,7 +70,7 @@ To help you start your first attempt, we use [good first issues](https://github.
 
 ## Development Process
 
-1. `npm start` A website running Ant Design locally
+1. `npm start` A website running Manyi Design locally
 2. As issue mentioned. Debug, fixing or add new feature
 
 ## Run test cases and specification checks
@@ -160,6 +160,6 @@ After a period of continuous maintenance, Collaborators will start the invitatio
 
 ## Related resources
 
-To learn more about Ant Design's development process and considerations, see:
+To learn more about Manyi Design's development process and considerations, see:
 
 - [contributor development maintenance guide](/docs/blog/contributor-development-maintenance-guide)

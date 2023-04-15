@@ -1,8 +1,8 @@
 import type { ReactElement } from 'react';
 import React, { useMemo } from 'react';
 import { ClassNames, css } from '@emotion/react';
-import type { MenuProps } from 'antd';
-import type { MenuItemType } from 'antd/es/menu/hooks/useItems';
+import type { MenuProps } from 'manyid';
+import type { MenuItemType } from 'manyid/es/menu/hooks/useItems';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import useMenu from '../../hooks/useMenu';
 import useSiteToken from '../../hooks/useSiteToken';

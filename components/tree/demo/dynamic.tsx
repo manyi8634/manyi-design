@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tree } from 'antd';
+import { Tree } from 'manyid';
 
 interface DataNode {
   title: string;

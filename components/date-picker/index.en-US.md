@@ -55,7 +55,7 @@ If there are special needs (only modifying single component language), Please us
 
 ```jsx
 import 'dayjs/locale/zh-cn';
-import locale from 'antd/es/date-picker/locale/zh_CN';
+import locale from 'manyid/es/date-picker/locale/zh_CN';
 
 <DatePicker locale={locale} />;
 ```
@@ -64,7 +64,7 @@ import locale from 'antd/es/date-picker/locale/zh_CN';
 // The default locale is en-US, if you want to use other locale, just set locale in entry file globally.
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
-import locale from 'antd/locale/zh_CN';
+import locale from 'manyid/locale/zh_CN';
 
 <ConfigProvider locale={locale}>
   <DatePicker defaultValue={dayjs('2015-01-01', 'YYYY-MM-DD')} />

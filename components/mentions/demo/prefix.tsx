@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mentions } from 'antd';
+import { Mentions } from 'manyid';
 
 const MOCK_DATA = {
   '@': ['afc163', 'zombiej', 'yesmeck'],

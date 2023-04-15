@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress } from 'antd';
+import { Progress } from 'manyid';
 import { red, green } from '@ant-design/colors';
 
 const App: React.FC = () => (

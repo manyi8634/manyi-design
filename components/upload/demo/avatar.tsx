@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
-import { message, Upload } from 'antd';
-import type { UploadChangeParam } from 'antd/es/upload';
-import type { RcFile, UploadFile, UploadProps } from 'antd/es/upload/interface';
+import { message, Upload } from 'manyid';
+import type { UploadChangeParam } from 'manyid/es/upload';
+import type { RcFile, UploadFile, UploadProps } from 'manyid/es/upload/interface';
 
 const getBase64 = (img: RcFile, callback: (url: string) => void) => {
   const reader = new FileReader();

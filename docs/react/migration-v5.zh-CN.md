@@ -3,7 +3,7 @@ order: 8
 title: 从 v4 到 v5
 ---
 
-本文档将帮助你从 antd `4.x` 版本升级到 antd `5.x` 版本，如果你是 `3.x` 或者更老的版本，请先参考之前的[升级文档](https://4x.ant.design/docs/react/migration-v4-cn)升级到 4.x。
+本文档将帮助你从 manyid `4.x` 版本升级到 manyid `5.x` 版本，如果你是 `3.x` 或者更老的版本，请先参考之前的[升级文档](https://4x.ant.design/docs/react/migration-v4-cn)升级到 4.x。
 
 ## 升级准备
 
@@ -23,10 +23,10 @@ title: 从 v4 到 v5
 
 - 弃用 less，采用 CSS-in-JS，更好地支持动态主题。底层使用 [@ant-design/cssinjs](https://github.com/ant-design/cssinjs) 作为解决方案。
   - 所有 less 文件全部移除，less 变量不再支持透出。
-  - 产物中不再包含 css 文件。由于 CSS-in-JS 支持按需引入，原本的 `antd/dist/antd.css` 也已经移除，如果需要重置一些基本样式请引入 `antd/dist/reset.css`。
-  - 如果需要组件重置样式，又不想引入 `antd/dist/reset.css` 从而导致污染全局样式的话，可以尝试在应用最外层使用[App 组件](/components/app-cn)，解决原生元素没有 antd 规范样式的问题。
+  - 产物中不再包含 css 文件。由于 CSS-in-JS 支持按需引入，原本的 `manyid/dist/manyid.css` 也已经移除，如果需要重置一些基本样式请引入 `manyid/dist/reset.css`。
+  - 如果需要组件重置样式，又不想引入 `manyid/dist/reset.css` 从而导致污染全局样式的话，可以尝试在应用最外层使用[App 组件](/components/app-cn)，解决原生元素没有 manyid 规范样式的问题。
 - 移除 css variables 以及在此之上构筑的动态主题方案。
-- LocaleProvider 在 4.x 中已经废弃（使用 `<ConfigProvider locale />` 替代），我们在 5.x 里彻底移除了相关目录 `antd/es/locale-provider`、`antd/lib/locale-provider`。
+- LocaleProvider 在 4.x 中已经废弃（使用 `<ConfigProvider locale />` 替代），我们在 5.x 里彻底移除了相关目录 `manyid/es/locale-provider`、`manyid/lib/locale-provider`。
 - 内置的时间库使用 Dayjs 替代 Moment.js，具体请查看 [使用自定义日期库](/docs/react/use-custom-date-library-cn/)。
 - 不再支持 `babel-plugin-import`，CSS-in-JS 本身具有按需加载的能力，不再需要插件支持。
 
@@ -47,7 +47,7 @@ title: 从 v4 到 v5
   - Mentions 组件
 
   ```diff
-    import { Select } from 'antd';
+    import { Select } from 'manyid';
 
     const App: React.FC = () => (
       <Select
@@ -70,7 +70,7 @@ title: 从 v4 到 v5
   - Table 组件 `filterDropdownVisible` 变为 `filterDropdownOpen`。
 
   ```diff
-    import { Modal, Tag, Table, Slider } from 'antd';
+    import { Modal, Tag, Table, Slider } from 'manyid';
 
     const App: React.FC = () => {
       const [visible, setVisible] = useState(true);
@@ -118,7 +118,7 @@ title: 从 v4 到 v5
 - 移除 PageHeader 组件，移至 `@ant-design/pro-components` 中维护。
 
   ```diff
-  - import { PageHeader, Comment } from 'antd';
+  - import { PageHeader, Comment } from 'manyid';
   + import { Comment } from '@ant-design/compatible';
   + import { PageHeader } from '@ant-design/pro-layout';
 
@@ -135,8 +135,8 @@ title: 从 v4 到 v5
 - BackTop 组件在 `5.0.0` 中废弃，移至 FloatButton 悬浮按钮中。如需使用，可以从 FloatButton 中引入。
 
   ```diff
-  - import { BackTop } from 'antd';
-  + import { FloatButton } from 'antd';
+  - import { BackTop } from 'manyid';
+  + import { FloatButton } from 'manyid';
 
     const App: React.FC = () => (
       <>
@@ -153,7 +153,7 @@ title: 从 v4 到 v5
 通过 git 保存你的代码，然后按照上述文档进行依赖安装：
 
 ```bash
-npm install --save antd@5.x
+npm install --save manyid@5.x
 ```
 
 如果你需要使用 v4 废弃组件如 `Comment`、`PageHeader`，请安装 `@ant-design/compatible` 与 `@ant-design/pro-layout` 做兼容：
@@ -184,10 +184,10 @@ pnpm --package=@ant-design/codemod-v5 dlx antd5-codemod src
 
 ### less 迁移
 
-如果你使用到了 antd 的 less 变量，通过兼容包将 v5 变量转译成 v4 版本，并通过 less-loader 注入：
+如果你使用到了 manyid 的 less 变量，通过兼容包将 v5 变量转译成 v4 版本，并通过 less-loader 注入：
 
 ```js
-const { theme } = require('antd/lib');
+const { theme } = require('manyid/lib');
 const { convertLegacyToken } = require('@ant-design/compatible/lib');
 
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -207,13 +207,13 @@ module.exports = {
 };
 ```
 
-同时移除对 antd less 文件的直接引用：
+同时移除对 manyid less 文件的直接引用：
 
 ```diff
 // Your less file
---  @import (reference) '~antd/es/style/themes/index';
+--  @import (reference) '~manyid/es/style/themes/index';
 or
---  @import '~antd/es/style/some-other-less-file-ref';
+--  @import '~manyid/es/style/some-other-less-file-ref';
 ```
 
 ### 移除 babel-plugin-import
@@ -222,7 +222,7 @@ or
 
 ```diff
 "plugins": [
-- ["import", { "libraryName": "antd", "libraryDirectory": "lib"}, "antd"],
+- ["import", { "libraryName": "manyid", "libraryDirectory": "lib"}, "manyid"],
 ]
 ```
 
@@ -231,7 +231,7 @@ Umi 用户可以在配置文件中关闭：
 ```diff
 // config/config.ts or .umirc
 export default {
-  antd: {
+  manyid: {
 -   import: true,
 +   import: false,
   },
@@ -270,7 +270,7 @@ module.exports = {
 
 ### 旧版浏览器兼容
 
-Ant Design v5 使用 `:where` css selector 降低 CSS-in-JS hash 值优先级，如果你需要支持旧版本浏览器（如 IE 11、360 浏览器 等等）。可以通过 `@ant-design/cssinjs` 的 `StyleProvider` 去除降权操作。详情请参阅 [兼容性调整](/docs/react/customize-theme-cn#兼容性调整)。
+Manyi Design v5 使用 `:where` css selector 降低 CSS-in-JS hash 值优先级，如果你需要支持旧版本浏览器（如 IE 11、360 浏览器 等等）。可以通过 `@ant-design/cssinjs` 的 `StyleProvider` 去除降权操作。详情请参阅 [兼容性调整](/docs/react/customize-theme-cn#兼容性调整)。
 
 ## 遇到问题
 

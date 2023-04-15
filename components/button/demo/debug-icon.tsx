@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SearchOutlined } from '@ant-design/icons';
-import { Button, Tooltip, ConfigProvider, Radio, Divider, Space } from 'antd';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
+import { Button, Tooltip, ConfigProvider, Radio, Divider, Space } from 'manyid';
+import type { SizeType } from 'manyid/es/config-provider/SizeContext';
 
 const App: React.FC = () => {
   const [size, setSize] = useState<SizeType>('large');

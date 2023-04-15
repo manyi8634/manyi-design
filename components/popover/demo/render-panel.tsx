@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover } from 'antd';
+import { Popover } from 'manyid';
 
 const { _InternalPanelDoNotUseOrYouWillBeFired: InternalPopover } = Popover;
 

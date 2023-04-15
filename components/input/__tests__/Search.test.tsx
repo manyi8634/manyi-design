@@ -80,7 +80,7 @@ describe('Input.Search', () => {
     const { container } = render(
       <Search
         defaultValue="search text"
-        enterButton={<Button>antd button</Button>}
+        enterButton={<Button>manyid button</Button>}
         onSearch={onSearch}
       />,
     );
@@ -97,7 +97,7 @@ describe('Input.Search', () => {
         defaultValue="search text"
         enterButton={
           <button type="button" onClick={onButtonClick}>
-            antd button
+            manyid button
           </button>
         }
         onSearch={onSearch}

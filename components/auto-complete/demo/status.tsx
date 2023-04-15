@@ -1,4 +1,4 @@
-import { AutoComplete, Space } from 'antd';
+import { AutoComplete, Space } from 'manyid';
 import React, { useState } from 'react';
 
 const mockVal = (str: string, repeat = 1) => ({

@@ -114,7 +114,7 @@ describe('Tag', () => {
 
     const { container } = render(<Tag visible={false} />);
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Tag] `visible` is deprecated, please use `visible && <Tag />` instead.',
+      'Warning: [manyid: Tag] `visible` is deprecated, please use `visible && <Tag />` instead.',
     );
     expect(container.querySelector('.ant-tag-hidden')).toBeTruthy();
 

@@ -8,7 +8,7 @@ demo:
   cols: 2
 ---
 
-Segmented Controls. This component is available since `antd@4.20.0`.
+Segmented Controls. This component is available since `manyid@4.20.0`.
 
 ## When To Use
 
@@ -32,7 +32,7 @@ Segmented Controls. This component is available since `antd@4.20.0`.
 
 ## API
 
-> This component is available since `antd@4.20.0`
+> This component is available since `manyid@4.20.0`
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

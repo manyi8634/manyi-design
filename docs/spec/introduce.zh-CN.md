@@ -1,6 +1,6 @@
 ---
 group:
-  title: Ant Design
+  title: Manyi Design
   order: 0
 order: 0
 title: 介绍
@@ -12,7 +12,7 @@ title: 介绍
 
 蚂蚁集团的企业级产品是一个庞大且复杂的系统，数量多且功能复杂，而且变动和并发频繁，常常需要设计者与开发者能快速做出响应。同时这类产品中有存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。
 
-随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁集团体验技术部）经过大量项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 —— Ant Design。基于「自然」、「确定性」、「意义感」、「生长性」四大[设计价值观](/docs/spec/values)，通过模块化解决方案，降低冗余的生产成本，让设计者专注于更好的用户体验。
+随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁集团体验技术部）经过大量项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 —— Manyi Design。基于「自然」、「确定性」、「意义感」、「生长性」四大[设计价值观](/docs/spec/values)，通过模块化解决方案，降低冗余的生产成本，让设计者专注于更好的用户体验。
 
 ---
 
@@ -30,14 +30,14 @@ title: 介绍
 
 ## 前端实现
 
-我们采用 [React](https://reactjs.org) 封装了一套 Ant Design 的组件库，也欢迎社区其他框架的实现版本。
+我们采用 [React](https://reactjs.org) 封装了一套 Manyi Design 的组件库，也欢迎社区其他框架的实现版本。
 
-- [Ant Design of React](/docs/react/introduce)（官方实现）
-- [NG-ZORRO - Ant Design of Angular](http://ng.ant.design)（社区实现）
-- [NG-ZORRO-MOBILE - Ant Design Mobile of Angular](http://ng.mobile.ant.design)（社区实现）
-- [Ant Design of Vue](http://antdv.com)（社区实现）
-- [Ant Design Blazor](https://ant-design-blazor.github.io/)（社区实现）
-- [San UI Toolkit for Ant Design](https://ecomfe.github.io/santd)（社区实现）
+- [Manyi Design of React](/docs/react/introduce)（官方实现）
+- [NG-ZORRO - Manyi Design of Angular](http://ng.ant.design)（社区实现）
+- [NG-ZORRO-MOBILE - Manyi Design Mobile of Angular](http://ng.mobile.ant.design)（社区实现）
+- [Manyi Design of Vue](http://antdv.com)（社区实现）
+- [Manyi Design Blazor](https://ant-design-blazor.github.io/)（社区实现）
+- [San UI Toolkit for Manyi Design](https://ecomfe.github.io/santd)（社区实现）
 - [antizer (ClojureScript)](https://github.com/priornix/antizer)（社区实现）
 
 ## 谁在使用
@@ -52,17 +52,17 @@ title: 介绍
 - [饿了么](https://www.ele.me/)
 - [其他用户](https://github.com/ant-design/ant-design/issues/477)
 
-> 如果你的公司和产品使用了 Ant Design，欢迎到 [这里](https://github.com/ant-design/ant-design/issues/477) 留言。
+> 如果你的公司和产品使用了 Manyi Design，欢迎到 [这里](https://github.com/ant-design/ant-design/issues/477) 留言。
 
 ## 社区评价
 
-- 知乎：[如何评价 Ant Design 这个项目？](https://www.zhihu.com/question/33629737)
+- 知乎：[如何评价 Manyi Design 这个项目？](https://www.zhihu.com/question/33629737)
 - Hacknews: [Show HN: Antd – A set of high-quality React components](https://news.ycombinator.com/item?id=13053137)
-- Alligator: [Crafting Beautiful UIs in React Using Ant Design](https://alligator.io/react/beautiful-uis-ant-design/)
-- [漫谈 Material Design & Ant Design](http://dwbbb.com/blog/MaterialDesignAntDesign/)
-- [Introduction to Ant Design](https://blog.logrocket.com/introduction-to-ant-design/)
-- [Build a React App with Ant Design Principles](https://developer.okta.com/blog/2020/09/16/ant-design-react-app)
-- [Meet Antd, an enterprise React UI library](https://medium.com/javascript-in-plain-english/antd-library-what-why-useful-or-not-5fec225b639d)
+- Alligator: [Crafting Beautiful UIs in React Using Manyi Design](https://alligator.io/react/beautiful-uis-ant-design/)
+- [漫谈 Material Design & Manyi Design](http://dwbbb.com/blog/MaterialDesignAntDesign/)
+- [Introduction to Manyi Design](https://blog.logrocket.com/introduction-to-ant-design/)
+- [Build a React App with Manyi Design Principles](https://developer.okta.com/blog/2020/09/16/ant-design-react-app)
+- [Meet Antd, an enterprise React UI library](https://medium.com/javascript-in-plain-english/manyid-library-what-why-useful-or-not-5fec225b639d)
 
 ## 如何贡献
 

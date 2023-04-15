@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Rate } from 'antd';
+import { Rate } from 'manyid';
 
 const desc = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
 

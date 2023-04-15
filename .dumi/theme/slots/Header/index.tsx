@@ -1,6 +1,6 @@
 import { GithubOutlined, MenuOutlined } from '@ant-design/icons';
 import { ClassNames, css } from '@emotion/react';
-import { Col, Modal, Popover, Row, Select } from 'antd';
+import { Col, Modal, Popover, Row, Select } from 'manyid';
 import classNames from 'classnames';
 import { useLocation, useSiteData } from 'dumi';
 import DumiSearchBar from 'dumi/theme-default/slots/SearchBar';

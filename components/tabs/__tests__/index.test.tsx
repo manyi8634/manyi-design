@@ -84,7 +84,7 @@ describe('Tabs', () => {
     const onNextClick = { onNextClick() {} } as any;
     render(<Tabs {...onNextClick} />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Tabs] `onPrevClick` and `onNextClick` has been removed. Please use `onTabScroll` instead.',
+      'Warning: [manyid: Tabs] `onPrevClick` and `onNextClick` has been removed. Please use `onTabScroll` instead.',
     );
     errorSpy.mockRestore();
   });
@@ -121,7 +121,7 @@ describe('Tabs', () => {
     expect(container.querySelectorAll('.ant-tabs-tab')).toHaveLength(1);
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Tabs] Tabs.TabPane is deprecated. Please use `items` directly.',
+      'Warning: [manyid: Tabs] Tabs.TabPane is deprecated. Please use `items` directly.',
     );
     errorSpy.mockRestore();
   });

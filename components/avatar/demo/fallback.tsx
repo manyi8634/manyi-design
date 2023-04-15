@@ -1,4 +1,4 @@
-import { Avatar, Space } from 'antd';
+import { Avatar, Space } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => (

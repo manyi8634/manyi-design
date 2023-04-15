@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { css } from '@emotion/react';
-import { Typography, Carousel } from 'antd';
+import { Typography, Carousel } from 'manyid';
 import { useCarouselStyle } from '../util';
 import useSiteToken from '../../../../hooks/useSiteToken';
 

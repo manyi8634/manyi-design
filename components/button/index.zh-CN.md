@@ -17,7 +17,7 @@ group:
 
 标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。
 
-在 Ant Design 中我们提供了五种按钮。
+在 Manyi Design 中我们提供了五种按钮。
 
 - 主按钮：用于主行动点，一个操作区域只能有一个主按钮。
 - 默认按钮：用于没有主次之分的一组行动点。
@@ -83,7 +83,7 @@ group:
 
 ### 如何移除两个汉字之间的空格？
 
-根据 Ant Design 设计规范要求，我们会在按钮内(文本按钮和链接按钮除外)只有两个汉字时自动添加空格，如果你不需要这个特性，可以设置 [ConfigProvider](/components/config-provider-cn#api) 的 `autoInsertSpaceInButton` 为 `false`。
+根据 Manyi Design 设计规范要求，我们会在按钮内(文本按钮和链接按钮除外)只有两个汉字时自动添加空格，如果你不需要这个特性，可以设置 [ConfigProvider](/components/config-provider-cn#api) 的 `autoInsertSpaceInButton` 为 `false`。
 
 <img src="https://gw.alipayobjects.com/zos/antfincdn/MY%26THAPZrW/38f06cb9-293a-4b42-b183-9f443e79ffea.png" style="box-shadow: none; margin: 0; width: 100px" alt="移除两个汉字之间的空格"  />
 
@@ -96,4 +96,4 @@ group:
 
 ## 设计指引
 
-- [我的按钮究竟该放哪儿！？| Ant Design 4.0 系列分享](https://zhuanlan.zhihu.com/p/109644406)
+- [我的按钮究竟该放哪儿！？| Manyi Design 4.0 系列分享](https://zhuanlan.zhihu.com/p/109644406)

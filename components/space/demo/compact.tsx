@@ -12,7 +12,7 @@ import {
   TimePicker,
   Tooltip,
   TreeSelect,
-} from 'antd';
+} from 'manyid';
 
 const { Option } = Select;
 const { TreeNode } = TreeSelect;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Badge } from 'antd';
+import { Avatar, Badge } from 'manyid';
 
 const App: React.FC = () => (
   <Badge count={5} offset={[10, 10]}>

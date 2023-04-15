@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider } from 'antd';
+import { Divider } from 'manyid';
 
 const App: React.FC = () => (
   <>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputNumber } from 'antd';
+import { InputNumber } from 'manyid';
 
 const onChange = (value: string) => {
   console.log('changed', value);

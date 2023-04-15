@@ -115,7 +115,7 @@ describe('Collapse', () => {
     );
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Collapse.Panel] `disabled` is deprecated. Please use `collapsible="disabled"` instead.',
+      'Warning: [manyid: Collapse.Panel] `disabled` is deprecated. Please use `collapsible="disabled"` instead.',
     );
 
     expect(container.querySelectorAll('.ant-collapse-item-disabled').length).toBe(1);
@@ -194,7 +194,7 @@ describe('Collapse', () => {
         );
 
         expect(errorSpy).toHaveBeenCalledWith(
-          'Warning: [antd: Collapse] `expandIconPosition` with `left` or `right` is deprecated. Please use `start` or `end` instead.',
+          'Warning: [manyid: Collapse] `expandIconPosition` with `left` or `right` is deprecated. Please use `start` or `end` instead.',
         );
       });
 

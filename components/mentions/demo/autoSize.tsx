@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mentions } from 'antd';
+import { Mentions } from 'manyid';
 
 const App: React.FC = () => (
   <Mentions

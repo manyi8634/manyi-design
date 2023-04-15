@@ -40,8 +40,8 @@ const { spawn } = require('child_process');
     // Replace mountNode
     script = script.replace('mountNode', `document.getElementById('#root')`);
 
-    // Replace antd
-    script = script.replace(`from 'antd'`, `from '..'`);
+    // Replace manyid
+    script = script.replace(`from 'manyid'`, `from '..'`);
 
     // Add path
     script = `/* eslint-disabled */\n// ${demoPath}\n${script}`;

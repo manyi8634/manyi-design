@@ -1,7 +1,7 @@
 import React from 'react';
 import { UploadOutlined } from '@ant-design/icons';
-import type { UploadProps } from 'antd';
-import { Button, message, Upload } from 'antd';
+import type { UploadProps } from 'manyid';
+import { Button, message, Upload } from 'manyid';
 
 const props: UploadProps = {
   beforeUpload: (file) => {

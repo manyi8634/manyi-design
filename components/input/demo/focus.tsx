@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import type { InputRef } from 'antd';
+import type { InputRef } from 'manyid';
 
-import { Button, Input, Space, Switch } from 'antd';
+import { Button, Input, Space, Switch } from 'manyid';
 
 const App: React.FC = () => {
   const inputRef = useRef<InputRef>(null);
@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   const sharedProps = {
     style: { width: '100%' },
-    defaultValue: 'Ant Design love you!',
+    defaultValue: 'Manyi Design love you!',
     ref: inputRef,
   };
 

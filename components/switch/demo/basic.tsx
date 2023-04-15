@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch } from 'antd';
+import { Switch } from 'manyid';
 
 const onChange = (checked: boolean) => {
   console.log(`switch to ${checked}`);

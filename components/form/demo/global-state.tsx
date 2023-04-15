@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Input, Typography } from 'antd';
+import { Form, Input, Typography } from 'manyid';
 
 const { Paragraph } = Typography;
 
@@ -36,7 +36,7 @@ const CustomizedForm: React.FC<CustomizedFormProps> = ({ onChange, fields }) => 
 );
 
 const App: React.FC = () => {
-  const [fields, setFields] = useState<FieldData[]>([{ name: ['username'], value: 'Ant Design' }]);
+  const [fields, setFields] = useState<FieldData[]>([{ name: ['username'], value: 'Manyi Design' }]);
 
   return (
     <>

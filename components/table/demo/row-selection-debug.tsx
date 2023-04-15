@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Table, InputNumber } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
-import type { TableRowSelection } from 'antd/es/table/interface';
+import { Table, InputNumber } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
+import type { TableRowSelection } from 'manyid/es/table/interface';
 
 const RenderTimes = () => {
   const timesRef = React.useRef(0);

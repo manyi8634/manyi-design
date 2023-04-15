@@ -282,8 +282,8 @@ Properties for row selection.
 ## Using in TypeScript
 
 ```tsx
-import { Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
+import { Table } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
 import React from 'react';
 
 interface User {

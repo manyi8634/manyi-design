@@ -1,7 +1,7 @@
 import { CalendarOutlined } from '@ant-design/icons';
 import { css } from '@emotion/react';
 import ContributorsList from '@qixian.cs/github-contributors-list';
-import { Affix, Anchor, Avatar, Col, Skeleton, Space, Tooltip, Typography } from 'antd';
+import { Affix, Anchor, Avatar, Col, Skeleton, Space, Tooltip, Typography } from 'manyid';
 import classNames from 'classnames';
 import DayJS from 'dayjs';
 import { FormattedMessage, useIntl, useRouteMeta, useTabMeta } from 'dumi';

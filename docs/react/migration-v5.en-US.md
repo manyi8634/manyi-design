@@ -3,7 +3,7 @@ order: 8
 title: V4 to V5
 ---
 
-This document will help you upgrade from antd `4.x` version to antd `5.x` version. If you are using `3.x` or older version, please refer to the previous [upgrade document](https://4x.ant.design/docs/react/migration-v4) to 4.x.
+This document will help you upgrade from manyid `4.x` version to manyid `5.x` version. If you are using `3.x` or older version, please refer to the previous [upgrade document](https://4x.ant.design/docs/react/migration-v4) to 4.x.
 
 ## Upgrade preparation
 
@@ -22,17 +22,17 @@ This document will help you upgrade from antd `4.x` version to antd `5.x` versio
 
 - Remove less, adopt CSS-in-JS, for better support of dynamic themes. The bottom layer uses [@ant-design/cssinjs](https://github.com/ant-design/cssinjs) as a solution.
   - All less files are removed, and less variables are no longer exported.
-  - Css files are no longer included in package. Since CSS-in-JS supports importing on demand, the original `antd/dist/antd.css` has also been abandoned. If you need to reset some basic styles, please import `antd/dist/reset.css`.
-  - If you need to reset the style of the component, but you don't want to introduce `antd/dist/reset.css` to pollute the global style, You can try using the [App](/components/app) in the outermost layer to solve the problem that native elements do not have antd specification style.
+  - Css files are no longer included in package. Since CSS-in-JS supports importing on demand, the original `manyid/dist/manyid.css` has also been abandoned. If you need to reset some basic styles, please import `manyid/dist/reset.css`.
+  - If you need to reset the style of the component, but you don't want to introduce `manyid/dist/reset.css` to pollute the global style, You can try using the [App](/components/app) in the outermost layer to solve the problem that native elements do not have manyid specification style.
 - Remove css variables and dynamic theme built on top of them.
-- LocaleProvider has been deprecated in 4.x (use `<ConfigProvider locale />` instead), we removed the related folder `antd/es/locale-provider` and `antd/lib/locale-provider` in 5.x.
+- LocaleProvider has been deprecated in 4.x (use `<ConfigProvider locale />` instead), we removed the related folder `manyid/es/locale-provider` and `manyid/lib/locale-provider` in 5.x.
 - Replace built-in Moment.js with Dayjs. For more: [Use custom date library](/docs/react/use-custom-date-library/).
 - `babel-plugin-import` is no longer supported. CSS-in-JS itself has the ability to import on demand, and plugin support is no longer required. Umi users can remove related configurations.
 
   ```diff
   // config/config.ts
   export default {
-    antd: {
+    manyid: {
   -   import: true,
     },
   };
@@ -55,7 +55,7 @@ This document will help you upgrade from antd `4.x` version to antd `5.x` versio
   - Mentions
 
   ```diff
-    import { Select } from 'antd';
+    import { Select } from 'manyid';
 
     const App: React.FC = () => (
       <Select
@@ -78,7 +78,7 @@ This document will help you upgrade from antd `4.x` version to antd `5.x` versio
   - Table `filterDropdownVisible` changed to `filterDropdownOpen`.
 
   ```diff
-    import { Modal, Tag, Table, Slider } from 'antd';
+    import { Modal, Tag, Table, Slider } from 'manyid';
 
     const App: React.FC = () => {
       const [visible, setVisible] = useState(true);
@@ -126,7 +126,7 @@ This document will help you upgrade from antd `4.x` version to antd `5.x` versio
 - Move PageHeader component into `@ant-design/pro-components`.
 
   ```diff
-  - import { PageHeader, Comment } from 'antd';
+  - import { PageHeader, Comment } from 'manyid';
   + import { Comment } from '@ant-design/compatible';
   + import { PageHeader } from '@ant-design/pro-layout';
 
@@ -143,8 +143,8 @@ This document will help you upgrade from antd `4.x` version to antd `5.x` versio
 - BackTop is deprecated in `5.0.0`, and is merged into FloatButton.
 
   ```diff
-  - import { BackTop } from 'antd';
-  + import { FloatButton } from 'antd';
+  - import { BackTop } from 'manyid';
+  + import { FloatButton } from 'manyid';
 
     const App: React.FC = () => (
       <div>
@@ -161,7 +161,7 @@ This document will help you upgrade from antd `4.x` version to antd `5.x` versio
 Use git to save your code and install latest version:
 
 ```bash
-npm install --save antd@5.x
+npm install --save manyid@5.x
 ```
 
 If you want to use v4 deprecated component like `Comment` or `PageHeader`. You can install `@ant-design/compatible` and `@ant-design/pro-layout` for compatible:
@@ -192,10 +192,10 @@ pnpm --package=@ant-design/codemod-v5 dlx antd5-codemod src
 
 ### less migration
 
-If you using antd less variables, you can use compatible package to covert it into v4 less variables and use less-loader to inject them:
+If you using manyid less variables, you can use compatible package to covert it into v4 less variables and use less-loader to inject them:
 
 ```js
-const { theme } = require('antd/lib');
+const { theme } = require('manyid/lib');
 const { convertLegacyToken } = require('@ant-design/compatible/lib');
 
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -215,13 +215,13 @@ module.exports = {
 };
 ```
 
-Ant then remove antd less reference in your less file:
+Ant then remove manyid less reference in your less file:
 
 ```diff
 // Your less file
---  @import (reference) '~antd/es/style/themes/index';
+--  @import (reference) '~manyid/es/style/themes/index';
 or
---  @import '~antd/es/style/some-other-less-file-ref';
+--  @import '~manyid/es/style/some-other-less-file-ref';
 ```
 
 ### Remove babel-plugin-import
@@ -230,7 +230,7 @@ Remove `babel-plugin-import` from package.json and modify `.babelrc`:
 
 ```diff
 "plugins": [
-- ["import", { "libraryName": "antd", "libraryDirectory": "lib"}, "antd"],
+- ["import", { "libraryName": "manyid", "libraryDirectory": "lib"}, "manyid"],
 ]
 ```
 
@@ -239,7 +239,7 @@ Umi user can disable by config：
 ```diff
 // config/config.ts or .umirc
 export default {
-  antd: {
+  manyid: {
 -   import: true,
 +   import: false,
   },
@@ -278,7 +278,7 @@ module.exports = {
 
 ### Legacy browser support
 
-Ant Design v5 using `:where` css selector to reduce CSS-in-JS hash priority. You can use `@ant-design/cssinjs` `StyleProvider` to cancel this function. Please ref [Compatible adjustment](/docs/react/customize-theme#compatible-adjustment).
+Manyi Design v5 using `:where` css selector to reduce CSS-in-JS hash priority. You can use `@ant-design/cssinjs` `StyleProvider` to cancel this function. Please ref [Compatible adjustment](/docs/react/customize-theme#compatible-adjustment).
 
 ## Encounter problems
 

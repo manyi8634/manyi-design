@@ -843,7 +843,7 @@ describe('Anchor Render', () => {
         />,
       );
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Anchor] `Anchor items#children` is not supported when `Anchor` direction is horizontal.',
+        'Warning: [manyid: Anchor] `Anchor items#children` is not supported when `Anchor` direction is horizontal.',
       );
     });
 
@@ -855,7 +855,7 @@ describe('Anchor Render', () => {
         </Anchor>,
       );
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Anchor] `Anchor children` is deprecated. Please use `items` instead.',
+        'Warning: [manyid: Anchor] `Anchor children` is deprecated. Please use `items` instead.',
       );
     });
 
@@ -867,7 +867,7 @@ describe('Anchor Render', () => {
         </Anchor>,
       );
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Anchor] `Anchor children` is deprecated. Please use `items` instead.',
+        'Warning: [manyid: Anchor] `Anchor children` is deprecated. Please use `items` instead.',
       );
     });
 
@@ -880,10 +880,10 @@ describe('Anchor Render', () => {
         </Anchor>,
       );
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Anchor] `Anchor children` is deprecated. Please use `items` instead.',
+        'Warning: [manyid: Anchor] `Anchor children` is deprecated. Please use `items` instead.',
       );
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Anchor.Link] `Anchor.Link children` is not supported when `Anchor` direction is horizontal',
+        'Warning: [manyid: Anchor.Link] `Anchor.Link children` is not supported when `Anchor` direction is horizontal',
       );
     });
   });

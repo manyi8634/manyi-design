@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor, Row, Col } from 'antd';
+import { Anchor, Row, Col } from 'manyid';
 
 const App: React.FC = () => (
   <Row>

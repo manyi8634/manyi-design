@@ -1,5 +1,5 @@
 import React from 'react';
-import { FloatButton } from 'antd';
+import { FloatButton } from 'manyid';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 
 const App: React.FC = () => (

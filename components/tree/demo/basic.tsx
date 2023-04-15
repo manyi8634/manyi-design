@@ -1,6 +1,6 @@
 import React from 'react';
-import { Tree } from 'antd';
-import type { DataNode, TreeProps } from 'antd/es/tree';
+import { Tree } from 'manyid';
+import type { DataNode, TreeProps } from 'manyid/es/tree';
 
 const treeData: DataNode[] = [
   {

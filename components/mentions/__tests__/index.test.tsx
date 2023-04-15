@@ -95,7 +95,7 @@ describe('Mentions', () => {
       </Mentions>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Mentions] `Mentions.Option` is deprecated. Please use `options` instead.',
+      'Warning: [manyid: Mentions] `Mentions.Option` is deprecated. Please use `options` instead.',
     );
   });
 

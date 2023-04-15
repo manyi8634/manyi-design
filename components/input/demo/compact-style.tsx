@@ -1,4 +1,4 @@
-import { Button, Input, Select, Space } from 'antd';
+import { Button, Input, Select, Space } from 'manyid';
 import React from 'react';
 
 const { Search } = Input;

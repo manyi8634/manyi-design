@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Popconfirm, Space } from 'antd';
+import { Button, Popconfirm, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space>

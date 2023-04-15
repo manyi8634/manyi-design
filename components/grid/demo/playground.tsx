@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Col, Row, Slider } from 'antd';
+import { Col, Row, Slider } from 'manyid';
 
 const gutters: Record<PropertyKey, number> = {};
 const vgutters: Record<PropertyKey, number> = {};

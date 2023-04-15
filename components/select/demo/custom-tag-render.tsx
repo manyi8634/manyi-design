@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select, Tag } from 'antd';
+import { Select, Tag } from 'manyid';
 import type { CustomTagProps } from 'rc-select/lib/BaseSelect';
 
 const options = [{ value: 'gold' }, { value: 'lime' }, { value: 'green' }, { value: 'cyan' }];

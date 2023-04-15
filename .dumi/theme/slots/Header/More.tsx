@@ -1,7 +1,7 @@
 import { DownOutlined } from '@ant-design/icons';
 import { css } from '@emotion/react';
-import type { MenuProps } from 'antd';
-import { Button, Dropdown } from 'antd';
+import type { MenuProps } from 'manyid';
+import { Button, Dropdown } from 'manyid';
 import { FormattedMessage } from 'dumi';
 import React from 'react';
 import type { SharedProps } from './interface';
@@ -56,7 +56,7 @@ export const getEcosystemGroup = (): MenuProps['items'] => [
   {
     label: (
       <a href="http://ng.ant.design" target="_blank" rel="noopener noreferrer">
-        Ant Design of Angular
+        Manyi Design of Angular
         <Community />
       </a>
     ),
@@ -65,7 +65,7 @@ export const getEcosystemGroup = (): MenuProps['items'] => [
   {
     label: (
       <a href="http://antdv.com" target="_blank" rel="noopener noreferrer">
-        Ant Design of Vue
+        Manyi Design of Vue
         <Community />
       </a>
     ),

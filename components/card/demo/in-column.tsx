@@ -1,4 +1,4 @@
-import { Card, Col, Row } from 'antd';
+import { Card, Col, Row } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => (

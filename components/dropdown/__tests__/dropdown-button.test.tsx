@@ -140,7 +140,7 @@ describe('DropdownButton', () => {
     const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<DropdownButton overlay={<div>test</div>} />);
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Dropdown] `overlay` is deprecated. Please use `menu` instead.',
+      'Warning: [manyid: Dropdown] `overlay` is deprecated. Please use `menu` instead.',
     );
     errSpy.mockRestore();
   });

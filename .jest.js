@@ -31,8 +31,8 @@ module.exports = {
   modulePathIgnorePatterns: ['/_site/'],
   moduleNameMapper: {
     '/\\.(css|less)$/': 'identity-obj-proxy',
-    '^antd$': '<rootDir>/components/index',
-    '^antd/es/(.*)$': '<rootDir>/components/$1',
+    '^manyid$': '<rootDir>/components/index',
+    '^manyid/es/(.*)$': '<rootDir>/components/$1',
   },
   testPathIgnorePatterns: ['/node_modules/', 'dekko', 'node', 'image.test.js', 'image.test.ts'],
   transform: {

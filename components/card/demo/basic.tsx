@@ -1,4 +1,4 @@
-import { Card, Space } from 'antd';
+import { Card, Space } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => (

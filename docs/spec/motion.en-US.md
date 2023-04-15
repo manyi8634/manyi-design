@@ -3,7 +3,7 @@ order: 4
 title: Motion
 ---
 
-> [Ant Motion](https://motion.ant.design/) is an animation library based on Ant Design's principles. It is more than just a single library, but also an entire React based solution for modern applications. The goal is to help developers to apply animations in their projects with minimal efforts. Ant Motion provides animations with all levels of granularity - from single action to combination of moves.
+> [Ant Motion](https://motion.ant.design/) is an animation library based on Manyi Design's principles. It is more than just a single library, but also an entire React based solution for modern applications. The goal is to help developers to apply animations in their projects with minimal efforts. Ant Motion provides animations with all levels of granularity - from single action to combination of moves.
 
 Animations bring vividness to interfaces and reinforce user experiences.
 
@@ -23,14 +23,14 @@ We can determine if an animation is effective or not from the following two aspe
 
 ## Principles
 
-Different from animations usage in typical front-office applications, animations in enterprise level applications spend a great amount of efforts on reinforcing user interactions and the effectiveness of those interactions. Therefore, we derived three animation design principles from Ant Design's core design language:
+Different from animations usage in typical front-office applications, animations in enterprise level applications spend a great amount of efforts on reinforcing user interactions and the effectiveness of those interactions. Therefore, we derived three animation design principles from Manyi Design's core design language:
 
 ```jsx | demo
 /**
  * inline: true
  */
 
-import { Col, Row } from 'antd';
+import { Col, Row } from 'manyid';
 
 const text = [
   {

@@ -523,7 +523,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
     await waitFakeTimer();
 
     expect(warnSpy).toHaveBeenCalledWith(
-      `Warning: [antd: Modal] \`icon\` is using ReactNode instead of string naming in v4. Please check \`question\` at https://ant.design/components/icon`,
+      `Warning: [manyid: Modal] \`icon\` is using ReactNode instead of string naming in v4. Please check \`question\` at https://ant.design/components/icon`,
     );
     warnSpy.mockRestore();
   });
@@ -593,7 +593,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
       rootPrefixCls: 'my',
     });
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Modal] Modal.config is deprecated. Please use ConfigProvider.config instead.',
+      'Warning: [manyid: Modal] Modal.config is deprecated. Please use ConfigProvider.config instead.',
     );
 
     confirm({

@@ -5,7 +5,7 @@ import { createStyles, css } from 'antd-style';
 import { CheckOutlined, SketchOutlined } from '@ant-design/icons';
 import { nodeToGroup } from 'html2sketch';
 import copy from 'copy-to-clipboard';
-import { App } from 'antd';
+import { App } from 'manyid';
 
 const useStyle = createStyles(({ token }) => ({
   wrapper: css`

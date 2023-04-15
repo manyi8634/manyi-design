@@ -9,8 +9,8 @@ import {
   UserOutlined,
   VideoCameraOutlined,
 } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
-import { Layout, Menu, theme } from 'antd';
+import type { MenuProps } from 'manyid';
+import { Layout, Menu, theme } from 'manyid';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -65,7 +65,7 @@ const App: React.FC = () => {
             }
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>Manyi Design ©2023 Created by Ant UED</Footer>
       </Layout>
     </Layout>
   );

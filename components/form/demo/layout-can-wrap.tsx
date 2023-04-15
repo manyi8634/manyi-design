@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input } from 'manyid';
 
 const App: React.FC = () => (
   <Form

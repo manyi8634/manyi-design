@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Button } from 'antd';
+import { Form, Button } from 'manyid';
 import { DownloadOutlined } from '@ant-design/icons';
 
 const App: React.FC = () => (

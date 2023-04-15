@@ -41,7 +41,7 @@ describe('Button', () => {
     const size = 'who am I';
     // @ts-expect-error: Type '"who am I"' is not assignable to type 'SizeType'.ts(2322)
     render(<Button.Group size={size} />);
-    expect(mockWarn).toHaveBeenCalledWith('Warning: [antd: Button.Group] Invalid prop `size`.');
+    expect(mockWarn).toHaveBeenCalledWith('Warning: [manyid: Button.Group] Invalid prop `size`.');
 
     mockWarn.mockRestore();
   });
@@ -249,7 +249,7 @@ describe('Button', () => {
 
     render(<Button type="primary" icon="search" />);
     expect(warnSpy).toHaveBeenCalledWith(
-      `Warning: [antd: Button] \`icon\` is using ReactNode instead of string naming in v4. Please check \`search\` at https://ant.design/components/icon`,
+      `Warning: [manyid: Button] \`icon\` is using ReactNode instead of string naming in v4. Please check \`search\` at https://ant.design/components/icon`,
     );
 
     warnSpy.mockRestore();
@@ -260,7 +260,7 @@ describe('Button', () => {
     const warnSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Button type="link" ghost />);
     expect(warnSpy).toHaveBeenCalledWith(
-      "Warning: [antd: Button] `link` or `text` button can't be a `ghost` button.",
+      "Warning: [manyid: Button] `link` or `text` button can't be a `ghost` button.",
     );
     warnSpy.mockRestore();
   });
@@ -270,7 +270,7 @@ describe('Button', () => {
     const warnSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<Button type="text" ghost />);
     expect(warnSpy).toHaveBeenCalledWith(
-      "Warning: [antd: Button] `link` or `text` button can't be a `ghost` button.",
+      "Warning: [manyid: Button] `link` or `text` button can't be a `ghost` button.",
     );
     warnSpy.mockRestore();
   });

@@ -48,7 +48,7 @@ const genBaseStyle: GenerateStyle<PopoverToken> = (token) => {
         textAlign: 'start',
         cursor: 'auto',
         userSelect: 'text',
-        '--antd-arrow-background-color': colorBgElevated,
+        '--manyid-arrow-background-color': colorBgElevated,
 
         '&-rtl': {
           direction: 'rtl',
@@ -85,7 +85,7 @@ const genBaseStyle: GenerateStyle<PopoverToken> = (token) => {
 
     // Arrow Style
     getArrowStyle(token, {
-      colorBg: 'var(--antd-arrow-background-color)',
+      colorBg: 'var(--manyid-arrow-background-color)',
     }),
 
     // Pure Render
@@ -112,7 +112,7 @@ const genColorStyle: GenerateStyle<PopoverToken> = (token) => {
       const lightColor = token[`${colorKey}6`];
       return {
         [`&${componentCls}-${colorKey}`]: {
-          '--antd-arrow-background-color': lightColor,
+          '--manyid-arrow-background-color': lightColor,
           [`${componentCls}-inner`]: {
             backgroundColor: lightColor,
           },

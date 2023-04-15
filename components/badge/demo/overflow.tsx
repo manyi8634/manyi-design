@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Badge, Space } from 'antd';
+import { Avatar, Badge, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space size="large">

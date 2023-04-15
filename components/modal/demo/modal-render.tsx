@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Button, Modal } from 'antd';
+import { Button, Modal } from 'manyid';
 import type { DraggableData, DraggableEvent } from 'react-draggable';
 import Draggable from 'react-draggable';
 

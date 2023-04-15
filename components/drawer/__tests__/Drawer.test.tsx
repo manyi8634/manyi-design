@@ -237,7 +237,7 @@ describe('Drawer', () => {
 
       render(<Drawer getContainer={false} style={{ position: 'absolute' }} />);
       expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Drawer] `style` is replaced by `rootStyle` in v5. Please check that `position: absolute` is necessary.',
+        'Warning: [manyid: Drawer] `style` is replaced by `rootStyle` in v5. Please check that `position: absolute` is necessary.',
       );
 
       errorSpy.mockRestore();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SmileOutlined } from '@ant-design/icons';
-import { Button, Result } from 'antd';
+import { Button, Result } from 'manyid';
 
 const App: React.FC = () => (
   <Result

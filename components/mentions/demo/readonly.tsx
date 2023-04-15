@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mentions } from 'antd';
+import { Mentions } from 'manyid';
 
 const options = ['afc163', 'zombiej', 'yesmeck'].map((value) => ({
   value,

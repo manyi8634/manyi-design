@@ -13,7 +13,7 @@ import {
   Slider,
   Switch,
   Upload,
-} from 'antd';
+} from 'manyid';
 
 const { Option } = Select;
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import type { MenuProps } from 'antd';
-import { Dropdown, theme } from 'antd';
+import type { MenuProps } from 'manyid';
+import { Dropdown, theme } from 'manyid';
 
 const items: MenuProps['items'] = [
   {

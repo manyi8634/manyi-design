@@ -3,7 +3,7 @@ order: 7.5
 title: Use custom date library
 ---
 
-By default, Ant Design use [Day.js](https://day.js.org) to handle time and date. Day.js is an immutable date-time library alternative to Moment.js with the same API.
+By default, Manyi Design use [Day.js](https://day.js.org) to handle time and date. Day.js is an immutable date-time library alternative to Moment.js with the same API.
 
 You might want to use another date library (**Ant design currently supports [moment](http://momentjs.com/) and [date-fns](https://date-fns.org)**). We provide two ways to customize:
 
@@ -11,7 +11,7 @@ You might want to use another date library (**Ant design currently supports [mom
 
 The first way is to use `generatePicker` (or `generateCalendar`) to help create Picker components.
 
-First, we initialize an antd demo with `create-react-app`. You can refer to [Use in TypeScript](/docs/react/use-in-typescript), or you can start directly here [init antd](https://github.com/xiaohuoni/antd4-generate-picker/commit/47fec964e36d48bd15760f8f5abcb9655c259aa6)
+First, we initialize an manyid demo with `create-react-app`. You can refer to [Use in TypeScript](/docs/react/use-in-typescript), or you can start directly here [init manyid](https://github.com/xiaohuoni/antd4-generate-picker/commit/47fec964e36d48bd15760f8f5abcb9655c259aa6)
 
 ### DatePicker.tsx
 
@@ -22,7 +22,7 @@ For example:
 ```tsx
 import type { Moment } from 'moment';
 import momentGenerateConfig from 'rc-picker/lib/generate/moment';
-import generatePicker from 'antd/es/date-picker/generatePicker';
+import generatePicker from 'manyid/es/date-picker/generatePicker';
 
 const DatePicker = generatePicker<Moment>(momentGenerateConfig);
 
@@ -38,7 +38,7 @@ For example:
 ```tsx
 import type { Moment } from 'moment';
 import * as React from 'react';
-import type { PickerTimeProps } from 'antd/es/date-picker/generatePicker';
+import type { PickerTimeProps } from 'manyid/es/date-picker/generatePicker';
 import DatePicker from './DatePicker';
 
 export interface TimePickerProps extends Omit<PickerTimeProps<Moment>, 'picker'> {}
@@ -61,7 +61,7 @@ For example:
 ```tsx
 import type { Moment } from 'moment';
 import momentGenerateConfig from 'rc-picker/lib/generate/moment';
-import generateCalendar from 'antd/es/calendar/generateCalendar';
+import generateCalendar from 'manyid/es/calendar/generateCalendar';
 
 const Calendar = generateCalendar<Moment>(momentGenerateConfig);
 
@@ -85,16 +85,16 @@ export { default as TimePicker } from './TimePicker';
 Modify `src/App.tsx`,import `moment` and custom component.
 
 ```diff
-- import { DatePicker, Calendar } from 'antd';
+- import { DatePicker, Calendar } from 'manyid';
 - import format from 'dayjs';
 
 + import { DatePicker, TimePicker, Calendar } from './components';
 + import format from 'moment';
 ```
 
-## antd-moment-webpack-plugin
+## manyid-moment-webpack-plugin
 
-We also provide another implementation, which we provide with `@ant-design/moment-webpack-plugin`, replacing `Day.js` with `moment` directly without changing a line of existing code. More info can be found at [@ant-design/moment-webpack-plugin](https://github.com/ant-design/antd-moment-webpack-plugin).
+We also provide another implementation, which we provide with `@ant-design/moment-webpack-plugin`, replacing `Day.js` with `moment` directly without changing a line of existing code. More info can be found at [@ant-design/moment-webpack-plugin](https://github.com/ant-design/manyid-moment-webpack-plugin).
 
 ```js
 // webpack-config.js
@@ -108,7 +108,7 @@ module.exports = {
 
 ## Use date-fns
 
-[date-fns](https://date-fns.org/) currently supports custom component methods similar to `dayjs`. The difference is that the parameter types used are different. Support is provided in antd 4.5.0 and above.
+[date-fns](https://date-fns.org/) currently supports custom component methods similar to `dayjs`. The difference is that the parameter types used are different. Support is provided in manyid 4.5.0 and above.
 
 For Example:
 
@@ -120,8 +120,8 @@ Code as follows:
 
 ```tsx
 import dateFnsGenerateConfig from 'rc-picker/lib/generate/dateFns';
-import generatePicker from 'antd/es/date-picker/generatePicker';
-import 'antd/es/date-picker/style/index';
+import generatePicker from 'manyid/es/date-picker/generatePicker';
+import 'manyid/es/date-picker/style/index';
 
 const DatePicker = generatePicker<Date>(dateFnsGenerateConfig);
 

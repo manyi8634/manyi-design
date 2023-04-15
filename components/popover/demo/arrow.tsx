@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Button, Divider, Popover, Segmented } from 'antd';
+import { Button, Divider, Popover, Segmented } from 'manyid';
 
 const text = <span>Title</span>;
 const content = (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress } from 'antd';
+import { Progress } from 'manyid';
 
 const App: React.FC = () => (
   <>

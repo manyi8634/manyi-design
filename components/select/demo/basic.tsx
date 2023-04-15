@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select, Space } from 'antd';
+import { Select, Space } from 'manyid';
 
 const handleChange = (value: string) => {
   console.log(`selected ${value}`);

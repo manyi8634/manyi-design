@@ -1,6 +1,6 @@
 import React from 'react';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
-import { Button, Form, Input, Select, Space } from 'antd';
+import { Button, Form, Input, Select, Space } from 'manyid';
 
 const { Option } = Select;
 

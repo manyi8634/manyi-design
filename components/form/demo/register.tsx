@@ -1,4 +1,4 @@
-import type { CascaderProps } from 'antd';
+import type { CascaderProps } from 'manyid';
 import {
   AutoComplete,
   Button,
@@ -10,7 +10,7 @@ import {
   InputNumber,
   Row,
   Select,
-} from 'antd';
+} from 'manyid';
 import React, { useState } from 'react';
 
 const { Option } = Select;

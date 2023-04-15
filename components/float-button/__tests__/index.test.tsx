@@ -47,7 +47,7 @@ describe('FloatButton', () => {
     const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     render(<FloatButton description="test" shape="circle" />);
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: FloatButton] supported only when `shape` is `square`. Due to narrow space for text, short sentence is recommended.',
+      'Warning: [manyid: FloatButton] supported only when `shape` is `square`. Due to narrow space for text, short sentence is recommended.',
     );
     errSpy.mockRestore();
   });

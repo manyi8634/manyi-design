@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { SmileOutlined, UserOutlined } from '@ant-design/icons';
-import { Avatar, Button, Form, Input, InputNumber, Modal, Typography } from 'antd';
-import type { FormInstance } from 'antd/es/form';
+import { Avatar, Button, Form, Input, InputNumber, Modal, Typography } from 'manyid';
+import type { FormInstance } from 'manyid/es/form';
 
 const layout = {
   labelCol: { span: 8 },

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import type { TableProps } from 'antd';
-import { Button, Space, Table } from 'antd';
-import type { ColumnsType, FilterValue, SorterResult } from 'antd/es/table/interface';
+import type { TableProps } from 'manyid';
+import { Button, Space, Table } from 'manyid';
+import type { ColumnsType, FilterValue, SorterResult } from 'manyid/es/table/interface';
 
 interface DataType {
   key: string;

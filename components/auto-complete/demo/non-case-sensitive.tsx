@@ -1,5 +1,5 @@
 import React from 'react';
-import { AutoComplete } from 'antd';
+import { AutoComplete } from 'manyid';
 
 const options = [
   { value: 'Burns Bay Road' },

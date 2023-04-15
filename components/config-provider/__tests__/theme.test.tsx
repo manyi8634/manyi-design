@@ -53,7 +53,7 @@ describe('ConfigProvider.Theme', () => {
     });
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: ConfigProvider] SSR do not support dynamic theme with css variables.',
+      'Warning: [manyid: ConfigProvider] SSR do not support dynamic theme with css variables.',
     );
     errorSpy.mockRestore();
   });

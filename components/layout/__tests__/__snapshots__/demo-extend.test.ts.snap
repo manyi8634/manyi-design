@@ -690,7 +690,7 @@ exports[`renders components/layout/demo/fixed.tsx extend context correctly 1`] =
     class="ant-layout-footer"
     style="text-align: center;"
   >
-    Ant Design ©2023 Created by Ant UED
+    Manyi Design ©2023 Created by Ant UED
   </footer>
 </section>
 `;
@@ -1475,7 +1475,7 @@ exports[`renders components/layout/demo/fixed-sider.tsx extend context correctly
       class="ant-layout-footer"
       style="text-align: center;"
     >
-      Ant Design ©2023 Created by Ant UED
+      Manyi Design ©2023 Created by Ant UED
     </footer>
   </section>
 </section>
@@ -1833,7 +1833,7 @@ exports[`renders components/layout/demo/responsive.tsx extend context correctly 
       class="ant-layout-footer"
       style="text-align: center;"
     >
-      Ant Design ©2023 Created by Ant UED
+      Manyi Design ©2023 Created by Ant UED
     </footer>
   </section>
 </section>
@@ -2487,7 +2487,7 @@ exports[`renders components/layout/demo/side.tsx extend context correctly 1`] = 
       class="ant-layout-footer"
       style="text-align: center;"
     >
-      Ant Design ©2023 Created by Ant UED
+      Manyi Design ©2023 Created by Ant UED
     </footer>
   </section>
 </section>
@@ -3314,7 +3314,7 @@ exports[`renders components/layout/demo/top.tsx extend context correctly 1`] = `
     class="ant-layout-footer"
     style="text-align: center;"
   >
-    Ant Design ©2023 Created by Ant UED
+    Manyi Design ©2023 Created by Ant UED
   </footer>
 </section>
 `;
@@ -4477,7 +4477,7 @@ exports[`renders components/layout/demo/top-side.tsx extend context correctly 1`
     class="ant-layout-footer"
     style="text-align: center;"
   >
-    Ant Design ©2023 Created by Ant UED
+    Manyi Design ©2023 Created by Ant UED
   </footer>
 </section>
 `;

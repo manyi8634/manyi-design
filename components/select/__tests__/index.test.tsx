@@ -141,7 +141,7 @@ describe('Select', () => {
       const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
       const { container } = render(<Select dropdownClassName="legacy" open />);
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Select] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
+        'Warning: [manyid: Select] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
       );
       expect(container.querySelector('.legacy')).toBeTruthy();
 

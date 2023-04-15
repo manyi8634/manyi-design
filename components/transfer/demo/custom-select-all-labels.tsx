@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Transfer } from 'antd';
-import type { SelectAllLabel } from 'antd/es/transfer';
+import { Transfer } from 'manyid';
+import type { SelectAllLabel } from 'manyid/es/transfer';
 
 interface RecordType {
   key: string;

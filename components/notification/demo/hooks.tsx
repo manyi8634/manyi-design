@@ -5,8 +5,8 @@ import {
   RadiusUpleftOutlined,
   RadiusUprightOutlined,
 } from '@ant-design/icons';
-import { Button, Divider, notification, Space } from 'antd';
-import type { NotificationPlacement } from 'antd/es/notification/interface';
+import { Button, Divider, notification, Space } from 'manyid';
+import type { NotificationPlacement } from 'manyid/es/notification/interface';
 
 const Context = React.createContext({ name: 'Default' });
 
@@ -21,7 +21,7 @@ const App: React.FC = () => {
     });
   };
 
-  const contextValue = useMemo(() => ({ name: 'Ant Design' }), []);
+  const contextValue = useMemo(() => ({ name: 'Manyi Design' }), []);
 
   return (
     <Context.Provider value={contextValue}>

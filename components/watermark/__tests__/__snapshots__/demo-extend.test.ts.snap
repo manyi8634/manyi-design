@@ -28,7 +28,7 @@ exports[`renders components/watermark/demo/custom.tsx extend context correctly 1
       <div
         class="ant-typography"
       >
-        The light-speed iteration of the digital world makes products more complex. However, human consciousness and attention resources are limited. Facing this design contradiction, the pursuit of natural interaction will be the consistent direction of Ant Design.
+        The light-speed iteration of the digital world makes products more complex. However, human consciousness and attention resources are limited. Facing this design contradiction, the pursuit of natural interaction will be the consistent direction of Manyi Design.
       </div>
       <div
         class="ant-typography"
@@ -85,7 +85,7 @@ exports[`renders components/watermark/demo/custom.tsx extend context correctly 1
                 id="content"
                 placeholder="请输入"
                 type="text"
-                value="Ant Design"
+                value="Manyi Design"
               />
             </div>
           </div>

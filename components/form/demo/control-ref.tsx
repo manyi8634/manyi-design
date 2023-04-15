@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Form, Input, Select } from 'antd';
-import type { FormInstance } from 'antd/es/form';
+import { Button, Form, Input, Select } from 'manyid';
+import type { FormInstance } from 'manyid/es/form';
 
 const { Option } = Select;
 

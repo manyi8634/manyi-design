@@ -1,4 +1,4 @@
-import { Button, Form, Input, Select } from 'antd';
+import { Button, Form, Input, Select } from 'manyid';
 import React from 'react';
 
 const { Option } = Select;

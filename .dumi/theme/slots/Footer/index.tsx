@@ -14,7 +14,7 @@ import {
 } from '@ant-design/icons';
 import { TinyColor } from '@ctrl/tinycolor';
 import { css } from '@emotion/react';
-import getAlphaColor from 'antd/es/theme/util/getAlphaColor';
+import getAlphaColor from 'manyid/es/theme/util/getAlphaColor';
 import { FormattedMessage, Link } from 'dumi';
 import RcFooter from 'rc-footer';
 import type { FooterColumn } from 'rc-footer/lib/column';
@@ -27,10 +27,10 @@ import AdditionalInfo from './AdditionalInfo';
 
 const locales = {
   cn: {
-    owner: '蚂蚁集团和 Ant Design 开源社区',
+    owner: '蚂蚁集团和 Manyi Design 开源社区',
   },
   en: {
-    owner: 'Ant Group and Ant Design Community',
+    owner: 'Ant Group and Manyi Design Community',
   },
 };
 
@@ -101,32 +101,32 @@ const Footer: React.FC = () => {
       title: <FormattedMessage id="app.footer.resources" />,
       items: [
         {
-          title: 'Ant Design Charts',
+          title: 'Manyi Design Charts',
           url: 'https://charts.ant.design',
           openExternal: true,
         },
         {
-          title: 'Ant Design Pro',
+          title: 'Manyi Design Pro',
           url: 'https://pro.ant.design',
           openExternal: true,
         },
         {
-          title: 'Ant Design Pro Components',
+          title: 'Manyi Design Pro Components',
           url: 'https://procomponents.ant.design',
           openExternal: true,
         },
         {
-          title: 'Ant Design Mobile',
+          title: 'Manyi Design Mobile',
           url: 'https://mobile.ant.design',
           openExternal: true,
         },
         {
-          title: 'Ant Design Mini',
+          title: 'Manyi Design Mini',
           url: 'https://mini.ant.design',
           openExternal: true,
         },
         {
-          title: 'Ant Design Landing',
+          title: 'Manyi Design Landing',
           description: <FormattedMessage id="app.footer.landing" />,
           url: 'https://landing.ant.design',
           openExternal: true,
@@ -287,13 +287,13 @@ const Footer: React.FC = () => {
         {
           icon: <QuestionCircleOutlined />,
           title: <FormattedMessage id="app.footer.stackoverflow" />,
-          url: 'http://stackoverflow.com/questions/tagged/antd',
+          url: 'http://stackoverflow.com/questions/tagged/manyid',
           openExternal: true,
         },
         {
           icon: <QuestionCircleOutlined />,
           title: <FormattedMessage id="app.footer.segmentfault" />,
-          url: 'https://segmentfault.com/t/antd',
+          url: 'https://segmentfault.com/t/manyid',
           openExternal: true,
         },
       ],

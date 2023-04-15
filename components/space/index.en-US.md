@@ -11,7 +11,7 @@ Set components spacing.
 ## When To Use
 
 - Avoid components clinging together and set a unified space.
-- Use Space.Compact when child form components are compactly connected and the border is collapsed (After version `antd@4.24.0` Supported).
+- Use Space.Compact when child form components are compactly connected and the border is collapsed (After version `manyid@4.24.0` Supported).
 
 ## Examples
 

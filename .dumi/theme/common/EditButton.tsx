@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip } from 'antd';
+import { Tooltip } from 'manyid';
 import { EditOutlined } from '@ant-design/icons';
 import { css } from '@emotion/react';
 import useSiteToken from '../../hooks/useSiteToken';

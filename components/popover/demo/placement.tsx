@@ -1,4 +1,4 @@
-import { Button, Popover } from 'antd';
+import { Button, Popover } from 'manyid';
 import React from 'react';
 
 const text = <span>Title</span>;

@@ -60,7 +60,7 @@ exports[`renders components/skeleton/demo/children.tsx extend context correctly 
     <h4
       style="margin-bottom: 16px;"
     >
-      Ant Design, a design language
+      Manyi Design, a design language
     </h4>
     <p>
       We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.

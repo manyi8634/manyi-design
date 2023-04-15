@@ -7,7 +7,7 @@ import {
   MinusCircleOutlined,
   SyncOutlined,
 } from '@ant-design/icons';
-import { Divider, Space, Tag } from 'antd';
+import { Divider, Space, Tag } from 'manyid';
 
 const App: React.FC = () => (
   <>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Mentions } from 'antd';
-import type { MentionsOptionProps } from 'antd/es/mentions';
+import { Mentions } from 'manyid';
+import type { MentionsOptionProps } from 'manyid/es/mentions';
 
 const onChange = (value: string) => {
   console.log('Change:', value);

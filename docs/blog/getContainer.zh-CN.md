@@ -8,7 +8,7 @@ author: zombieJ
 
 ![Overflow](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*Noh-TYJ0BdcAAAAAAAAAAAAADrJ8AQ/original)
 
-因而在 Ant Design 中，我们默认将其渲染到 `body` 下，但是这又会带来新的问题。由于不在同一个容器下，当用户滚动屏幕时会发现弹出层并未跟随滚动：
+因而在 Manyi Design 中，我们默认将其渲染到 `body` 下，但是这又会带来新的问题。由于不在同一个容器下，当用户滚动屏幕时会发现弹出层并未跟随滚动：
 
 ![Scroll](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*d44KQqkTX90AAAAAAAAAAAAADrJ8AQ/original)
 

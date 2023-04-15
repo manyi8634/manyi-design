@@ -59,7 +59,7 @@ High performance Form component with data scope management. Including data colle
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | colon | Configure the default value of `colon` for Form.Item. Indicates whether the colon after the label is displayed (only effective when prop layout is horizontal) | boolean | true |  |
-| disabled | Set form component disable, only available for antd components | boolean | false | 4.21.0 |
+| disabled | Set form component disable, only available for manyid components | boolean | false | 4.21.0 |
 | component | Set the Form rendering element. Do not create a DOM node for `false` | ComponentType \| false | form |  |
 | fields | Control of form fields through state management (such as redux). Not recommended for non-strong demand. View [example](#components-form-demo-global-state) | [FieldData](#fielddata)\[] | - |  |
 | form | Form control instance created by `Form.useForm()`. Automatically created when not provided | [FormInstance](#forminstance) | - |  |
@@ -72,7 +72,7 @@ High performance Form component with data scope management. Including data colle
 | preserve | Keep field value even when field removed | boolean | true | 4.4.0 |
 | requiredMark | Required mark style. Can use required mark or optional mark. You can not config to single Form.Item since this is a Form level config | boolean \| `optional` | true | 4.6.0 |
 | scrollToFirstError | Auto scroll to first failed field when submit | boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) | false |  |
-| size | Set field component size (antd components only) | `small` \| `middle` \| `large` | - |  |
+| size | Set field component size (manyid components only) | `small` \| `middle` \| `large` | - |  |
 | validateMessages | Validation prompt template, description [see below](#validatemessages) | [ValidateMessages](https://github.com/ant-design/ant-design/blob/6234509d18bac1ac60fbb3f92a5b2c6a6361295a/components/locale/en_US.ts#L88-L134) | - |  |
 | validateTrigger | Config field validate trigger | string \| string\[] | `onChange` | 4.3.0 |
 | wrapperCol | The layout for input controls, same as `labelCol` | [object](/components/grid/#col) | - |  |
@@ -473,7 +473,7 @@ validator(rule, value, callback) => {
 
 > Warning: Instance created by `useForm` is not connect to any Form element. Forget to pass `form` prop?
 
-Before Modal opens, children elements do not exist in the view. You can set `forceRender` on Modal to pre-render its children. Click [here](https://codesandbox.io/s/antd-reproduction-template-ibu5c) to view an example.
+Before Modal opens, children elements do not exist in the view. You can set `forceRender` on Modal to pre-render its children. Click [here](https://codesandbox.io/s/manyid-reproduction-template-ibu5c) to view an example.
 
 ### Why is component `defaultValue` not working when inside Form.Item?
 
@@ -506,7 +506,7 @@ In each `onFieldsChange`, you will get `false` > `true` > `false` with `isFieldV
 
 ### Why doesn't Form.List support `label` and need ErrorList to show errors?
 
-Form.List use renderProps which mean internal structure is flexible. Thus `label` and `error` can not have best place. If you want to use antd `label`, you can wrap with Form.Item instead.
+Form.List use renderProps which mean internal structure is flexible. Thus `label` and `error` can not have best place. If you want to use manyid `label`, you can wrap with Form.Item instead.
 
 ### Why can't Form.Item `dependencies` work on Form.List field?
 
@@ -541,7 +541,7 @@ React can not get correct interaction of controlled component with async value u
 
 See similar issues: [#28370](https://github.com/ant-design/ant-design/issues/28370) [#27994](https://github.com/ant-design/ant-design/issues/27994)
 
-`scrollToFirstError` and `scrollToField` deps on `id` attribute passed to form control, please make sure that it hasn't been ignored in your custom form control. Check [codesandbox](https://codesandbox.io/s/antd-reproduction-template-forked-25nul?file=/index.js) for solution.
+`scrollToFirstError` and `scrollToField` deps on `id` attribute passed to form control, please make sure that it hasn't been ignored in your custom form control. Check [codesandbox](https://codesandbox.io/s/manyid-reproduction-template-forked-25nul?file=/index.js) for solution.
 
 ### `setFieldsValue` do not trigger `onFieldsChange` or `onValuesChange`?
 

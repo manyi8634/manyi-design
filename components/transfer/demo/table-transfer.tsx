@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Space, Switch, Table, Tag, Transfer } from 'antd';
-import type { ColumnsType, TableRowSelection } from 'antd/es/table/interface';
-import type { TransferItem, TransferProps } from 'antd/es/transfer';
+import { Space, Switch, Table, Tag, Transfer } from 'manyid';
+import type { ColumnsType, TableRowSelection } from 'manyid/es/table/interface';
+import type { TransferItem, TransferProps } from 'manyid/es/transfer';
 import difference from 'lodash/difference';
 
 interface RecordType {

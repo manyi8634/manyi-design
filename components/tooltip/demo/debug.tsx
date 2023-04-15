@@ -1,10 +1,10 @@
-import { Button, Tooltip } from 'antd';
+import { Button, Tooltip } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => (
   <Tooltip
     open
-    title="Thanks for using antd. Have a nice day!"
+    title="Thanks for using manyid. Have a nice day!"
     arrow={{ pointAtCenter: true }}
     placement="topLeft"
   >

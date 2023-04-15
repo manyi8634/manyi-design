@@ -7,8 +7,8 @@ import {
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import { Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
+import { Table } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
 import React, { useState } from 'react';
 
 interface DataType {

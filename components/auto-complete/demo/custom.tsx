@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AutoComplete, Input } from 'antd';
+import { AutoComplete, Input } from 'manyid';
 
 const { TextArea } = Input;
 

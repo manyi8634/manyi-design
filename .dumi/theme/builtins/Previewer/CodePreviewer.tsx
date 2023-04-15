@@ -6,7 +6,7 @@ import {
 } from '@ant-design/icons';
 import type { Project } from '@stackblitz/sdk';
 import stackblitzSdk from '@stackblitz/sdk';
-import { Alert, Badge, Space, Tooltip } from 'antd';
+import { Alert, Badge, Space, Tooltip } from 'manyid';
 import classNames from 'classnames';
 import type { IPreviewerProps } from 'dumi';
 import { FormattedMessage, useSiteData } from 'dumi';
@@ -227,7 +227,7 @@ const CodePreviewer: React.FC<IPreviewerProps> = (props) => {
   const dependencies: Record<PropertyKey, string> = jsx.split('\n').reduce(
     (acc, line) => {
       const matches = line.match(/import .+? from '(.+)';$/);
-      if (matches && matches[1] && !line.includes('antd')) {
+      if (matches && matches[1] && !line.includes('manyid')) {
         const paths = matches[1].split('/');
         if (paths.length) {
           const dep = paths[0].startsWith('@') ? `${paths[0]}/${paths[1]}` : paths[0];
@@ -236,7 +236,7 @@ const CodePreviewer: React.FC<IPreviewerProps> = (props) => {
       }
       return acc;
     },
-    { antd: pkg.version },
+    { manyid: pkg.version },
   );
 
   dependencies['@ant-design/icons'] = 'latest';
@@ -250,11 +250,11 @@ const CodePreviewer: React.FC<IPreviewerProps> = (props) => {
   dependencies['react-dom'] = '^18.0.0';
 
   const codepenPrefillConfig = {
-    title: `${localizedTitle} - antd@${dependencies.antd}`,
+    title: `${localizedTitle} - manyid@${dependencies.manyid}`,
     html,
     js: `const { createRoot } = ReactDOM;\n${jsx
       .replace(/import\s+(?:React,\s+)?{(\s+[^}]*\s+)}\s+from\s+'react'/, `const { $1 } = React;`)
-      .replace(/import\s+{(\s+[^}]*\s+)}\s+from\s+'antd';/, 'const { $1 } = antd;')
+      .replace(/import\s+{(\s+[^}]*\s+)}\s+from\s+'manyid';/, 'const { $1 } = manyid;')
       .replace(/import\s+{(\s+[^}]*\s+)}\s+from\s+'@ant-design\/icons';/, 'const { $1 } = icons;')
       .replace("import moment from 'moment';", '')
       .replace("import React from 'react';", '')
@@ -274,7 +274,7 @@ const CodePreviewer: React.FC<IPreviewerProps> = (props) => {
       'react@18/umd/react.development.js',
       'react-dom@18/umd/react-dom.development.js',
       'dayjs@1/dayjs.min.js',
-      `antd@${pkg.version}/dist/antd-with-locales.js`,
+      `manyid@${pkg.version}/dist/manyid-with-locales.js`,
       `@ant-design/icons/dist/index.umd.js`,
       'react-router-dom/dist/umd/react-router-dom.production.min.js',
       'react-router/dist/umd/react-router.production.min.js',
@@ -285,7 +285,7 @@ const CodePreviewer: React.FC<IPreviewerProps> = (props) => {
   };
 
   const riddlePrefillConfig = {
-    title: `${localizedTitle} - antd@${dependencies.antd}`,
+    title: `${localizedTitle} - manyid@${dependencies.manyid}`,
     js: `${
       /import React(\D*)from 'react';/.test(jsx) ? '' : `import React from 'react';\n`
     }import { createRoot } from 'react-dom/client';\n${jsx.replace(
@@ -293,7 +293,7 @@ const CodePreviewer: React.FC<IPreviewerProps> = (props) => {
       'const ComponentDemo =',
     )}\n\ncreateRoot(mountNode).render(<ComponentDemo />);\n`,
     css: '',
-    json: JSON.stringify({ name: 'antd-demo', dependencies }, null, 2),
+    json: JSON.stringify({ name: 'manyid-demo', dependencies }, null, 2),
   };
 
   // Reorder source code
@@ -324,7 +324,7 @@ createRoot(document.getElementById('container')).render(<Demo />);
   `;
 
   const codesandboxPackage = {
-    title: `${localizedTitle} - antd@${dependencies.antd}`,
+    title: `${localizedTitle} - manyid@${dependencies.manyid}`,
     main: 'index.js',
     dependencies: {
       ...dependencies,
@@ -357,7 +357,7 @@ createRoot(document.getElementById('container')).render(<Demo />);
   };
 
   const stackblitzPrefillConfig: Project = {
-    title: `${localizedTitle} - antd@${dependencies.antd}`,
+    title: `${localizedTitle} - manyid@${dependencies.manyid}`,
     template: 'create-react-app',
     dependencies,
     description: '',

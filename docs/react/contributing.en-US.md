@@ -4,7 +4,7 @@ title: Contributing
 toc: false
 ---
 
-The following is a set of guidelines for contributing to Ant Design. Please spend several minutes reading these guidelines before you create an issue or pull request.
+The following is a set of guidelines for contributing to Manyi Design. Please spend several minutes reading these guidelines before you create an issue or pull request.
 
 ## Code of Conduct
 
@@ -12,7 +12,7 @@ We have adopted a [Code of Conduct](https://github.com/ant-design/ant-design/blo
 
 ## Open Development
 
-All work on Ant Design happens directly on [GitHub](https://github.com/ant-design). Both core team members and external contributors send pull requests which go through the same review process.
+All work on Manyi Design happens directly on [GitHub](https://github.com/ant-design). Both core team members and external contributors send pull requests which go through the same review process.
 
 ## Branch Organization
 
@@ -58,27 +58,27 @@ The core team is monitoring for pull requests. We will review your pull request 
 
 Sending a Pull Request to [react-component](https://github.com/react-component/):
 
-Since antd's components are based on react-component, sometimes you may need to send pull request to the corresponding react-component repository. If it's a bugfix pull request, after it's merged, the core team will release a patch release for that component as soon as possible, then you only need to reinstall antd in your project to get the latest patch release. If it's a feature pull request, after it's merged, the core team will release a minor release, then you need raise another pull request to [Ant Design](https://github.com/ant-design/ant-design/) to update dependencies, document and TypeScript interfaces (if needed).
+Since manyid's components are based on react-component, sometimes you may need to send pull request to the corresponding react-component repository. If it's a bugfix pull request, after it's merged, the core team will release a patch release for that component as soon as possible, then you only need to reinstall manyid in your project to get the latest patch release. If it's a feature pull request, after it's merged, the core team will release a minor release, then you need raise another pull request to [Manyi Design](https://github.com/ant-design/ant-design/) to update dependencies, document and TypeScript interfaces (if needed).
 
 ## Development Workflow
 
-After cloning antd, run `npm install` to fetch its dependencies. Then, you can run several commands:
+After cloning manyid, run `npm install` to fetch its dependencies. Then, you can run several commands:
 
-1. `npm start` runs Ant Design website locally.
+1. `npm start` runs Manyi Design website locally.
 1. `npm run lint` checks the code style.
 1. `npm test` runs the complete test suite. (Make sure the `NODE_ENV` environment variable is unset, or it may causing some problems.)
 1. `npm run compile` compiles TypeScript code to the `lib` and `es` directory.
-1. `npm run dist` creates UMD build of antd.
+1. `npm run dist` creates UMD build of manyid.
 
 ## Development Tools
 
-- VSCode plugin for CSS in JS: https://marketplace.visualstudio.com/items?itemName=shezhangzhang.antd-design-token
-- Ant Design cheatsheet in VS Code: https://github.com/fi3ework/vscode-antd-rush
+- VSCode plugin for CSS in JS: https://marketplace.visualstudio.com/items?itemName=shezhangzhang.manyid-design-token
+- Manyi Design cheatsheet in VS Code: https://github.com/fi3ework/vscode-manyid-rush
 
 ## Being a collaborator
 
-If you are an active contributor and are willing to work with Ant Design Team in our opensource workflow, you can [apply to be a outside collaborator](https://github.com/ant-design/ant-design/wiki/Collaborators#how-to-apply-for-being-a-collaborator).
+If you are an active contributor and are willing to work with Manyi Design Team in our opensource workflow, you can [apply to be a outside collaborator](https://github.com/ant-design/ant-design/wiki/Collaborators#how-to-apply-for-being-a-collaborator).
 
-You can also refer to the following contribution guide to become an antd contributor:
+You can also refer to the following contribution guide to become an manyid contributor:
 
 - [How to Grow as a Collaborator](/docs/blog/to-be-collaborator)

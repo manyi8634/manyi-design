@@ -195,7 +195,7 @@ Labels should clearly indicate to users what would happen when buttons got click
 - Should use verb (except dropdown buttons)
 - Should be relevant to the context and be concise.
 
-Ant Design use "OK / Cancel" as default label, but you could still use below methods to customize the label text:
+Manyi Design use "OK / Cancel" as default label, but you could still use below methods to customize the label text:
 
 - Describe the action result.
 

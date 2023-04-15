@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress, Space } from 'antd';
+import { Progress, Space } from 'manyid';
 
 const App: React.FC = () => (
   <>

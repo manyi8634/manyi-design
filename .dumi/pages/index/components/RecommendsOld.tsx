@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Row, Col, Typography } from 'antd';
+import { Row, Col, Typography } from 'manyid';
 import { css } from '@emotion/react';
 import type { Recommendation } from './util';
 import useSiteToken from '../../../hooks/useSiteToken';

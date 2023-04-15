@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from 'manyid';
 import { useLocale as useDumiLocale } from 'dumi';
 import React from 'react';
 import useLocale from '../../hooks/useLocale';

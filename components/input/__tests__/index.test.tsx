@@ -70,7 +70,7 @@ describe('Input', () => {
       container.querySelector('input')?.focus();
       rerender(<Input suffix="light" />);
       expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Input] When Input is focused, dynamic add or remove prefix / suffix will make it lose focus caused by dom structure change. Read more: https://ant.design/components/input/#FAQ',
+        'Warning: [manyid: Input] When Input is focused, dynamic add or remove prefix / suffix will make it lose focus caused by dom structure change. Read more: https://ant.design/components/input/#FAQ',
       );
       unmount();
     });
@@ -124,7 +124,7 @@ describe('Input', () => {
     render(<Input.Group />);
 
     expect(errorSpy).toHaveBeenCalledWith(
-      "Warning: [antd: Input.Group] 'Input.Group' is deprecated. Please use 'Space.Compact' instead.",
+      "Warning: [manyid: Input.Group] 'Input.Group' is deprecated. Please use 'Space.Compact' instead.",
     );
   });
 });

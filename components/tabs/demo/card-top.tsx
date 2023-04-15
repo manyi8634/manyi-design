@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, theme } from 'antd';
+import { Tabs, theme } from 'manyid';
 import { css } from '@emotion/css';
 
 const useStyle = () => {

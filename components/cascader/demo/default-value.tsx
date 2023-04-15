@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cascader } from 'antd';
+import { Cascader } from 'manyid';
 
 interface Option {
   value: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, message } from 'antd';
+import { Button, message } from 'manyid';
 
 const App: React.FC = () => {
   const [messageApi, contextHolder] = message.useMessage();

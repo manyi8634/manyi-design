@@ -1,9 +1,9 @@
 ---
 order: 0
-title: Ant Design of React
+title: Manyi Design of React
 ---
 
-`antd` 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。
+`manyid` 是基于 Manyi Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。
 
 <div class="pic-plus">
   <img width="150" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"/>
@@ -46,11 +46,11 @@ title: Ant Design of React
 
 对于 IE 系列浏览器，需要提供相应的 Polyfill 支持，建议使用 [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) 来解决浏览器兼容问题。如果你在使用 [umi](http://umijs.org/)，可以直接使用 [targets](https://umijs.org/zh/config/#targets) 配置。
 
-> `antd@2.0` 之后不再支持 IE8。 `antd@4.0` 之后不再支持 React 15 和 IE9/10。 `antd@5.0` 之后不再支持 IE。
+> `manyid@2.0` 之后不再支持 IE8。 `manyid@4.0` 之后不再支持 React 15 和 IE9/10。 `manyid@5.0` 之后不再支持 IE。
 
 ## 版本
 
-- 稳定版：[![npm package](https://img.shields.io/npm/v/antd.svg?style=flat-square)](https://www.npmjs.org/package/antd)
+- 稳定版：[![npm package](https://img.shields.io/npm/v/manyid.svg?style=flat-square)](https://www.npmjs.org/package/manyid)
 
 你可以订阅：https://github.com/ant-design/ant-design/releases.atom 来获得版本发布的通知。
 
@@ -61,30 +61,30 @@ title: Ant Design of React
 **我们推荐使用 npm 或 yarn 的方式进行开发**，不仅可在开发环境轻松调试，也可放心地在生产环境打包部署使用，享受整个生态圈和工具链带来的诸多好处。
 
 ```bash
-$ npm install antd --save
+$ npm install manyid --save
 ```
 
 ```bash
-$ yarn add antd
+$ yarn add manyid
 ```
 
 如果你的网络环境不佳，推荐使用 [cnpm](https://github.com/cnpm/cnpm)。
 
 ### 浏览器引入
 
-在浏览器中使用 `script` 和 `link` 标签直接引入文件，并使用全局变量 `antd`。
+在浏览器中使用 `script` 和 `link` 标签直接引入文件，并使用全局变量 `manyid`。
 
-我们在 npm 发布包内的 dist 目录下提供了 `antd.js`、`antd.min.js` 和 `reset.css`。你也可以通过 [![CDNJS](https://img.shields.io/cdnjs/v/antd.svg?style=flat-square)](https://cdnjs.com/libraries/antd)，[![](https://data.jsdelivr.com/v1/package/npm/antd/badge)](https://www.jsdelivr.com/package/npm/antd) 或 [UNPKG](https://unpkg.com/antd/dist/) 进行下载。
+我们在 npm 发布包内的 dist 目录下提供了 `manyid.js`、`manyid.min.js` 和 `reset.css`。你也可以通过 [![CDNJS](https://img.shields.io/cdnjs/v/manyid.svg?style=flat-square)](https://cdnjs.com/libraries/manyid)，[![](https://data.jsdelivr.com/v1/package/npm/manyid/badge)](https://www.jsdelivr.com/package/npm/manyid) 或 [UNPKG](https://unpkg.com/manyid/dist/) 进行下载。
 
 > **强烈不推荐使用已构建文件**，这样无法按需加载，而且难以获得底层依赖模块的 bug 快速修复支持。
 
-> 注意：`antd.js` 和 `antd.min.js` 依赖 `react`、`react-dom`、`dayjs`，请确保提前引入这些文件。
+> 注意：`manyid.js` 和 `manyid.min.js` 依赖 `react`、`react-dom`、`dayjs`，请确保提前引入这些文件。
 
 ## 示例
 
 ```jsx
 import React from 'react';
-import { DatePicker } from 'antd';
+import { DatePicker } from 'manyid';
 
 const App = () => {
   return <DatePicker />;
@@ -95,26 +95,26 @@ export default App;
 
 ### 按需加载
 
-`antd` 默认支持基于 ES modules 的 tree shaking。
+`manyid` 默认支持基于 ES modules 的 tree shaking。
 
 ### TypeScript
 
-`antd` 使用 TypeScript 进行书写并提供了完整的定义文件。（不要引用 `@types/antd`）。
+`manyid` 使用 TypeScript 进行书写并提供了完整的定义文件。（不要引用 `@types/manyid`）。
 
 ## 链接
 
 - [首页](/index-cn)
 - [组件库](/components/overview-cn)
 - [国内镜像](https://github.com/ant-design/ant-design/issues/25661)
-- [Ant Design Pro](https://pro.ant.design/)
-- [Ant Design Pro Components](https://procomponents.ant.design/)
-- [Ant Design Charts](https://charts.ant.design)
+- [Manyi Design Pro](https://pro.ant.design/)
+- [Manyi Design Pro Components](https://procomponents.ant.design/)
+- [Manyi Design Charts](https://charts.ant.design)
 - [更新日志](/changelog)
 - [React 底层基础组件](https://react-component.github.io/)
 - [移动端组件库](https://mobile.ant.design)
 - [小程序组件库](https://mini.ant.design)
-- [Ant Design 图标](https://github.com/ant-design/ant-design-icons)
-- [Ant Design 色彩](https://github.com/ant-design/ant-design-colors)
+- [Manyi Design 图标](https://github.com/ant-design/ant-design-icons)
+- [Manyi Design 色彩](https://github.com/ant-design/ant-design-colors)
 - [首页模板集](https://landing.ant.design)
 - [动效](https://motion.ant.design)
 - [脚手架市场](https://scaffold.ant.design)
@@ -123,7 +123,7 @@ export default App;
 - [版本发布规则](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
 - [常见问题](/docs/react/faq)
 - [CodeSandbox 模板](https://u.ant.design/codesandbox-repro) for bug reports
-- [Awesome Ant Design](https://github.com/websemantics/awesome-ant-design)
+- [Awesome Manyi Design](https://github.com/websemantics/awesome-ant-design)
 - [定制主题](/docs/react/customize-theme)
 - [成为社区协作成员](https://github.com/ant-design/ant-design/wiki/Collaborators#how-to-apply-for-being-a-collaborator)
 
@@ -138,7 +138,7 @@ export default App;
 - [滴滴](https://www.xiaojukeji.com/)
 - [饿了么](https://www.ele.me/)
 
-> 如果你的公司和产品使用了 Ant Design，欢迎到 [这里](https://github.com/ant-design/ant-design/issues/477) 留言。
+> 如果你的公司和产品使用了 Manyi Design，欢迎到 [这里](https://github.com/ant-design/ant-design/issues/477) 留言。
 
 ## 如何贡献
 
@@ -152,8 +152,8 @@ export default App;
 
 通过 GitHub Discussions 提问时，建议使用 `Q&A` 标签。
 
-通过 Stack Overflow 或者 Segment Fault 提问时，建议加上 `antd` 标签。
+通过 Stack Overflow 或者 Segment Fault 提问时，建议加上 `manyid` 标签。
 
 1. [GitHub Discussions](https://github.com/ant-design/ant-design/discussions)
-2. [<img alt="Stack Overflow" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.svg?v=2bb144720a66" width="140" />](http://stackoverflow.com/questions/tagged/antd)(English)
-3. [<img alt="Segment Fault" src="https://gw.alipayobjects.com/zos/rmsportal/hfYFfCvHTQTUKntlJbMF.svg" width="100" />](https://segmentfault.com/t/antd)(中文)
+2. [<img alt="Stack Overflow" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.svg?v=2bb144720a66" width="140" />](http://stackoverflow.com/questions/tagged/manyid)(English)
+3. [<img alt="Segment Fault" src="https://gw.alipayobjects.com/zos/rmsportal/hfYFfCvHTQTUKntlJbMF.svg" width="100" />](https://segmentfault.com/t/manyid)(中文)

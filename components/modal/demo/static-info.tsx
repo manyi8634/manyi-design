@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Space } from 'antd';
+import { Button, Modal, Space } from 'manyid';
 
 const info = () => {
   Modal.info({

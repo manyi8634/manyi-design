@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import type { RadioChangeEvent } from 'antd';
-import { Radio } from 'antd';
+import type { RadioChangeEvent } from 'manyid';
+import { Radio } from 'manyid';
 
 const plainOptions = ['Apple', 'Pear', 'Orange'];
 const options = [

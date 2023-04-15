@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Slider, Space } from 'antd';
+import { Button, Slider, Space } from 'manyid';
 
 const App: React.FC = () => {
   const [size, setSize] = useState(8);

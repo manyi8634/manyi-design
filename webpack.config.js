@@ -6,8 +6,8 @@ const { EsbuildPlugin } = require('esbuild-loader');
 const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 
 function addLocales(webpackConfig) {
-  let packageName = 'antd-with-locales';
-  if (webpackConfig.entry['antd.min']) {
+  let packageName = 'manyid-with-locales';
+  if (webpackConfig.entry['manyid.min']) {
     packageName += '.min';
   }
   webpackConfig.entry[packageName] = './index-with-locales.js';

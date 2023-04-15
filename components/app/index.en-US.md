@@ -26,7 +26,7 @@ Static function in React 18 concurrent mode will not well support. In v5, we rec
 App provides upstream and downstream method calls through `Context`, because useApp needs to be used as a subcomponent, we recommend encapsulating App at the top level in the application.
 
 ```tsx
-import { App } from 'antd';
+import { App } from 'manyid';
 import React from 'react';
 
 const MyPage: React.FC = () => {
@@ -77,10 +77,10 @@ The App component can only use the token in the `ConfigProvider`, if you need to
 
 ```tsx
 // Entry component
-import { App } from 'antd';
-import type { MessageInstance } from 'antd/es/message/interface';
-import type { ModalStaticFunctions } from 'antd/es/modal/confirm';
-import type { NotificationInstance } from 'antd/es/notification/interface';
+import { App } from 'manyid';
+import type { MessageInstance } from 'manyid/es/message/interface';
+import type { ModalStaticFunctions } from 'manyid/es/modal/confirm';
+import type { NotificationInstance } from 'manyid/es/notification/interface';
 
 let message: MessageInstance;
 let notification: NotificationInstance;
@@ -99,7 +99,7 @@ export { message, notification, modal };
 
 ```tsx
 // sub page
-import { Button, Space } from 'antd';
+import { Button, Space } from 'manyid';
 import React from 'react';
 import { message } from './store';
 

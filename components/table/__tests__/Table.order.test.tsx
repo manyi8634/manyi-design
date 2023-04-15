@@ -49,7 +49,7 @@ describe('Table.order', () => {
     );
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Table] Multiple `SELECTION_COLUMN` exist in `columns`.',
+      'Warning: [manyid: Table] Multiple `SELECTION_COLUMN` exist in `columns`.',
     );
   });
 

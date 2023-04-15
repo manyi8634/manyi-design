@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AppstoreOutlined, MailOutlined } from '@ant-design/icons';
-import type { MenuProps, MenuTheme } from 'antd';
-import { Menu, Switch } from 'antd';
+import type { MenuProps, MenuTheme } from 'manyid';
+import { Menu, Switch } from 'manyid';
 
 type MenuItem = Required<MenuProps>['items'][number];
 

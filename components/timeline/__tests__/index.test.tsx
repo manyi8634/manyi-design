@@ -53,7 +53,7 @@ describe('TimeLine', () => {
       );
 
       expect(errSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Timeline] `Timeline.Item` is deprecated. Please use `items` instead.',
+        'Warning: [manyid: Timeline] `Timeline.Item` is deprecated. Please use `items` instead.',
       );
       errSpy.mockRestore();
     });

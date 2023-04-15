@@ -1,5 +1,5 @@
 import { UserOutlined } from '@ant-design/icons';
-import { Avatar, Badge, Space } from 'antd';
+import { Avatar, Badge, Space } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => (

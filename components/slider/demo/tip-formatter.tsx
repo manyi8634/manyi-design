@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slider } from 'antd';
+import { Slider } from 'manyid';
 
 const formatter = (value: number) => `${value}%`;
 

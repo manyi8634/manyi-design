@@ -57,7 +57,7 @@ describe('Transfer.Customize', () => {
       </Transfer>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Transfer] `pagination` not support customize render list.',
+      'Warning: [manyid: Transfer] `pagination` not support customize render list.',
     );
   });
 });

@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { ConfigProvider, Layout, Typography } from 'antd';
+import { ConfigProvider, Layout, Typography } from 'manyid';
 import { FormattedMessage, useRouteMeta } from 'dumi';
 import type { PropsWithChildren } from 'react';
 import React from 'react';

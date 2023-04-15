@@ -1,5 +1,5 @@
 import React from 'react';
-import { Space, Tag } from 'antd';
+import { Space, Tag } from 'manyid';
 
 const log = (e: React.MouseEvent<HTMLElement>) => {
   console.log(e);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Divider, Row } from 'antd';
+import { Col, Divider, Row } from 'manyid';
 
 const DemoBox: React.FC<{ children: React.ReactNode; value: number }> = (props) => (
   <p className={`height-${props.value}`}>{props.children}</p>

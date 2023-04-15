@@ -10,7 +10,7 @@ title: 概览
 
 在企业级业务中使用设计模式，可以显着增加研发团队的确定性，节省不必要的设计，保持系统一致性，让设计师专注于创意最需要的地方。
 
-设计模式遵循 Ant Design 设计价值观，并为企业产品中反复出现的设计问题提供通用解决方案。设计者可以直接使用设计模式来完成界面设计，也可以以设计模式为出发点，衍生出更加针对业务的解决方案，以满足个性化的设计需求。
+设计模式遵循 Manyi Design 设计价值观，并为企业产品中反复出现的设计问题提供通用解决方案。设计者可以直接使用设计模式来完成界面设计，也可以以设计模式为出发点，衍生出更加针对业务的解决方案，以满足个性化的设计需求。
 
 同时，这是一份动态更新的设计文档，您的阅读和反馈是我们前进的动力，[Github 反馈地址](https://github.com/ant-design/ant-design/issues)。
 
@@ -31,6 +31,6 @@ title: 概览
 
 我们与工程师合作，将设计模式转化为可重用的代码，最大限度地提高您的生产力和沟通效率。
 
-- [Ant Design Pro](https://pro.ant.design/)：具有 20 多个模板和 10 多个业务组件的开箱即用解决方案
-- [React 官方实现](/components/overview-cn)：Ant Design 的 React UI 库拥有 60 多个基础组件。
+- [Manyi Design Pro](https://pro.ant.design/)：具有 20 多个模板和 10 多个业务组件的开箱即用解决方案
+- [React 官方实现](/components/overview-cn)：Manyi Design 的 React UI 库拥有 60 多个基础组件。
 - [Axure 设计库](http://library.ant.design/)：代码中包含 Axure 资源包，使您的原型看起来像一个视觉草稿，包括模板、组件等。

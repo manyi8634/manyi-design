@@ -3,10 +3,10 @@ const chalk = require('chalk');
 
 $('dist')
   .isDirectory()
-  .hasFile('antd-with-locales.js')
-  .hasFile('antd-with-locales.min.js')
-  .hasFile('antd.js')
-  .hasFile('antd.min.js')
+  .hasFile('manyid-with-locales.js')
+  .hasFile('manyid-with-locales.min.js')
+  .hasFile('manyid.js')
+  .hasFile('manyid.min.js')
   .hasFile('reset.css');
 
 // eslint-disable-next-line no-console

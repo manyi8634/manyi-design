@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Steps } from 'antd';
+import { Steps } from 'manyid';
 
 const App: React.FC = () => {
   const [current, setCurrent] = useState(0);

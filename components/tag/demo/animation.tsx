@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
-import type { InputRef } from 'antd';
-import { Input, Tag, theme } from 'antd';
+import type { InputRef } from 'manyid';
+import { Input, Tag, theme } from 'manyid';
 import { TweenOneGroup } from 'rc-tween-one';
 
 const App: React.FC = () => {

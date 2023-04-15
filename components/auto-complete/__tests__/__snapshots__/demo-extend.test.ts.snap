@@ -194,7 +194,7 @@ exports[`renders components/auto-complete/demo/certain-category.tsx extend conte
                 <span>
                   Libraries
                   <a
-                    href="https://www.google.com/search?q=antd"
+                    href="https://www.google.com/search?q=manyid"
                     rel="noopener noreferrer"
                     style="float: right;"
                     target="_blank"
@@ -293,7 +293,7 @@ exports[`renders components/auto-complete/demo/certain-category.tsx extend conte
                 <span>
                   Solutions
                   <a
-                    href="https://www.google.com/search?q=antd"
+                    href="https://www.google.com/search?q=manyid"
                     rel="noopener noreferrer"
                     style="float: right;"
                     target="_blank"
@@ -392,7 +392,7 @@ exports[`renders components/auto-complete/demo/certain-category.tsx extend conte
                 <span>
                   Articles
                   <a
-                    href="https://www.google.com/search?q=antd"
+                    href="https://www.google.com/search?q=manyid"
                     rel="noopener noreferrer"
                     style="float: right;"
                     target="_blank"

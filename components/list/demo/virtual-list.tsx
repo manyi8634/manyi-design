@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Avatar, List, message } from 'antd';
+import { Avatar, List, message } from 'manyid';
 import VirtualList from 'rc-virtual-list';
 
 interface UserItem {

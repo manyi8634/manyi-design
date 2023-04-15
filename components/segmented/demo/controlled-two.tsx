@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Segmented } from 'antd';
+import { Segmented } from 'manyid';
 
 const Demo: React.FC = () => {
   const [foo, setFoo] = useState<string | number>('AND');

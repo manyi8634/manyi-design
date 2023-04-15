@@ -1,7 +1,7 @@
 import React from 'react';
 import { UploadOutlined } from '@ant-design/icons';
-import type { UploadProps } from 'antd';
-import { Button, Upload } from 'antd';
+import type { UploadProps } from 'manyid';
+import { Button, Upload } from 'manyid';
 
 const props: UploadProps = {
   action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
@@ -22,7 +22,7 @@ const props: UploadProps = {
           ctx.fillStyle = 'red';
           ctx.textBaseline = 'middle';
           ctx.font = '33px Arial';
-          ctx.fillText('Ant Design', 20, 20);
+          ctx.fillText('Manyi Design', 20, 20);
           canvas.toBlob((result) => resolve(result as any));
         };
       };

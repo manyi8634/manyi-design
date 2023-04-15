@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Switch, Space } from 'antd';
+import { Alert, Switch, Space } from 'manyid';
 
 const App: React.FC = () => {
   const [visible, setVisible] = useState(true);

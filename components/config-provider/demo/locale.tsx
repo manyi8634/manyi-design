@@ -1,5 +1,5 @@
 import { EllipsisOutlined } from '@ant-design/icons';
-import type { RadioChangeEvent, TourProps, UploadFile } from 'antd';
+import type { RadioChangeEvent, TourProps, UploadFile } from 'manyid';
 import {
   Upload,
   Tour,
@@ -23,10 +23,10 @@ import {
   Image,
   InputNumber,
   Divider,
-} from 'antd';
-import type { Locale } from 'antd/es/locale';
-import enUS from 'antd/locale/en_US';
-import zhCN from 'antd/locale/zh_CN';
+} from 'manyid';
+import type { Locale } from 'manyid/es/locale';
+import enUS from 'manyid/locale/en_US';
+import zhCN from 'manyid/locale/zh_CN';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import React, { useState } from 'react';

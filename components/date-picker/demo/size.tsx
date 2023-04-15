@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import type { RadioChangeEvent } from 'antd';
-import { DatePicker, Radio, Space } from 'antd';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
+import type { RadioChangeEvent } from 'manyid';
+import { DatePicker, Radio, Space } from 'manyid';
+import type { SizeType } from 'manyid/es/config-provider/SizeContext';
 
 const { RangePicker } = DatePicker;
 

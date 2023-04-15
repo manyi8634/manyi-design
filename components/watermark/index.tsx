@@ -35,7 +35,7 @@ export interface WatermarkProps {
 const Watermark: React.FC<WatermarkProps> = (props) => {
   const {
     /**
-     * The antd content layer zIndex is basically below 10
+     * The manyid content layer zIndex is basically below 10
      * https://github.com/ant-design/ant-design/blob/6192403b2ce517c017f9e58a32d58774921c10cd/components/style/themes/default.less#L335
      */
     zIndex = 9,

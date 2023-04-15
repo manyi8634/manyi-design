@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Tooltip } from 'antd';
+import { Tooltip } from 'manyid';
 import React from 'react';
 import useSiteToken from '../../../hooks/useSiteToken';
 

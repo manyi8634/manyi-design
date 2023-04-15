@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Tooltip } from 'antd';
+import { Col, Row, Tooltip } from 'manyid';
 import { css } from '@emotion/react';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 import useSiteToken from '../../../hooks/useSiteToken';

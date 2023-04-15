@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Drawer } from 'antd';
+import { Button, Drawer } from 'manyid';
 
 const App: React.FC = () => {
   const [open, setOpen] = useState(false);

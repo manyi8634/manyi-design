@@ -1,6 +1,6 @@
 import React from 'react';
-import type { BadgeProps } from 'antd';
-import { Badge, Calendar } from 'antd';
+import type { BadgeProps } from 'manyid';
+import { Badge, Calendar } from 'manyid';
 import type { Dayjs } from 'dayjs';
 
 const getListData = (value: Dayjs) => {

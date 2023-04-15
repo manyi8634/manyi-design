@@ -8,7 +8,7 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { css } from '@emotion/css';
-import { Tabs } from 'antd';
+import { Tabs } from 'manyid';
 import React, { useEffect, useState } from 'react';
 
 interface DraggableTabPaneProps extends React.HTMLAttributes<HTMLDivElement> {

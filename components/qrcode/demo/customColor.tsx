@@ -1,5 +1,5 @@
 import React from 'react';
-import { QRCode, Space, theme } from 'antd';
+import { QRCode, Space, theme } from 'manyid';
 
 const { useToken } = theme;
 

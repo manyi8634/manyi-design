@@ -6,8 +6,8 @@ import {
   MehOutlined,
   SmileOutlined,
 } from '@ant-design/icons';
-import { Tree } from 'antd';
-import type { DataNode } from 'antd/es/tree';
+import { Tree } from 'manyid';
+import type { DataNode } from 'manyid/es/tree';
 
 const treeData: DataNode[] = [
   {

@@ -1,5 +1,5 @@
-import type { TooltipProps } from 'antd';
-import { Button, Tooltip, Typography } from 'antd';
+import type { TooltipProps } from 'manyid';
+import { Button, Tooltip, Typography } from 'manyid';
 import React from 'react';
 
 const Block = React.forwardRef<HTMLDivElement, Partial<TooltipProps>>((props, ref) => (

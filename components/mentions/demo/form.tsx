@@ -1,4 +1,4 @@
-import { Button, Form, Mentions, Space } from 'antd';
+import { Button, Form, Mentions, Space } from 'manyid';
 import React from 'react';
 
 const { getMentions } = Mentions;

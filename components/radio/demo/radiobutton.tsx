@@ -1,6 +1,6 @@
 import React from 'react';
-import type { RadioChangeEvent } from 'antd';
-import { Radio } from 'antd';
+import type { RadioChangeEvent } from 'manyid';
+import { Radio } from 'manyid';
 
 const onChange = (e: RadioChangeEvent) => {
   console.log(`radio checked:${e.target.value}`);

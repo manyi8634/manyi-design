@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
+import { Table } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
 import type { ResizeCallbackData } from 'react-resizable';
 import { Resizable } from 'react-resizable';
 

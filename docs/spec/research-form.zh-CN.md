@@ -189,7 +189,7 @@ title: 表单页
 <img class="preview-img no-padding" src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*ba6DR5U23nAAAAAAAAAAAABkARQnAQ" />
 </ImagePreview>
 
-Ant Design 标准登录模板
+Manyi Design 标准登录模板
 
 #### [模板 - 注册](https://preview.pro.ant.design/user/register)
 
@@ -197,14 +197,14 @@ Ant Design 标准登录模板
 <img class="preview-img no-padding" src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*6U_gQ6MbrSYAAAAAAAAAAABkARQnAQ" />
 </ImagePreview>
 
-Ant Design 标准注册模板
+Manyi Design 标准注册模板
 
 ## 设计建议
 
 ### 前期准备
 
 - 表单页的核心由表单项组成，设计前建议先熟悉[表单基础规则](/components/form/)；
-- 梳理用户当前信息录入任务中所涉及的信息类型，[并根据 Ant Design 数据录入规则](/docs/spec/data-entry/) 确定所使用的组件。
+- 梳理用户当前信息录入任务中所涉及的信息类型，[并根据 Manyi Design 数据录入规则](/docs/spec/data-entry/) 确定所使用的组件。
 
 ### 布局方式
 

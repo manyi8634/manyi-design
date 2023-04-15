@@ -1,5 +1,5 @@
 import React from 'react';
-import { Space, TimePicker } from 'antd';
+import { Space, TimePicker } from 'manyid';
 import type { Dayjs } from 'dayjs';
 
 const onChange = (time: Dayjs, timeString: string) => {

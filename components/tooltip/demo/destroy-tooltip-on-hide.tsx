@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip } from 'antd';
+import { Tooltip } from 'manyid';
 
 const App: React.FC = () => (
   <Tooltip destroyTooltipOnHide title="prompt text">

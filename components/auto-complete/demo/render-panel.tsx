@@ -1,5 +1,5 @@
 import React from 'react';
-import { AutoComplete, Switch, Space } from 'antd';
+import { AutoComplete, Switch, Space } from 'manyid';
 
 const { _InternalPanelDoNotUseOrYouWillBeFired: InternalAutoComplete } = AutoComplete;
 

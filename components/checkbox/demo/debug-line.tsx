@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, Radio, Space } from 'antd';
+import { Checkbox, Radio, Space } from 'manyid';
 
 const sharedStyle: React.CSSProperties = {
   border: '1px solid red',

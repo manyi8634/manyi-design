@@ -352,8 +352,8 @@ describe('ConfigProvider', () => {
             <List.Item.Meta
               {...props}
               avatar={<Avatar src="https://joesch.moe/api/v1/random" />}
-              title="Ant Design"
-              description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+              title="Manyi Design"
+              description="Manyi Design, a design language for background applications, is refined by Ant UED Team"
             />
           </List.Item>
         )}

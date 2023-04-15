@@ -14,7 +14,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*DLUwQ4B2_zQAAA
   <img src="https://gw.alipayobjects.com/zos/bmw-prod/9189c9ef-c601-40dc-9960-c11dbb681888.svg" alt="grid design" />
 </div>
 
-In most business situations, Ant Design needs to solve a lot of information storage problems within the design area, so based on 12 Grids System, we divided the design area into 24 sections.
+In most business situations, Manyi Design needs to solve a lot of information storage problems within the design area, so based on 12 Grids System, we divided the design area into 24 sections.
 
 We name the divided area 'box'. We suggest four boxes for horizontal arrangement at most, one at least. Boxes are proportional to the entire screen as shown in the picture above. To ensure a high level of visual comfort, we customize the typography inside of the box based on the box unit.
 
@@ -51,7 +51,7 @@ Layout uses a 24 grid layout to define the width of each "box", but does not rig
 
 ## API
 
-If the Ant Design grid layout component does not meet your needs, you can use the excellent layout components of the community:
+If the Manyi Design grid layout component does not meet your needs, you can use the excellent layout components of the community:
 
 - [react-flexbox-grid](http://roylee0704.github.io/react-flexbox-grid/)
 - [react-blocks](https://github.com/whoisandy/react-blocks/)
@@ -82,6 +82,6 @@ If the Ant Design grid layout component does not meet your needs, you can use th
 | xl | `screen ≥ 1200px`, could be a `span` value or an object containing above props | number \| object | - |  |
 | xxl | `screen ≥ 1600px`, could be a `span` value or an object containing above props | number \| object | - |  |
 
-You can modify the breakpoints values using by modifying `screen[XS|SM|MD|LG|XL|XXL]` with [theme customization](/docs/react/customize-theme) (since 5.1.0, [sandbox demo](https://codesandbox.io/s/antd-reproduction-template-forked-dlq3r9?file=/index.js)).
+You can modify the breakpoints values using by modifying `screen[XS|SM|MD|LG|XL|XXL]` with [theme customization](/docs/react/customize-theme) (since 5.1.0, [sandbox demo](https://codesandbox.io/s/manyid-reproduction-template-forked-dlq3r9?file=/index.js)).
 
 The breakpoints of responsive grid follow [BootStrap 4 media queries rules](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints) (not including `occasionally part`).

@@ -35,7 +35,7 @@ describe('TimePicker', () => {
     const { container } = render(<TimePicker addon={addon} open />);
     expect(container.querySelectorAll('.my-btn').length).toBeTruthy();
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: TimePicker] `addon` is deprecated. Please use `renderExtraFooter` instead.',
+      'Warning: [manyid: TimePicker] `addon` is deprecated. Please use `renderExtraFooter` instead.',
     );
   });
 

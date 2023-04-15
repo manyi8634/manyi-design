@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Checkbox, Divider } from 'antd';
-import type { CheckboxChangeEvent } from 'antd/es/checkbox';
-import type { CheckboxValueType } from 'antd/es/checkbox/Group';
+import { Checkbox, Divider } from 'manyid';
+import type { CheckboxChangeEvent } from 'manyid/es/checkbox';
+import type { CheckboxValueType } from 'manyid/es/checkbox/Group';
 
 const CheckboxGroup = Checkbox.Group;
 

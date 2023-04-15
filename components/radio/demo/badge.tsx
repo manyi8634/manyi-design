@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Radio } from 'antd';
+import { Badge, Radio } from 'manyid';
 
 const App: React.FC = () => (
   <Radio.Group buttonStyle="solid">

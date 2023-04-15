@@ -1,7 +1,7 @@
 import React from 'react';
 import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import type { MenuProps } from 'manyid';
+import { Breadcrumb, Layout, Menu, theme } from 'manyid';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -60,7 +60,7 @@ const App: React.FC = () => {
           <Content style={{ padding: '0 24px', minHeight: 280 }}>Content</Content>
         </Layout>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
+      <Footer style={{ textAlign: 'center' }}>Manyi Design ©2023 Created by Ant UED</Footer>
     </Layout>
   );
 };

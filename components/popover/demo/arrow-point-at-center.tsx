@@ -1,4 +1,4 @@
-import { Button, Popover, Space } from 'antd';
+import { Button, Popover, Space } from 'manyid';
 import React from 'react';
 
 const content = (

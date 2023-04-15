@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select, Switch, Space } from 'antd';
+import { Select, Switch, Space } from 'manyid';
 
 const { _InternalPanelDoNotUseOrYouWillBeFired: InternalSelect } = Select;
 

@@ -59,7 +59,7 @@ describe('TreeSelect', () => {
     const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     const { container } = render(<TreeSelect dropdownClassName="legacy" open />);
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: TreeSelect] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
+      'Warning: [manyid: TreeSelect] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
     );
     expect(container.querySelector('.legacy')).toBeTruthy();
 

@@ -1,4 +1,4 @@
-import { Button, Divider, Segmented, Tooltip } from 'antd';
+import { Button, Divider, Segmented, Tooltip } from 'manyid';
 import React, { useMemo, useState } from 'react';
 
 const text = <span>prompt text</span>;

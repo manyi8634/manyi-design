@@ -1,6 +1,6 @@
 import React from 'react';
 import { CaretRightOutlined } from '@ant-design/icons';
-import { Collapse, theme } from 'antd';
+import { Collapse, theme } from 'manyid';
 
 const { Panel } = Collapse;
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
-import { Modal, Upload } from 'antd';
-import type { RcFile, UploadProps } from 'antd/es/upload';
-import type { UploadFile } from 'antd/es/upload/interface';
+import { Modal, Upload } from 'manyid';
+import type { RcFile, UploadProps } from 'manyid/es/upload';
+import type { UploadFile } from 'manyid/es/upload/interface';
 
 const getBase64 = (file: RcFile): Promise<string> =>
   new Promise((resolve, reject) => {

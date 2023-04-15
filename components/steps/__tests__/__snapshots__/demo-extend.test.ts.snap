@@ -864,13 +864,13 @@ exports[`renders components/steps/demo/inline.tsx extend context correctly 1`] =
                   <a
                     href="https://ant.design"
                   >
-                    Ant Design Title 1
+                    Manyi Design Title 1
                   </a>
                 </h4>
                 <div
                   class="ant-list-item-meta-description"
                 >
-                  Ant Design, a design language for background applications, is refined by Ant UED Team
+                  Manyi Design, a design language for background applications, is refined by Ant UED Team
                 </div>
               </div>
             </div>
@@ -1071,13 +1071,13 @@ exports[`renders components/steps/demo/inline.tsx extend context correctly 1`] =
                   <a
                     href="https://ant.design"
                   >
-                    Ant Design Title 2
+                    Manyi Design Title 2
                   </a>
                 </h4>
                 <div
                   class="ant-list-item-meta-description"
                 >
-                  Ant Design, a design language for background applications, is refined by Ant UED Team
+                  Manyi Design, a design language for background applications, is refined by Ant UED Team
                 </div>
               </div>
             </div>
@@ -1278,13 +1278,13 @@ exports[`renders components/steps/demo/inline.tsx extend context correctly 1`] =
                   <a
                     href="https://ant.design"
                   >
-                    Ant Design Title 3
+                    Manyi Design Title 3
                   </a>
                 </h4>
                 <div
                   class="ant-list-item-meta-description"
                 >
-                  Ant Design, a design language for background applications, is refined by Ant UED Team
+                  Manyi Design, a design language for background applications, is refined by Ant UED Team
                 </div>
               </div>
             </div>
@@ -1485,13 +1485,13 @@ exports[`renders components/steps/demo/inline.tsx extend context correctly 1`] =
                   <a
                     href="https://ant.design"
                   >
-                    Ant Design Title 4
+                    Manyi Design Title 4
                   </a>
                 </h4>
                 <div
                   class="ant-list-item-meta-description"
                 >
-                  Ant Design, a design language for background applications, is refined by Ant UED Team
+                  Manyi Design, a design language for background applications, is refined by Ant UED Team
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import React, { useMemo } from 'react';
-import type { MenuProps } from 'antd';
+import type { MenuProps } from 'manyid';
 import { Link, useFullSidebarData, useSidebarData } from 'dumi';
 import useLocation from './useLocation';
 

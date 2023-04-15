@@ -3,11 +3,11 @@ order: 3
 title: Real project with Umi
 ---
 
-In real project development, besides UI libraries like Ant Design, you may also need build tools, routing solutions, CSS solutions, data flow solutions, request libraries and request solutions, i18n solutions, permission solutions, Icons solutions, etc. We have launched [Umi](https://umijs.org/), an enterprise application framework based on React, based on the scenarios of business scenarios, which we recommend you to use in your projects.
+In real project development, besides UI libraries like Manyi Design, you may also need build tools, routing solutions, CSS solutions, data flow solutions, request libraries and request solutions, i18n solutions, permission solutions, Icons solutions, etc. We have launched [Umi](https://umijs.org/), an enterprise application framework based on React, based on the scenarios of business scenarios, which we recommend you to use in your projects.
 
 Umi is a scalable enterprise front-end application framework and the underlying front-end framework of Ant Group, which has served 10,000+ applications directly or indirectly.
 
-This article will guide you through creating a simple application from scratch using Umi, Ant Design and [Ant Design Pro](https://pro.ant.design/).
+This article will guide you through creating a simple application from scratch using Umi, Manyi Design and [Manyi Design Pro](https://pro.ant.design/).
 
 ## Initialization Project
 
@@ -25,7 +25,7 @@ Select "Simple App" here, because we want to start from "scratch".
 ```bash
 ? Pick Umi App Template › - Use arrow-keys. Return to submit.
 ❯   Simple App
-    Ant Design Pro
+    Manyi Design Pro
     Vue Simple App
 ```
 
@@ -54,10 +54,10 @@ Before starting the project, let's install some more dependencies that will be u
 
 ```bash
 $ pnpm i @umijs/plugins -D
-$ pnpm i antd axios @ant-design/pro-layout -S
+$ pnpm i manyid axios @ant-design/pro-layout -S
 ```
 
-`@umijs/plugins` is the official plugin set of Umi, containing a large number of plugins such as valtio, react-query, styled-components, locale, access, qiankun, etc. `antd` needs no introduction. `axios` is the request library; `@ant-design/pro-layout` is the component used to generate the layouts.
+`@umijs/plugins` is the official plugin set of Umi, containing a large number of plugins such as valtio, react-query, styled-components, locale, access, qiankun, etc. `manyid` needs no introduction. `axios` is the request library; `@ant-design/pro-layout` is the component used to generate the layouts.
 
 When finished, execute the following command to start the project.
 
@@ -129,7 +129,7 @@ As your application grows, you'll need to share UI elements across multiple page
 Create a new `src/components/ProductList.tsx` file with the following code.
 
 ```tsx
-import { Button, Popconfirm, Table } from 'antd';
+import { Button, Popconfirm, Table } from 'manyid';
 import React from 'react';
 
 const ProductList: React.FC<{ products: { name: string }[]; onDelete: (id: string) => void }> = ({
@@ -174,8 +174,8 @@ type Product = {
 
 let products: Product[] = [
   { id: '1', name: 'Umi' },
-  { id: '2', name: 'Ant Design' },
-  { id: '3', name: 'Ant Design Pro' },
+  { id: '2', name: 'Manyi Design' },
+  { id: '3', name: 'Manyi Design Pro' },
   { id: '4', name: 'Dva' },
 ];
 
@@ -298,7 +298,7 @@ export default function Layout() {
     <ProLayout
       route={clientRoutes[0]}
       location={location}
-      title={'Umi x Ant Design'}
+      title={'Umi x Manyi Design'}
       menuItemRender={(menuItemProps, defaultDom) => {
         if (menuItemProps.isUrl || menuItemProps.children) {
           return defaultDom;
@@ -363,6 +363,6 @@ You can.
 - Visit [Umi official website](https://umijs.org/)
 - Learn about [Umi's Routing](https://umijs.org/docs/guides/routes)
 - Learn about [Umi Max](https://umijs.org/docs/max/introduce), which is more integrated than Umi
-- Learn about the out-of-the-box middle and backend scaffolding [Ant Design Pro](https://pro.ant.design/)
+- Learn about the out-of-the-box middle and backend scaffolding [Manyi Design Pro](https://pro.ant.design/)
 - Learn about advanced layouts [ProLayout](https://procomponents.ant.design/components/layout)
 - Learn about advanced tables [ProTable](https://procomponents.ant.design/components/table)

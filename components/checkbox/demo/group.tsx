@@ -1,5 +1,5 @@
-import { Checkbox } from 'antd';
-import type { CheckboxValueType } from 'antd/es/checkbox/Group';
+import { Checkbox } from 'manyid';
+import type { CheckboxValueType } from 'manyid/es/checkbox/Group';
 import React from 'react';
 
 const onChange = (checkedValues: CheckboxValueType[]) => {

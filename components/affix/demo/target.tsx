@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Affix, Button } from 'antd';
+import { Affix, Button } from 'manyid';
 
 const App: React.FC = () => {
   const [container, setContainer] = useState<HTMLDivElement | null>(null);

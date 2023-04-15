@@ -1,10 +1,11 @@
 {
-  "name": "antd",
-  "version": "5.3.1",
+  "name": "manyid",
+  "version": "0.0.1-alpha.0",
   "description": "An enterprise-class UI design language and React components implementation",
-  "title": "Ant Design",
+  "title": "Manyi Design",
   "keywords": [
-    "ant",
+    "manyi",
+    "zhangmanyi",
     "component",
     "components",
     "design",
@@ -14,22 +15,15 @@
     "react-component",
     "ui"
   ],
-  "homepage": "https://ant.design",
+  "homepage": "https://gitee.com/manyi863412757/manyi-design.git",
   "bugs": {
-    "url": "https://github.com/ant-design/ant-design/issues"
+    "url": "https://gitee.com/manyi863412757/manyi-design/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ant-design/ant-design"
+    "url": "https://gitee.com/manyi863412757/manyi-design.git"
   },
   "license": "MIT",
-  "contributors": [
-    "ant"
-  ],
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/ant-design"
-  },
   "files": [
     "dist",
     "es",
@@ -41,7 +35,7 @@
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
-  "unpkg": "dist/antd.min.js",
+  "unpkg": "dist/manyid.min.js",
   "typings": "es/index.d.ts",
   "scripts": {
     "prepare": "husky install",
@@ -51,8 +45,8 @@
     "size-limit": "size-limit",
     "check-commit": "node ./scripts/check-commit",
     "check-ts-demo": "node ./scripts/check-ts-demo",
-    "clean": "antd-tools run clean && rm -rf es lib coverage dist report.html",
-    "clean-lockfiles": "rm -rf package-lock.json yarn.lock",
+    "clean": "antd-tools run clean && rimraf es lib coverage dist report.html",
+    "clean-lockfiles": "rimraf package-lock.json yarn.lock",
     "collect-token-statistic": "ts-node --project tsconfig.node.json scripts/collect-token-statistic.js",
     "token-meta": "node scripts/generate-token-meta.js",
     "prestart": "npm run version & npm run collect-token-statistic & npm run token-meta",
@@ -299,7 +293,7 @@
   },
   "size-limit": [
     {
-      "path": "./dist/antd.min.js",
+      "path": "./dist/manyid.min.js",
       "limit": "385 KiB"
     },
     {

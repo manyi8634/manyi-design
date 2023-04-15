@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimePicker } from 'antd';
+import { TimePicker } from 'manyid';
 
 const App: React.FC = () => <TimePicker.RangePicker />;
 

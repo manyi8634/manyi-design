@@ -1,5 +1,5 @@
 import React from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Layout, Menu, theme } from 'manyid';
 
 const { Header, Content, Footer } = Layout;
 
@@ -35,7 +35,7 @@ const App: React.FC = () => {
           Content
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
+      <Footer style={{ textAlign: 'center' }}>Manyi Design ©2023 Created by Ant UED</Footer>
     </Layout>
   );
 };

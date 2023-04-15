@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useSidebarData } from 'dumi';
-import { Col, ConfigProvider, Menu } from 'antd';
+import { Col, ConfigProvider, Menu } from 'manyid';
 import MobileMenu from 'rc-drawer';
 import { css } from '@emotion/react';
 import SiteContext from '../SiteContext';

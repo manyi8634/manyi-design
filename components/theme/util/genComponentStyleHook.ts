@@ -47,7 +47,7 @@ export default function genComponentStyleHook<ComponentName extends OverrideComp
     const { getPrefixCls, iconPrefixCls } = useContext(ConfigContext);
     const rootPrefixCls = getPrefixCls();
 
-    // Generate style for all a tags in antd component.
+    // Generate style for all a tags in manyid component.
     useStyleRegister({ theme, token, hashId, path: ['Shared', rootPrefixCls] }, () => [
       {
         // Link

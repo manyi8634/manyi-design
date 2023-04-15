@@ -364,7 +364,7 @@ Array [
   <span
     class="ant-typography"
   >
-    Ant Design
+    Manyi Design
     <div
       aria-label="Copy"
       class="ant-typography-copy"
@@ -1829,7 +1829,7 @@ exports[`renders components/input/demo/focus.tsx correctly 1`] = `
       class="ant-input"
       style="width:100%"
       type="text"
-      value="Ant Design love you!"
+      value="Manyi Design love you!"
     />
   </div>
 </div>

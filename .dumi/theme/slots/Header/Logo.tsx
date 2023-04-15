@@ -58,7 +58,7 @@ const Logo: React.FC<LogoProps> = ({ isZhCN }) => {
     <h1>
       <Link to={utils.getLocalizedPathname('/', isZhCN, search)} css={logo}>
         <img src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" alt="logo" />
-        <span css={title}>Ant Design</span>
+        <span css={title}>Manyi Design</span>
       </Link>
     </h1>
   );

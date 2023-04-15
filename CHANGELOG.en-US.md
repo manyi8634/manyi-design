@@ -5,7 +5,7 @@ toc: false
 timeline: true
 ---
 
-`antd` follows [Semantic Versioning 2.0.0](http://semver.org/).
+`manyid` follows [Semantic Versioning 2.0.0](http://semver.org/).
 
 #### Release Schedule
 
@@ -347,7 +347,7 @@ timeline: true
   - 🐞 Fix Menu.Submenu will flicker when use `createRoot` to render. [#38855](https://github.com/ant-design/ant-design/pull/38855) [@JarvisArt](https://github.com/JarvisArt)
   - 🛠 Refactor MenuItem to Function Component. [#38751](https://github.com/ant-design/ant-design/pull/38751)
   - 💄 Optimize Menu item style when selected. [#39439](https://github.com/ant-design/ant-design/pull/39439)
-- 🛠 LocaleProvider has been deprecated in 4.x (use `<ConfigProvider locale />` instead), we removed the related folder antd/es/locale-provider and antd/lib/locale-provider in 5.x. [#39373](https://github.com/ant-design/ant-design/pull/39373)
+- 🛠 LocaleProvider has been deprecated in 4.x (use `<ConfigProvider locale />` instead), we removed the related folder manyid/es/locale-provider and manyid/lib/locale-provider in 5.x. [#39373](https://github.com/ant-design/ant-design/pull/39373)
 - 🛠 Simplified lodash method introduction. [#39599](https://github.com/ant-design/ant-design/pull/39599) [#39602](https://github.com/ant-design/ant-design/pull/39602)
 - TypeScript
   - 🤖 Optimize Button DropDown Modal Popconfirm Select Transfer mouse event type definition. [#39533](https://github.com/ant-design/ant-design/pull/39533)
@@ -477,11 +477,11 @@ timeline: true
 
 `2022-11-18`
 
-🏆 Ant Design 5.0.0 is released, see our [release note](https://github.com/ant-design/ant-design/issues/38671) for more details.
+🏆 Manyi Design 5.0.0 is released, see our [release note](https://github.com/ant-design/ant-design/issues/38671) for more details.
 
 #### Read it before migration
 
-🌟 If you want to migrate to Ant Design 5.0, please check [V4 to V5](/docs/react/migration-v5).
+🌟 If you want to migrate to Manyi Design 5.0, please check [V4 to V5](/docs/react/migration-v5).
 
 #### Major Changes
 
@@ -522,9 +522,9 @@ timeline: true
   - 🆕 Support override Design Token for single component. [#37568](https://github.com/ant-design/ant-design/pull/37568)
 - 🆕 Add `locale` directory in package, which contains commonjs locale files. [#38194](https://github.com/ant-design/ant-design/pull/38194) [@chunsch](https://github.com/chunsch)
 - 🗑 Do not support IE browser anymore.
-- 🗑 Remove package `antd/lib`. [#36362](https://github.com/ant-design/ant-design/pull/36362)
-  - 🛠 Change `main` in `package.json` to `dist/antd.js`. [eb8835f](https://github.com/ant-design/ant-design/commit/eb8835fe29b39767c0f5e310f5c69619a75d5840)
-- 🗑 Remove `dist/antd.css`, and add `dist/reset.css` to override common styles. [#36224](https://github.com/ant-design/ant-design/pull/36224)
+- 🗑 Remove package `manyid/lib`. [#36362](https://github.com/ant-design/ant-design/pull/36362)
+  - 🛠 Change `main` in `package.json` to `dist/manyid.js`. [eb8835f](https://github.com/ant-design/ant-design/commit/eb8835fe29b39767c0f5e310f5c69619a75d5840)
+- 🗑 Remove `dist/manyid.css`, and add `dist/reset.css` to override common styles. [#36224](https://github.com/ant-design/ant-design/pull/36224)
 - 🗑 Deprecate `visible` and provide `open` instead in components below. [@yykoypj](https://github.com/yykoypj)
   - 🗑 Tag deprecate `visible`. [#36671](https://github.com/ant-design/ant-design/pull/36671)
   - 🗑 Table deprecate `filterDropdownVisible` and provide `filterDropdownOpen`. [#36747](https://github.com/ant-design/ant-design/pull/36747)

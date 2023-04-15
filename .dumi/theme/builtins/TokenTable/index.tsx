@@ -2,10 +2,10 @@ import type { FC } from 'react';
 import * as React from 'react';
 /* eslint import/no-unresolved: 0 */
 import { css } from '@emotion/react';
-import type { TableProps } from 'antd';
-import { Table } from 'antd';
+import type { TableProps } from 'manyid';
+import { Table } from 'manyid';
 import { getDesignToken } from 'antd-token-previewer';
-import tokenMeta from 'antd/es/version/token-meta.json';
+import tokenMeta from 'manyid/es/version/token-meta.json';
 import useLocale from '../../../hooks/useLocale';
 import useSiteToken from '../../../hooks/useSiteToken';
 import ColorChunk from '../ColorChunk';

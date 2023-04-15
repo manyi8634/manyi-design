@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DatePicker, Space } from 'antd';
+import { DatePicker, Space } from 'manyid';
 import type { Dayjs } from 'dayjs';
 
 const App: React.FC = () => {

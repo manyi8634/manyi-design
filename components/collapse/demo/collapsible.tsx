@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse, Space } from 'antd';
+import { Collapse, Space } from 'manyid';
 
 const { Panel } = Collapse;
 

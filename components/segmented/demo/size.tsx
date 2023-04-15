@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segmented, Space } from 'antd';
+import { Segmented, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space direction="vertical">

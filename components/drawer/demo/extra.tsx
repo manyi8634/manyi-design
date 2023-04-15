@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Button, Drawer, Radio, Space } from 'antd';
-import type { DrawerProps } from 'antd/es/drawer';
-import type { RadioChangeEvent } from 'antd/es/radio';
+import { Button, Drawer, Radio, Space } from 'manyid';
+import type { DrawerProps } from 'manyid/es/drawer';
+import type { RadioChangeEvent } from 'manyid/es/radio';
 
 const App: React.FC = () => {
   const [open, setOpen] = useState(false);

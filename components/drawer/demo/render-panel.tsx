@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer } from 'antd';
+import { Drawer } from 'manyid';
 
 /** Test usage. Do not use in your production. */
 const { _InternalPanelDoNotUseOrYouWillBeFired: InternalDrawer } = Drawer;

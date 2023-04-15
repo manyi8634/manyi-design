@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Select } from 'antd';
+import { Select } from 'manyid';
 
 const OPTIONS = ['Apples', 'Nails', 'Bananas', 'Helicopters'];
 

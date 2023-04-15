@@ -51,7 +51,7 @@ describe('notification static warning', () => {
     expect(document.querySelector('.light')).toBeTruthy();
 
     expect(errSpy).toHaveBeenCalledWith(
-      "Warning: [antd: notification] Static function can not consume context like dynamic theme. Please use 'App' component instead.",
+      "Warning: [manyid: notification] Static function can not consume context like dynamic theme. Please use 'App' component instead.",
     );
   });
 });

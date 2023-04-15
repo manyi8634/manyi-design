@@ -1,6 +1,6 @@
 import React from 'react';
 import { ClockCircleOutlined } from '@ant-design/icons';
-import { Avatar, Badge, Space } from 'antd';
+import { Avatar, Badge, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space size="middle">

@@ -574,7 +574,7 @@ describe('Table.pagination', () => {
     expect(container.querySelectorAll('tbody tr')).toHaveLength(5);
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Table] `dataSource` length is less than `pagination.total` but large than `pagination.pageSize`. Please make sure your config correct data with async mode.',
+      'Warning: [manyid: Table] `dataSource` length is less than `pagination.total` but large than `pagination.pageSize`. Please make sure your config correct data with async mode.',
     );
   });
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor } from 'antd';
+import { Anchor } from 'manyid';
 
 const App: React.FC = () => (
   <Anchor

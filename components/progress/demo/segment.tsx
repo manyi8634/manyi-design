@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress, Tooltip, Space } from 'antd';
+import { Progress, Tooltip, Space } from 'manyid';
 
 const App: React.FC = () => (
   <>

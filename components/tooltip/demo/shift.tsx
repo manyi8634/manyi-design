@@ -1,4 +1,4 @@
-import { Button, Tooltip } from 'antd';
+import { Button, Tooltip } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => {
@@ -18,7 +18,7 @@ const App: React.FC = () => {
           justifyContent: 'center',
         }}
       >
-        <Tooltip title="Thanks for using antd. Have a nice day!" open>
+        <Tooltip title="Thanks for using manyid. Have a nice day!" open>
           <Button>Scroll The Window</Button>
         </Tooltip>
       </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { UserOutlined } from '@ant-design/icons';
-import { AutoComplete, Input } from 'antd';
+import { AutoComplete, Input } from 'manyid';
 
 const renderTitle = (title: string) => (
   <span>
     {title}
     <a
       style={{ float: 'right' }}
-      href="https://www.google.com/search?q=antd"
+      href="https://www.google.com/search?q=manyid"
       target="_blank"
       rel="noopener noreferrer"
     >

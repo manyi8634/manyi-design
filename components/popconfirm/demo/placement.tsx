@@ -1,4 +1,4 @@
-import { Button, message, Popconfirm } from 'antd';
+import { Button, message, Popconfirm } from 'manyid';
 import React from 'react';
 
 const text = 'Are you sure to delete this task?';

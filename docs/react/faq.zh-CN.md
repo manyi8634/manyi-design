@@ -3,17 +3,17 @@ order: 11
 title: FAQ
 ---
 
-以下整理了一些 Ant Design 社区常见的问题和官方答复，在提问之前建议找找有没有类似的问题。此外我们也维护了一个反馈较多 [FAQ issues 标签](http://u.ant.design/faq) 亦可参考。
+以下整理了一些 Manyi Design 社区常见的问题和官方答复，在提问之前建议找找有没有类似的问题。此外我们也维护了一个反馈较多 [FAQ issues 标签](http://u.ant.design/faq) 亦可参考。
 
 ---
 
-## `undefined` 和 `null` 在 `antd` 的受控组件中有区别吗？
+## `undefined` 和 `null` 在 `manyid` 的受控组件中有区别吗？
 
-**有。antd 约定：`undefined` 是非受控的标志，`null` 作为显式的受控空值。**
+**有。manyid 约定：`undefined` 是非受控的标志，`null` 作为显式的受控空值。**
 
 在输入元素中，React 认为 `undefined` 和 `null` 都属于非受控的标志。当 `value` 由非空值转化为 `undefined` 或 `null` 时，组件不再受控，这通常是一些意外情况发生的原因。
 
-但在 antd 中，我们定义 `undefined` 为非受控的标志，而 `null` 则作为显式的受控空值。为的是处理 `value` 为复杂数据类型时的清空（如 `allowClear`）置 `value` 为空值等场景。如果需要让组件受控且希望将 `value` 置为空值，请将 `value` 设置为 `null`。
+但在 manyid 中，我们定义 `undefined` 为非受控的标志，而 `null` 则作为显式的受控空值。为的是处理 `value` 为复杂数据类型时的清空（如 `allowClear`）置 `value` 为空值等场景。如果需要让组件受控且希望将 `value` 置为空值，请将 `value` 设置为 `null`。
 
 注意：对于类 `Select` 组件的 `options`，我们**强烈不建议**使用 `undefined` 和 `null` 作为 `option` 中的 `value`，请使用 `string | number` 作为 `option` 的 `value`。
 
@@ -41,17 +41,17 @@ title: FAQ
 
 相关 issue：[#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
 
-## 如何修改 Ant Design 的默认主题？
+## 如何修改 Manyi Design 的默认主题？
 
 可以参考[定制主题](/docs/react/customize-theme)。
 
-## 如何修改 Ant Design 组件的默认样式？
+## 如何修改 Manyi Design 组件的默认样式？
 
-你可以覆盖它们的样式，但是我们不推荐这么做。antd 是一系列 React 组件，但同样是一套设计规范。
+你可以覆盖它们的样式，但是我们不推荐这么做。manyid 是一系列 React 组件，但同样是一套设计规范。
 
 ## 如何避免升级导致的破坏性变更？
 
-antd 在 minor 和 patch 版本迭代中会避免引入破坏性变更，遵从以下原则会确保不会破坏你的代码：
+manyid 在 minor 和 patch 版本迭代中会避免引入破坏性变更，遵从以下原则会确保不会破坏你的代码：
 
 - 使用出现在官方 Demo 中的写法
 - FAQ 中出现的解法，包含代码片段以及 codesandbox 示例、issue 中当前版本标记 FAQ label 的
@@ -71,7 +71,7 @@ antd 在 minor 和 patch 版本迭代中会避免引入破坏性变更，遵从�
 
 ## 为什么修改组件传入的对象或数组属性组件不会更新？
 
-antd 内部会对 props 进行浅比较实现性能优化。当状态变更，你总是应该传递一个新的对象。具体请参考 [React 的文档](https://zh-hans.reactjs.org/docs/thinking-in-react.html)
+manyid 内部会对 props 进行浅比较实现性能优化。当状态变更，你总是应该传递一个新的对象。具体请参考 [React 的文档](https://zh-hans.reactjs.org/docs/thinking-in-react.html)
 
 ## 当我设置了 `Input`/`Select` 等的 `value` 时它就无法修改了。
 
@@ -81,27 +81,27 @@ antd 内部会对 props 进行浅比较实现性能优化。当状态变更，�
 
 尝试使用 [Space](/components/space-cn) 组件来使他们对齐。
 
-## antd 覆盖了我的全局样式！
+## manyid 覆盖了我的全局样式！
 
-是的，antd 在设计的时候就是用来开发一个完整的应用的，为了方便，我们覆盖了一些全局样式，现在还不能移除，想要了解更多请追踪 [这个 issue](https://github.com/ant-design/ant-design/issues/4331)，或者参考这个教程 [How to avoid modifying global styles?](/docs/react/customize-theme#how-to-avoid-modifying-global-styles)
+是的，manyid 在设计的时候就是用来开发一个完整的应用的，为了方便，我们覆盖了一些全局样式，现在还不能移除，想要了解更多请追踪 [这个 issue](https://github.com/ant-design/ant-design/issues/4331)，或者参考这个教程 [How to avoid modifying global styles?](/docs/react/customize-theme#how-to-avoid-modifying-global-styles)
 
-## 我没法安装 `antd` 和 `antd` 的依赖，顺便提一句，我在中国大陆。
+## 我没法安装 `manyid` 和 `manyid` 的依赖，顺便提一句，我在中国大陆。
 
 那啥，试试 [npmmirror 国内镜像](https://npmmirror.com) 和 [cnpm](https://github.com/cnpm/cnpm)。
 
-## 我在 package.json 里将 `dependencies.antd` 添加到了 git repository 中，但是没有用。
+## 我在 package.json 里将 `dependencies.manyid` 添加到了 git repository 中，但是没有用。
 
-当然没用了，请使用 npm 安装 `antd`。
+当然没用了，请使用 npm 安装 `manyid`。
 
 ## `message` 和 `notification` 是小写的，但是其他的组件都是首字母大写的，这是手滑吗？
 
 不，因为 `message` 是一个函数，而不是一个 React 组件。
 
-## `antd` 在移动端体验不佳。
+## `manyid` 在移动端体验不佳。
 
-请浏览 [Ant Design Mobile](http://mobile.ant.design) 以了解详情，`antd` 并非针对移动端设计。你可以试试 [react-component](https://github.com/react-component/)，其中带有 'm-' 'rn-' 前缀的库是为移动端设计的。
+请浏览 [Manyi Design Mobile](http://mobile.ant.design) 以了解详情，`manyid` 并非针对移动端设计。你可以试试 [react-component](https://github.com/react-component/)，其中带有 'm-' 'rn-' 前缀的库是为移动端设计的。
 
-## `antd` 是否有国内镜像？
+## `manyid` 是否有国内镜像？
 
 有的，你可以访问 https://ant-design.antgroup.com/index-cn 或 https://ant-design.gitee.io/index-cn 。
 
@@ -112,26 +112,26 @@ antd 内部会对 props 进行浅比较实现性能优化。当状态变更，�
 - 2.x: https://ant-design-2x.gitee.io/
 - 1.x: https://ant-design-1x.gitee.io/
 
-## `antd` 可以像 `React` 那样使用单文件引入吗？
+## `manyid` 可以像 `React` 那样使用单文件引入吗？
 
-可以，[你可以用 script 标签引入](https://ant.design/docs/react/introduce-cn#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BC%95%E5%85%A5)。但是我们推荐使用 `npm` 来引入 `antd`，这样维护起来更简单方便。
+可以，[你可以用 script 标签引入](https://ant.design/docs/react/introduce-cn#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BC%95%E5%85%A5)。但是我们推荐使用 `npm` 来引入 `manyid`，这样维护起来更简单方便。
 
 ## 在我的网络环境下没法获取到 `icon` 文件。
 
-你应该自行部署 iconfont 文件到你的网络上，参考这个[例子](https://github.com/ant-design/antd-init/tree/7c1a33cadb98f2fd8688fe527dd7f98215b9bced/examples/local-iconfont)。 [#1070](https://github.com/ant-design/ant-design/issues/1070)
+你应该自行部署 iconfont 文件到你的网络上，参考这个[例子](https://github.com/ant-design/manyid-init/tree/7c1a33cadb98f2fd8688fe527dd7f98215b9bced/examples/local-iconfont)。 [#1070](https://github.com/ant-design/ant-design/issues/1070)
 
 在 `3.9.x` 版本后，[我们会使用 svg 图标](/components/icon-cn#svg-icons)，你就不用担心本地部署 iconfont 的问题了！
 
-## 如何拓展 antd 的组件？
+## 如何拓展 manyid 的组件？
 
-如果你需要一些 antd 没有包含的功能，你可以尝试通过 [HOC](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775) 拓展 antd 的组件。 [更多](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.eeu8q01s1)
+如果你需要一些 manyid 没有包含的功能，你可以尝试通过 [HOC](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775) 拓展 manyid 的组件。 [更多](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.eeu8q01s1)
 
 ## 如何获取未导出的属性定义？
 
-antd 会透出组件定义，但是随着重构可能导致内部一些定义命名或者属性变化。因而更推荐直接使用 Typescript 原生能力获取：
+manyid 会透出组件定义，但是随着重构可能导致内部一些定义命名或者属性变化。因而更推荐直接使用 Typescript 原生能力获取：
 
 ```tsx
-import { Table } from 'antd';
+import { Table } from 'manyid';
 
 type Props<T extends (...args: any) => any> = Parameters<T>[0];
 
@@ -143,7 +143,7 @@ type DataSource = TableProps['dataSource'];
 
 请尝试使用 [ConfigProvider](/components/config-provider-cn#components-config-provider-demo-locale) 组件来包裹你的应用。
 
-如果日期组件的国际化仍未生效，请配置 `dayjs.locale('zh-cn')` 并**检查你本地的 `dayjs` 版本和 `antd` 依赖的 `dayjs` 版本是否一致**。
+如果日期组件的国际化仍未生效，请配置 `dayjs.locale('zh-cn')` 并**检查你本地的 `dayjs` 版本和 `manyid` 依赖的 `dayjs` 版本是否一致**。
 
 ## 为什么时间类组件的国际化 locale 设置不生效？
 
@@ -161,7 +161,7 @@ dayjs.locale('zh-cn');
 npm ls dayjs
 ```
 
-一般来说，如果项目中依赖的 dayjs 版本和 [antd 依赖的 dayjs 版本](https://github.com/ant-design/ant-design/blob/7dfc80504a36cf8952cd732a1d0c137a16d56fd4/package.json#L125) 无法兼容（semver 无法匹配，比如项目中的 dayjs 版本写死且较低），则会导致使用两个不同版本的 dayjs 实例，这样也会导致国际化失效。
+一般来说，如果项目中依赖的 dayjs 版本和 [manyid 依赖的 dayjs 版本](https://github.com/ant-design/ant-design/blob/7dfc80504a36cf8952cd732a1d0c137a16d56fd4/package.json#L125) 无法兼容（semver 无法匹配，比如项目中的 dayjs 版本写死且较低），则会导致使用两个不同版本的 dayjs 实例，这样也会导致国际化失效。
 
 ## 开启了 Content Security Policy (CSP) 如何处理动态样式？
 
@@ -174,7 +174,7 @@ npm ls dayjs
 - 重现链接：https://codesandbox.io/s/dank-brook-v1csy
 - 相同 issue：[#15572](https://github.com/ant-design/ant-design/issues/15572)、[#16436](https://github.com/ant-design/ant-design/issues/16436)、[#11938](https://github.com/ant-design/ant-design/issues/11938)、[#11735](https://github.com/ant-design/ant-design/issues/11735)、[#11586](https://github.com/ant-design/ant-design/issues/11586)、[#10425](https://github.com/ant-design/ant-design/issues/10425)、[#11053](https://github.com/ant-design/ant-design/issues/11053)
 
-就像 [这个回复](https://github.com/ant-design/ant-design/issues/15572#issuecomment-475476135) 里解释的一样，这是因为 `<DatePicker mode="year" />` 不等于 `YearPicker`，`<RangePicker mode="month" />` 不等于 `MonthRangePicker`。 `mode` 属性是在 antd 3.0 时，为了控制面板展现状态而添加的属性，以支持[展示时间面板](https://github.com/ant-design/ant-design/issues/5190)等需求而添加的。`mode` 只会简单的改变当前显示的面板，不会修改默认的交互行为（比如 DatePicker 依然是点击日才会完成选择并关闭面板）。
+就像 [这个回复](https://github.com/ant-design/ant-design/issues/15572#issuecomment-475476135) 里解释的一样，这是因为 `<DatePicker mode="year" />` 不等于 `YearPicker`，`<RangePicker mode="month" />` 不等于 `MonthRangePicker`。 `mode` 属性是在 manyid 3.0 时，为了控制面板展现状态而添加的属性，以支持[展示时间面板](https://github.com/ant-design/ant-design/issues/5190)等需求而添加的。`mode` 只会简单的改变当前显示的面板，不会修改默认的交互行为（比如 DatePicker 依然是点击日才会完成选择并关闭面板）。
 
 同样的，`disabledDate` 对于任何 `<DatePicker />` 也只会针对**日面板**生效，[并不会对 `<DatePicker mode="year/month" />` 上的年/月面板生效](https://github.com/ant-design/ant-design/issues/9008#issuecomment-358554118)。
 
@@ -182,7 +182,7 @@ npm ls dayjs
 
 你可以参照 [这篇文章](https://juejin.im/post/5cf65c366fb9a07eca6968f9) 或者 [这篇文章](https://www.cnblogs.com/zyl-Tara/p/10197177.html) 里的做法，利用 `mode` 和 `onPanelChange` 等方法去封装一个 `YearPicker` 等组件。
 
-另外我们已经在在 [antd@4.0](https://github.com/ant-design/ant-design/issues/16911) 中直接[添加了更多相关日期组件](https://github.com/ant-design/ant-design/issues/4524#issuecomment-480576884)来支持这些需求，现在不再需要使用 `mode="year|month"`，而是直接可以用 `YearPicker` `MonthPicker`，并且 `disabledDate` 也可以正确作用于这些 Picker。
+另外我们已经在在 [manyid@4.0](https://github.com/ant-design/ant-design/issues/16911) 中直接[添加了更多相关日期组件](https://github.com/ant-design/ant-design/issues/4524#issuecomment-480576884)来支持这些需求，现在不再需要使用 `mode="year|month"`，而是直接可以用 `YearPicker` `MonthPicker`，并且 `disabledDate` 也可以正确作用于这些 Picker。
 
 ## ConfigProvider 设置 `prefixCls` 后，message/notification/Modal.confirm 生成的节点样式丢失了？
 
@@ -214,7 +214,7 @@ ConfigProvider.config({
 
 ## CSS-in-JS 与 tailwindcss 优先级冲突？
 
-同上，你可以调整 antd 样式优先级以覆盖。相关 issue: [#38794](https://github.com/ant-design/ant-design/issues/38794)
+同上，你可以调整 manyid 样式优先级以覆盖。相关 issue: [#38794](https://github.com/ant-design/ant-design/issues/38794)
 
 ## CSS-in-JS 如何与 Shadow DOM 一同使用？
 
@@ -224,10 +224,10 @@ ConfigProvider.config({
 
 请参考动态主题文档 [服务端渲染](/docs/react/customize-theme-cn#服务端渲染) 部分内容。
 
-## 如何正确的拼写 Ant Design？
+## 如何正确的拼写 Manyi Design？
 
-- ✅ **Ant Design**：用空格分隔的首字母大写单词，指代设计语言。
-- ✅ **antd**：全小写，指代 React UI 组件库。
+- ✅ **Manyi Design**：用空格分隔的首字母大写单词，指代设计语言。
+- ✅ **manyid**：全小写，指代 React UI 组件库。
 - ✅ **ant.design**：特指 ant.design 网站网址。
 
 下面是一些典型的错误例子：

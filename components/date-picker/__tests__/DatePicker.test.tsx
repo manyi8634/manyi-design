@@ -282,7 +282,7 @@ describe('DatePicker', () => {
     const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     const { container } = render(<DatePicker dropdownClassName="legacy" open />);
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: DatePicker] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
+      'Warning: [manyid: DatePicker] `dropdownClassName` is deprecated. Please use `popupClassName` instead.',
     );
     expect(container.querySelector('.legacy')).toBeTruthy();
 

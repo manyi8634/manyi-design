@@ -11,7 +11,7 @@ import {
   MailOutlined,
   MobileOutlined,
 } from '@ant-design/icons';
-import { Button, Menu, Dropdown, Space, Tooltip } from 'antd';
+import { Button, Menu, Dropdown, Space, Tooltip } from 'manyid';
 
 const App: React.FC = () => (
   <div>

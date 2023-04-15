@@ -374,7 +374,7 @@ describe('Table.filter', () => {
     expect(onFilterDropdownVisibleChange).toHaveBeenCalledWith(true);
 
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Table] `onFilterDropdownVisibleChange` is deprecated. Please use `onFilterDropdownOpenChange` instead.',
+      'Warning: [manyid: Table] `onFilterDropdownVisibleChange` is deprecated. Please use `onFilterDropdownOpenChange` instead.',
     );
 
     errSpy.mockRestore();
@@ -2613,7 +2613,7 @@ describe('Table.filter', () => {
         } as TableProps<any>),
       );
       expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Table] Columns should all contain `filteredValue` or not contain `filteredValue`.',
+        'Warning: [manyid: Table] Columns should all contain `filteredValue` or not contain `filteredValue`.',
       );
     });
 

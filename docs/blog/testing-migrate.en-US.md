@@ -1,16 +1,16 @@
 ---
-title: about antd test library migration
+title: about manyid test library migration
 date: 2022-12-20
 author: li-jia-nan,zombieJ
 ---
 
-Hello, I am **[@li-jia-nan](https://github.com/li-jia-nan)**. It is also a new Collaborator who joined antd in the past few months. Fortunately, as one of the Collaborators, I developed the **[FloatButton component](/components/float-button)** and **[QRCode component](/components/qrcode)**, as well as some other maintenance work. Let me share the migration of the antd test library son~
+Hello, I am **[@li-jia-nan](https://github.com/li-jia-nan)**. It is also a new Collaborator who joined manyid in the past few months. Fortunately, as one of the Collaborators, I developed the **[FloatButton component](/components/float-button)** and **[QRCode component](/components/qrcode)**, as well as some other maintenance work. Let me share the migration of the manyid test library son~
 
 ## introduction
 
-In `antd@4.x`, **[enzyme](https://enzymejs.github.io/enzyme)** is used as the test framework. However, due to the lack of maintenance of enzyme, it is difficult to support it in the React 18 era . Therefore, I had to start a long **[@testing-lib](https://testing-library.com/docs/react-testing-library/intro)** migration road for antd.
+In `manyid@4.x`, **[enzyme](https://enzymejs.github.io/enzyme)** is used as the test framework. However, due to the lack of maintenance of enzyme, it is difficult to support it in the React 18 era . Therefore, I had to start a long **[@testing-lib](https://testing-library.com/docs/react-testing-library/intro)** migration road for manyid.
 
-During the migration process, I undertook about a quarter of the workload of antd. Here I mainly record the problems encountered during the migration process.
+During the migration process, I undertook about a quarter of the workload of manyid. Here I mainly record the problems encountered during the migration process.
 
 > Thanks for the time [@zombieJ](https://github.com/zombieJ) [@MadCcc](https://github.com/MadCcc) [@miracles1919](https://github.com/miracles1919) for help.
 
@@ -40,7 +40,7 @@ Of course, this is only one of the reasons to drop `enzyme`. More importantly it
 
 - mount: Fully rendered, it loads component rendering into a real DOM node to test the interaction of DOM API and the life cycle of components, and uses jsdom to simulate the browser environment.
 
-In order to be close to the real scene of the browser, `antd@4.x` uses `mount` for rendering, and the corresponding `render` method in `@testing-library`:
+In order to be close to the real scene of the browser, `manyid@4.x` uses `mount` for rendering, and the corresponding `render` method in `@testing-library`:
 
 ```diff
 --  import { mount } from 'enzyme';
@@ -94,7 +94,7 @@ In `testing-library`, these APIs are not provided (as mentioned above - `testing
 
 ### 4. compatibility test
 
-While the major version is being upgraded, some components are discarded, but they are not removed in antd. For example, the BackTop component needs to add warning to the component to ensure compatibility, so it is also necessary to write a special unit test for warning:
+While the major version is being upgraded, some components are discarded, but they are not removed in manyid. For example, the BackTop component needs to add warning to the component to ensure compatibility, so it is also necessary to write a special unit test for warning:
 
 ```diff
     describe('BackTop', () => {
@@ -102,7 +102,7 @@ While the major version is being upgraded, some components are discarded, but th
 ++        const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
 ++        render(<BackTop />);
 ++        expect(errSpy).toHaveBeenCalledWith(
-++          'Warning: [antd: BackTop] `BackTop` is deprecated, please use `FloatButton.BackTop` instead.',
+++          'Warning: [manyid: BackTop] `BackTop` is deprecated, please use `FloatButton.BackTop` instead.',
 ++        );
 ++      errSpy.mockRestore();
 ++    });
@@ -260,7 +260,7 @@ Antd needs to test React16, 17, and 18. If snapshot is not feasible, it will cau
 ```ts
 expect.addSnapshotSerializer({
   // Determine whether it is a dom element, if yes, go to our own serialization logic
-  // The code has been simplified, more logic is needed for real judgment, you can refer to setupAfterEnv.ts of antd
+  // The code has been simplified, more logic is needed for real judgment, you can refer to setupAfterEnv.ts of manyid
   test: (element) => element instanceof HTMLElement,
   // ...
 });
@@ -288,4 +288,4 @@ expect.addSnapshotSerializer({
 
 ## knock off
 
-The above are some problems encountered during the migration of the antd test framework. I hope to help students who need to migrate or have not yet started writing test cases. Everyone is also welcome to join the antd community and contribute to open source together.
+The above are some problems encountered during the migration of the manyid test framework. I hope to help students who need to migrate or have not yet started writing test cases. Everyone is also welcome to join the manyid community and contribute to open source together.

@@ -1,4 +1,4 @@
-import { Button, Space, Tooltip } from 'antd';
+import { Button, Space, Tooltip } from 'manyid';
 import React from 'react';
 
 const App: React.FC = () => (

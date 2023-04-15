@@ -3,17 +3,17 @@ order: 11
 title: FAQ
 ---
 
-Here are the frequently asked questions about Ant Design and antd that you should look up before you ask in the community or create a new issue. We also maintain a [FAQ issues label](http://u.ant.design/faq) for common github issues.
+Here are the frequently asked questions about Manyi Design and manyid that you should look up before you ask in the community or create a new issue. We also maintain a [FAQ issues label](http://u.ant.design/faq) for common github issues.
 
 ---
 
-## Is there a difference between `undefined` and `null` in the controlled components of `antd`?
+## Is there a difference between `undefined` and `null` in the controlled components of `manyid`?
 
-**Yes. antd will treat `undefined` as uncontrolled but `null` as controlled component which means empty value of it.**
+**Yes. manyid will treat `undefined` as uncontrolled but `null` as controlled component which means empty value of it.**
 
 As input element, React treats both `undefined` and `null` as uncontrolled. When the `value` is converted from a valid value to `undefined` or `null`, the component is no longer controlled, which causes some unexpected cases.
 
-But in antd, `undefined` is treated as uncontrolled, and `null` is used as an explicit empty value of controlled components. To deal with some cases (e.g. `allowClear`) like clearing the `value` when the `value` is non-primitive. If you need a component controlled with the `value` valid, just set the `value` as `null`.
+But in manyid, `undefined` is treated as uncontrolled, and `null` is used as an explicit empty value of controlled components. To deal with some cases (e.g. `allowClear`) like clearing the `value` when the `value` is non-primitive. If you need a component controlled with the `value` valid, just set the `value` as `null`.
 
 Note: For `options` in `Select-like` components, it is **strongly recommended not** to use `undefined` and `null` as `value` in `option`. Please use `string | number` as a valid `value` in `option`.
 
@@ -41,17 +41,17 @@ And make sure that parentElement is `position: relative` or `position: absolute`
 
 Related issue: [#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
 
-## How do I modify the default theme of Ant Design?
+## How do I modify the default theme of Manyi Design?
 
 See: https://ant.design/docs/react/customize-theme .
 
 ## How do I modify `Menu`/`Button`(etc.)'s style?
 
-While you can override a component's style, we don't recommend doing so. antd is not only a set of React components, but also a design specification as well.
+While you can override a component's style, we don't recommend doing so. manyid is not only a set of React components, but also a design specification as well.
 
 ## How to avoid breaking change when update version?
 
-antd will avoid breaking change in minor & patch version. You can safe do follow things:
+manyid will avoid breaking change in minor & patch version. You can safe do follow things:
 
 - Official demo usage
 - FAQ suggestion. Including codesandbox sample, marked as FAQ issue
@@ -71,7 +71,7 @@ The `defaultXxxx` (e.g. `defaultValue`) of `Input`/`Select`(etc...) only works o
 
 ## Why does modifying props in mutable way not trigger a component update?
 
-antd use shallow compare of props to optimize performance. You should always pass the new object when updating the state. Please ref [React's document](https://reactjs.org/docs/thinking-in-react.html)
+manyid use shallow compare of props to optimize performance. You should always pass the new object when updating the state. Please ref [React's document](https://reactjs.org/docs/thinking-in-react.html)
 
 ## After I set the `value` of an `Input`/`Select`(etc.) component, the value cannot be changed by user's action.
 
@@ -81,42 +81,42 @@ Try `onChange` to change `value`, and please read [React's documentation](https:
 
 Try [Space](https://ant.design/components/space/) component to make them aligned.
 
-## antd overrides my global styles
+## manyid overrides my global styles
 
-Yes, antd is designed to help you develop a complete background application. To do so, we override some global styles for styling convenience, and currently these cannot be removed or changed. More info at https://github.com/ant-design/ant-design/issues/4331 .
+Yes, manyid is designed to help you develop a complete background application. To do so, we override some global styles for styling convenience, and currently these cannot be removed or changed. More info at https://github.com/ant-design/ant-design/issues/4331 .
 
 Alternatively, follow the instructions in [How to avoid modifying global styles?](/docs/react/customize-theme#how-to-avoid-modifying-global-styles)
 
-## I cannot install `antd` and `antd`'s dependencies in mainland China.
+## I cannot install `manyid` and `manyid`'s dependencies in mainland China.
 
 To potentially solve this, try [npm mirror china](https://npmmirror.com) and [cnpm](https://github.com/cnpm/cnpm).
 
-## I set `dependencies.antd` as the git repository in `package.json`, but it doesn't work.
+## I set `dependencies.manyid` as the git repository in `package.json`, but it doesn't work.
 
-Please install `antd` with either npm or yarn.
+Please install `manyid` with either npm or yarn.
 
 ## `message` and `notification` is lower case, but other components are capitalized. Is this a typo?
 
 No, `message` is just a function, not a React Component, thus it is not a typo that it is in lower case.
 
-## `antd` doesn't work well in mobile.
+## `manyid` doesn't work well in mobile.
 
-Please check [Ant Design Mobile](http://mobile.ant.design) as a possible solution, as `antd` has not been optimized to work well on mobile. You can also try the [react-component](https://github.com/react-component/) repositories which start with 'm-' 'rn-', which are also designed for mobile.
+Please check [Manyi Design Mobile](http://mobile.ant.design) as a possible solution, as `manyid` has not been optimized to work well on mobile. You can also try the [react-component](https://github.com/react-component/) repositories which start with 'm-' 'rn-', which are also designed for mobile.
 
-## Does `antd` supply standalone files like 'React'?
+## Does `manyid` supply standalone files like 'React'?
 
-Yes, you can [import `antd` with script tag](https://ant.design/docs/react/introduce#import-in-browser), but we recommend using `npm` to import `antd`, as it is simple and easy to maintain.
+Yes, you can [import `manyid` with script tag](https://ant.design/docs/react/introduce#import-in-browser), but we recommend using `npm` to import `manyid`, as it is simple and easy to maintain.
 
-## How do I extend antd's components?
+## How do I extend manyid's components?
 
-If you need some features which should not be included in antd, try to extend antd's component with [HOC](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775). [more](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.eeu8q01s1)
+If you need some features which should not be included in manyid, try to extend manyid's component with [HOC](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775). [more](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.eeu8q01s1)
 
 ## How to get the definition which is not export?
 
-antd 会透出组件定义，但是随着重构可能导致内部一些定义命名或者属性变化。因而更推荐直接使用 Typescript 原生能力获取： antd will export mainly definitions, but not export internal definitions which may be rename or changed. So we recommend you to use Typescript's native ability to get the definition if needed:
+manyid 会透出组件定义，但是随着重构可能导致内部一些定义命名或者属性变化。因而更推荐直接使用 Typescript 原生能力获取： manyid will export mainly definitions, but not export internal definitions which may be rename or changed. So we recommend you to use Typescript's native ability to get the definition if needed:
 
 ```tsx
-import { Table } from 'antd';
+import { Table } from 'manyid';
 
 type Props<T extends (...args: any) => any> = Parameters<T>[0];
 
@@ -140,7 +140,7 @@ Please check whether there are two versions of dayjs installed.
 npm ls dayjs
 ```
 
-If you are using a mismatched version of dayjs with [antd's dayjs](https://github.com/ant-design/ant-design/blob/7dfc80504a36cf8952cd732a1d0c137a16d56fd4/package.json#L125) in your project. That would be a problem cause locale not working.
+If you are using a mismatched version of dayjs with [manyid's dayjs](https://github.com/ant-design/ant-design/blob/7dfc80504a36cf8952cd732a1d0c137a16d56fd4/package.json#L125) in your project. That would be a problem cause locale not working.
 
 ## How do I fix dynamic styles while using a Content Security Policy (CSP)?
 
@@ -153,7 +153,7 @@ In a real world development, you may need a `YearPicker`, `MonthRangePicker` or 
 - Reproduction link: https://codesandbox.io/s/dank-brook-v1csy
 - Same issues：[#15572](https://github.com/ant-design/ant-design/issues/15572), [#16436](https://github.com/ant-design/ant-design/issues/16436), [#11938](https://github.com/ant-design/ant-design/issues/11938), [#11735](https://github.com/ant-design/ant-design/issues/11735), [#11586](https://github.com/ant-design/ant-design/issues/11586), [#10425](https://github.com/ant-design/ant-design/issues/10425), [#11053](https://github.com/ant-design/ant-design/issues/11053)
 
-Like [the explanation](https://github.com/ant-design/ant-design/issues/11586#issuecomment-429189877) explains, this is because `<DatePicker mode="year" />` does not equal the `YearPicker`, nor is `<RangePicker mode="month" />` equal to `MonthRangePicker`. The `mode` property was added to support [showing time picker panel in DatePicker](https://github.com/ant-design/ant-design/issues/5190) in antd 3.0, which simply controls the displayed panel, and won't change the original date picking behavior of `DatePicker`/`RangePicker` (for instance you will still need to click date cell to finish selection in a `DatePicker`, whatever the `mode` is).
+Like [the explanation](https://github.com/ant-design/ant-design/issues/11586#issuecomment-429189877) explains, this is because `<DatePicker mode="year" />` does not equal the `YearPicker`, nor is `<RangePicker mode="month" />` equal to `MonthRangePicker`. The `mode` property was added to support [showing time picker panel in DatePicker](https://github.com/ant-design/ant-design/issues/5190) in manyid 3.0, which simply controls the displayed panel, and won't change the original date picking behavior of `DatePicker`/`RangePicker` (for instance you will still need to click date cell to finish selection in a `DatePicker`, whatever the `mode` is).
 
 Likewise，`disabledDate` [cannot work on year/month panels](https://github.com/ant-design/ant-design/issues/9008#issuecomment-358554118) of `<DatePicker mode="year/month" />`, but only on cells of date panel.
 
@@ -161,7 +161,7 @@ Likewise，`disabledDate` [cannot work on year/month panels](https://github.com/
 
 You can refer to [this article](https://juejin.im/post/5cf65c366fb9a07eca6968f9) or [this article](https://www.cnblogs.com/zyl-Tara/p/10197177.html), using `mode` and `onPanelChange` to encapsulate a `YearPicker` or `MonthRangePicker` for your needs.
 
-Or you can simply upgrade to [antd@4.0](https://github.com/ant-design/ant-design/issues/16911), in which we [added more XxxPickers](https://github.com/ant-design/ant-design/issues/4524#issuecomment-480576884) to meet those requirements, and `disabledDate` could be effect on those pickers too.
+Or you can simply upgrade to [manyid@4.0](https://github.com/ant-design/ant-design/issues/16911), in which we [added more XxxPickers](https://github.com/ant-design/ant-design/issues/4524#issuecomment-480576884) to meet those requirements, and `disabledDate` could be effect on those pickers too.
 
 ## message/notification/Modal.confirm lost styles when set `prefixCls` on ConfigProvider?
 
@@ -193,7 +193,7 @@ Please ref dynamic theme document [Compatible Adjustment](/docs/react/customize-
 
 ## CSS-in-JS css priority conflict with tailwindcss?
 
-Same as above. You can adjust antd css priority to override. Related issue: [#38794](https://github.com/ant-design/ant-design/issues/38794)
+Same as above. You can adjust manyid css priority to override. Related issue: [#38794](https://github.com/ant-design/ant-design/issues/38794)
 
 ## How to let CSS-in-JS work with shadow DOM?
 
@@ -203,10 +203,10 @@ Please ref document [Shadow Dom Usage](/docs/react/customize-theme#shadow-dom-us
 
 Please ref dynamic theme document [SSR](/docs/react/customize-theme#server-side-render-ssr) part.
 
-## How to spell Ant Design correctly?
+## How to spell Manyi Design correctly?
 
-- ✅ **Ant Design**: Capitalized with space, for the design language.
-- ✅ **antd**: all lowercase, for the React UI library.
+- ✅ **Manyi Design**: Capitalized with space, for the design language.
+- ✅ **manyid**: all lowercase, for the React UI library.
 - ✅ **ant.design**：For ant.design website url.
 
 Here are some typical wrong examples:

@@ -10,7 +10,7 @@ author: zombieJ
 
 Tooltip 默认添加至 `body` 上，在全屏滚动时它会随着一起滚动。但是当 Tooltip 的目标元素放置在滚动容器中，则因为滚动容器不同而出现不会跟随滚动的情况：
 
-[<img height="300" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*IkOIQK69T5gAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-antd-5-2-0-forked-mo31wr?file=/demo.tsx)
+[<img height="300" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*IkOIQK69T5gAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-manyid-5-2-0-forked-mo31wr?file=/demo.tsx)
 
 我们集中在 FAQ 提供了 `getPopupContainer` 的方式，让开发者将弹出元素通过该方法插入到目标元素的父级容器中，从而解决这个问题。但是这个方案并不完美，因为它需要开发者自己去判断目标元素的父级容器中哪个是滚动容器。在多层封装的组件中，可能使用 Tooltip 的组件与其滚动的组件并不是同一个，这使得设置目标滚动容器并不容易。
 
@@ -18,7 +18,7 @@ Tooltip 默认添加至 `body` 上，在全屏滚动时它会随着一起滚动�
 
 Tooltip 支持在滚动范围内贴边展示。但是由于弹出层是整体，使得居中的箭头在偏移后无法指向目标位置：
 
-[<img height="160" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*E3RmTZG3vhQAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-antd-5-2-0-forked-z6frnr?file=/demo.tsx)
+[<img height="160" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*E3RmTZG3vhQAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-manyid-5-2-0-forked-z6frnr?file=/demo.tsx)
 
 我们会推荐使用 `placement` 属性，配置 `topLeft` 让弹出层靠左对齐来解决这个问题：
 
@@ -32,11 +32,11 @@ Tooltip 对齐底层使用 `dom-align` 库，它会直接为 dom 节点添加 `l
 
 `dom-align` 通过遍历父层节点累加计算出目标元素和弹出层各自的坐标位置，接着根据对齐规则计算差值。当父层节点有 `transform` 样式时，会导致计算出的坐标位置不准确，从而导致对齐不正确：
 
-[<img height="200" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*CVysTIq-y6UAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-antd-5-2-0-forked-znqgc6?file=/demo.tsx)
+[<img height="200" src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*CVysTIq-y6UAAAAAAAAAAAAADrJ8AQ/original" />](https://codesandbox.io/s/ji-ben-manyid-5-2-0-forked-znqgc6?file=/demo.tsx)
 
 ## 新的对齐方式
 
-以上问题如滚动、贴边可以使用一些方式规避，而缩放问题则无法解决。我们希望这些问题可以由 antd 底层来解，而不是由开发者自己去处理。为此，我们重写了 `@rc-component/trigger` 组件，将对齐逻辑和箭头逻辑整合在一起。不再依赖 `rc-align` 以及 `dom-align`。同时使用新的计算方式避免 `transform` 样式导致的计算问题。
+以上问题如滚动、贴边可以使用一些方式规避，而缩放问题则无法解决。我们希望这些问题可以由 manyid 底层来解，而不是由开发者自己去处理。为此，我们重写了 `@rc-component/trigger` 组件，将对齐逻辑和箭头逻辑整合在一起。不再依赖 `rc-align` 以及 `dom-align`。同时使用新的计算方式避免 `transform` 样式导致的计算问题。
 
 ### 位置计算
 

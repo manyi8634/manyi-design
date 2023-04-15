@@ -5,8 +5,8 @@ import {
   parentSelectorLinter,
   StyleProvider,
 } from '@ant-design/cssinjs';
-import { ConfigProvider, theme as antdTheme, App } from 'antd';
-import type { DirectionType } from 'antd/es/config-provider';
+import { ConfigProvider, theme as antdTheme, App } from 'manyid';
+import type { DirectionType } from 'manyid/es/config-provider';
 import { createSearchParams, useOutlet, useSearchParams } from 'dumi';
 import React, { startTransition, useCallback, useEffect, useMemo } from 'react';
 import useLocation from '../../hooks/useLocation';

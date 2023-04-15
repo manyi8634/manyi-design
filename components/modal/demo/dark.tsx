@@ -18,7 +18,7 @@ import {
   Switch,
   Typography,
   Dropdown,
-} from 'antd';
+} from 'manyid';
 import difference from 'lodash/difference';
 import { DownOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';

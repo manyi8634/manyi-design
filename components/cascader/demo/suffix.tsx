@@ -1,6 +1,6 @@
 import React from 'react';
 import { SmileOutlined } from '@ant-design/icons';
-import { Cascader } from 'antd';
+import { Cascader } from 'manyid';
 
 interface Option {
   value: string;

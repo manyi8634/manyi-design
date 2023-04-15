@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Tabs } from 'antd';
+import { Tabs } from 'manyid';
 import throttle from 'lodash/throttle';
 import * as React from 'react';
 import scrollTo from '../../../../components/_util/scrollTo';

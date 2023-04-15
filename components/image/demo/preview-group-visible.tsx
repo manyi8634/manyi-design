@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image } from 'antd';
+import { Image } from 'manyid';
 
 const App: React.FC = () => {
   const [visible, setVisible] = useState(false);

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { DownOutlined } from '@ant-design/icons';
-import type { RadioChangeEvent } from 'antd';
-import { Form, Radio, Space, Switch, Table } from 'antd';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
-import type { ColumnsType, TableProps } from 'antd/es/table';
-import type { ExpandableConfig, TableRowSelection } from 'antd/es/table/interface';
+import type { RadioChangeEvent } from 'manyid';
+import { Form, Radio, Space, Switch, Table } from 'manyid';
+import type { SizeType } from 'manyid/es/config-provider/SizeContext';
+import type { ColumnsType, TableProps } from 'manyid/es/table';
+import type { ExpandableConfig, TableRowSelection } from 'manyid/es/table/interface';
 
 interface DataType {
   key: number;

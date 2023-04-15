@@ -280,7 +280,7 @@ describe('Sider', () => {
       </Sider>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Menu] `inlineCollapsed` not control Menu under Sider. Should set `collapsed` on Sider instead.',
+      'Warning: [manyid: Menu] `inlineCollapsed` not control Menu under Sider. Should set `collapsed` on Sider instead.',
     );
   });
 

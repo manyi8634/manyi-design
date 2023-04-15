@@ -10,7 +10,7 @@ A versatile menu for navigation.
 
 ## When To Use
 
-Navigation is an important part of any website, as a good navigation setup allows users to move around the site quickly and efficiently. Ant Design offers two navigation options: top and side. Top navigation provides all the categories and functions of the website. Side navigation provides the multi-level structure of the website.
+Navigation is an important part of any website, as a good navigation setup allows users to move around the site quickly and efficiently. Manyi Design offers two navigation options: top and side. Top navigation provides all the categories and functions of the website. Side navigation provides the multi-level structure of the website.
 
 More layouts with navigation: [Layout](/components/layout).
 
@@ -134,7 +134,7 @@ Menu collects structure info with [twice-render](https://github.com/react-compon
 
 ### Why Menu do not responsive collapse in Flex layout?
 
-Menu will render fully item in flex layout and then collapse it. You need tell flex not consider Menu width to enable responsive ([online demo](https://codesandbox.io/s/ding-bu-dao-hang-antd-4-21-7-forked-5e3imy?file=/demo.js)):
+Menu will render fully item in flex layout and then collapse it. You need tell flex not consider Menu width to enable responsive ([online demo](https://codesandbox.io/s/ding-bu-dao-hang-manyid-4-21-7-forked-5e3imy?file=/demo.js)):
 
 ```jsx
 <div style={{ flex }}>

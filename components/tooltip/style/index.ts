@@ -47,7 +47,7 @@ const genTooltipStyle: GenerateStyle<TooltipToken> = (token) => {
           display: 'none',
         },
 
-        '--antd-arrow-background-color': tooltipBg,
+        '--manyid-arrow-background-color': tooltipBg,
 
         // Wrapper for the tooltip content
         [`${componentCls}-inner`]: {
@@ -88,7 +88,7 @@ const genTooltipStyle: GenerateStyle<TooltipToken> = (token) => {
               backgroundColor: darkColor,
             },
             [`${componentCls}-arrow`]: {
-              '--antd-arrow-background-color': darkColor,
+              '--manyid-arrow-background-color': darkColor,
             },
           },
         })),
@@ -106,7 +106,7 @@ const genTooltipStyle: GenerateStyle<TooltipToken> = (token) => {
         borderRadiusOuter: tooltipRadiusOuter,
       }),
       {
-        colorBg: 'var(--antd-arrow-background-color)',
+        colorBg: 'var(--manyid-arrow-background-color)',
         contentRadius: tooltipBorderRadius,
         limitVerticalRadius: true,
       },

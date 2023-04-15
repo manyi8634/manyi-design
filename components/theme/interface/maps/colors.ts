@@ -190,8 +190,8 @@ interface ColorSuccessMapToken {
   /**
    * @nameZH 成功色的浅色背景色悬浮态
    * @nameEN Hover State Color of Light Success Background
-   * @desc 成功色浅色背景颜色，一般用于视觉层级较弱的选中状态，不过 antd 目前没有使用到该 token
-   * @descEN Light background color of success color, but antd does not use this token currently
+   * @desc 成功色浅色背景颜色，一般用于视觉层级较弱的选中状态，不过 manyid 目前没有使用到该 token
+   * @descEN Light background color of success color, but manyid does not use this token currently
    */
   colorSuccessBgHover: string; // 2
 

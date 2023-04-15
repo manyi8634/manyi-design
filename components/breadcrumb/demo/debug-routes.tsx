@@ -1,4 +1,4 @@
-import { Breadcrumb } from 'antd';
+import { Breadcrumb } from 'manyid';
 import React from 'react';
 
 export default () => (

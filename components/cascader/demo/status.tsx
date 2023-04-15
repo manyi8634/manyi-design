@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cascader, Space } from 'antd';
+import { Cascader, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space direction="vertical">

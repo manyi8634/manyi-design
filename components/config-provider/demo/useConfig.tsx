@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Checkbox, ConfigProvider, Divider, Form, Input, Radio, Space } from 'antd';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
+import { Checkbox, ConfigProvider, Divider, Form, Input, Radio, Space } from 'manyid';
+import type { SizeType } from 'manyid/es/config-provider/SizeContext';
 
 const ConfigDisplay = () => {
   const { componentDisabled, componentSize } = ConfigProvider.useConfig();

@@ -3,9 +3,9 @@ import 'dayjs/locale/zh-cn';
 import dayjs from 'dayjs';
 import { Helmet, useOutlet, useSiteData } from 'dumi';
 import '../../static/style';
-import ConfigProvider from 'antd/es/config-provider';
+import ConfigProvider from 'manyid/es/config-provider';
 import classNames from 'classnames';
-import zhCN from 'antd/es/locale/zh_CN';
+import zhCN from 'manyid/es/locale/zh_CN';
 import SiteContext from '../../slots/SiteContext';
 import Header from '../../slots/Header';
 import Footer from '../../slots/Footer';
@@ -17,11 +17,11 @@ import SidebarLayout from '../SidebarLayout';
 
 const locales = {
   cn: {
-    title: 'Ant Design - 一套企业级 UI 设计语言和 React 组件库',
-    description: '基于 Ant Design 设计体系的 React UI 组件库，用于研发企业级中后台产品。',
+    title: 'Manyi Design - 一套企业级 UI 设计语言和 React 组件库',
+    description: '基于 Manyi Design 设计体系的 React UI 组件库，用于研发企业级中后台产品。',
   },
   en: {
-    title: "Ant Design - The world's second most popular React UI framework",
+    title: "Manyi Design - The world's second most popular React UI framework",
     description:
       'An enterprise-class UI design language and React UI library with a set of high-quality React components, one of best React UI library for enterprises',
   },
@@ -101,7 +101,7 @@ const DocLayout: React.FC = () => {
         <title>{locale?.title}</title>
         <link
           sizes="144x144"
-          href="https://gw.alipayobjects.com/zos/antfincdn/UmVnt3t4T0/antd.png"
+          href="https://gw.alipayobjects.com/zos/antfincdn/UmVnt3t4T0/manyid.png"
         />
         <meta name="description" content={locale.description} />
         <meta property="og:title" content={locale?.title} />

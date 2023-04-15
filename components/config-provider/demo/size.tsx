@@ -10,8 +10,8 @@ import {
   Space,
   Table,
   Tabs,
-} from 'antd';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
+} from 'manyid';
+import type { SizeType } from 'manyid/es/config-provider/SizeContext';
 import React, { useState } from 'react';
 
 const { TabPane } = Tabs;

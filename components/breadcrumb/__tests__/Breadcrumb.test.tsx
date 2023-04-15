@@ -30,7 +30,7 @@ describe('Breadcrumb', () => {
       </Breadcrumb>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      "Warning: [antd: Breadcrumb] Only accepts Breadcrumb.Item and Breadcrumb.Separator as it's children",
+      "Warning: [manyid: Breadcrumb] Only accepts Breadcrumb.Item and Breadcrumb.Separator as it's children",
     );
   });
 
@@ -45,7 +45,7 @@ describe('Breadcrumb', () => {
       />,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Breadcrumb] `routes` is deprecated. Please use `items` instead.',
+      'Warning: [manyid: Breadcrumb] `routes` is deprecated. Please use `items` instead.',
     );
   });
 
@@ -77,7 +77,7 @@ describe('Breadcrumb', () => {
         </Breadcrumb>,
       );
       expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Breadcrumb.Item] `overlay` is deprecated. Please use `menu` instead.',
+        'Warning: [manyid: Breadcrumb.Item] `overlay` is deprecated. Please use `menu` instead.',
       );
     });
 
@@ -94,7 +94,7 @@ describe('Breadcrumb', () => {
         />,
       );
       expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: Breadcrumb.Item] `overlay` is deprecated. Please use `menu` instead.',
+        'Warning: [manyid: Breadcrumb.Item] `overlay` is deprecated. Please use `menu` instead.',
       );
     });
   });
@@ -106,7 +106,7 @@ describe('Breadcrumb', () => {
       </Breadcrumb>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Breadcrumb] `Breadcrumb.Item and Breadcrumb.Separator` is deprecated. Please use `items` instead.',
+      'Warning: [manyid: Breadcrumb] `Breadcrumb.Item and Breadcrumb.Separator` is deprecated. Please use `items` instead.',
     );
   });
 
@@ -117,7 +117,7 @@ describe('Breadcrumb', () => {
       </Breadcrumb>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Breadcrumb] `Breadcrumb.Item and Breadcrumb.Separator` is deprecated. Please use `items` instead.',
+      'Warning: [manyid: Breadcrumb] `Breadcrumb.Item and Breadcrumb.Separator` is deprecated. Please use `items` instead.',
     );
   });
 
@@ -144,7 +144,7 @@ describe('Breadcrumb', () => {
       />,
     );
     expect(errorSpy).not.toHaveBeenCalledWith(
-      'Warning: [antd: Dropdown] `overlay` is deprecated. Please use `menu` instead.',
+      'Warning: [manyid: Dropdown] `overlay` is deprecated. Please use `menu` instead.',
     );
   });
 
@@ -318,7 +318,7 @@ describe('Breadcrumb', () => {
       </Breadcrumb>,
     );
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Breadcrumb.Item] `overlay` is deprecated. Please use `menu` instead.',
+      'Warning: [manyid: Breadcrumb.Item] `overlay` is deprecated. Please use `menu` instead.',
     );
     errSpy.mockRestore();
   });

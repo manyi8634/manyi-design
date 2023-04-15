@@ -1,4 +1,4 @@
-import { Button, Tooltip } from 'antd';
+import { Button, Tooltip } from 'manyid';
 import React from 'react';
 
 const text = <span>prompt text</span>;

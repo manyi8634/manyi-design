@@ -8,7 +8,7 @@ Recently we encountered an [issue](https://github.com/ant-design/ant-design/issu
 
 ```tsx
 import React from 'react';
-import { Button, Modal } from 'antd';
+import { Button, Modal } from 'manyid';
 
 export default () => {
   const [modal, contextHolder] = Modal.useModal();
@@ -47,7 +47,7 @@ From the figure above, we can see that when `contextHolder` is placed inside `Mo
 
 ### Why?
 
-antd's Modal internal calls the `rc-dialog` component library, which accepts a `mousePosition` attribute to control the pop-up position([Dialog/Content/index.tsx](https://github.com/react-component/dialog/blob/79649e187ee512be6b3eb3b76e4a6b618b67ebc7/src/Dialog/Content/index.tsx#L43))：
+manyid's Modal internal calls the `rc-dialog` component library, which accepts a `mousePosition` attribute to control the pop-up position([Dialog/Content/index.tsx](https://github.com/react-component/dialog/blob/79649e187ee512be6b3eb3b76e4a6b618b67ebc7/src/Dialog/Content/index.tsx#L43))：
 
 ```tsx
 // pseudocode

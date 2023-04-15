@@ -2,7 +2,7 @@ import type { ChangeEventHandler } from 'react';
 import React, { useState, useEffect, useRef } from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import classNames from 'classnames';
-import type { ColProps } from 'antd/es/grid';
+import type { ColProps } from 'manyid/es/grid';
 import type { FormInstance } from '..';
 import Form from '..';
 import * as Util from '../util';
@@ -180,7 +180,7 @@ describe('Form', () => {
       </Form>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form.Item] A `Form.Item` with a render function must have either `shouldUpdate` or `dependencies`.',
+      'Warning: [manyid: Form.Item] A `Form.Item` with a render function must have either `shouldUpdate` or `dependencies`.',
     );
   });
 
@@ -193,7 +193,7 @@ describe('Form', () => {
       </Form>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      "Warning: [antd: Form.Item] `shouldUpdate` and `dependencies` shouldn't be used together. See https://u.ant.design/form-deps.",
+      "Warning: [manyid: Form.Item] `shouldUpdate` and `dependencies` shouldn't be used together. See https://u.ant.design/form-deps.",
     );
   });
 
@@ -206,7 +206,7 @@ describe('Form', () => {
       </Form>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form.Item] A `Form.Item` with a render function cannot be a field, and thus cannot have a `name` prop.',
+      'Warning: [manyid: Form.Item] A `Form.Item` with a render function cannot be a field, and thus cannot have a `name` prop.',
     );
   });
 
@@ -220,7 +220,7 @@ describe('Form', () => {
       </Form>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form.Item] A `Form.Item` with a `name` prop must have a single child element. For information on how to render more complex form items, see https://u.ant.design/complex-form-item.',
+      'Warning: [manyid: Form.Item] A `Form.Item` with a `name` prop must have a single child element. For information on how to render more complex form items, see https://u.ant.design/complex-form-item.',
     );
   });
 
@@ -451,7 +451,7 @@ describe('Form', () => {
       </Form>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form.Item] `name` is only used for validate React element. If you are using Form.Item as layout display, please remove `name` instead.',
+      'Warning: [manyid: Form.Item] `name` is only used for validate React element. If you are using Form.Item as layout display, please remove `name` instead.',
     );
   });
 
@@ -524,7 +524,7 @@ describe('Form', () => {
   it('warning when use v3 function', () => {
     Form.create();
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form] antd v4 removed `Form.create`. Please remove or use `@ant-design/compatible` instead.',
+      'Warning: [manyid: Form] manyid v4 removed `Form.create`. Please remove or use `@ant-design/compatible` instead.',
     );
   });
 
@@ -600,7 +600,7 @@ describe('Form', () => {
       </Form>,
     );
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form.Item] Must set `name` or use a render function when `dependencies` is set.',
+      'Warning: [manyid: Form.Item] Must set `name` or use a render function when `dependencies` is set.',
     );
   });
 
@@ -739,7 +739,7 @@ describe('Form', () => {
     // if getByLabelText can get element, then it is a validate field with form control and label
     expect(screen.queryByLabelText('test')).not.toBeInTheDocument();
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form.Item] `null` is passed as `name` property',
+      'Warning: [manyid: Form.Item] `null` is passed as `name` property',
     );
   });
 
@@ -950,7 +950,7 @@ describe('Form', () => {
     );
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Form.Item] `defaultValue` will not work on controlled Field. You should use `initialValues` of Form instead.',
+      'Warning: [manyid: Form.Item] `defaultValue` will not work on controlled Field. You should use `initialValues` of Form instead.',
     );
   });
 

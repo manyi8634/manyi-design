@@ -126,7 +126,7 @@ exports[`renders components/breadcrumb/demo/overlay.tsx correctly 1`] = `
       <span
         class="ant-breadcrumb-link"
       >
-        Ant Design
+        Manyi Design
       </span>
     </li>
     <li

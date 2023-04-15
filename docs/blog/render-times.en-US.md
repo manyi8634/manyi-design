@@ -12,7 +12,7 @@ Before that, we recommend you to read the official [Perf tool](https://reactjs.o
 
 In most cases, invalid rendering is not as dramatic as an un-optimized loop. However, in some scenarios such as large forms, tables, and lists, due to the large number of sub components, the performance impact of invalid rendering overlays is also terrible.
 
-For example, in antd v4, in order to improve Table hover highlighting experience of `rowSpan`, we added an event listener for `tr`, and added an additional `className` for the selected row in `td` to support multiple row highlighting capability. However, because `td` consumes `hoverStartRow` and `hoverEndRow` data in the context, non-related rows will [re-render](https://github.com/ant-design/ant-design/issues/33342) due to changes of `hoverStartRow` and `hoverEndRow`.
+For example, in manyid v4, in order to improve Table hover highlighting experience of `rowSpan`, we added an event listener for `tr`, and added an additional `className` for the selected row in `td` to support multiple row highlighting capability. However, because `td` consumes `hoverStartRow` and `hoverEndRow` data in the context, non-related rows will [re-render](https://github.com/ant-design/ant-design/issues/33342) due to changes of `hoverStartRow` and `hoverEndRow`.
 
 Problems like this are repeated in heavy components, so we need some helper way to determine the number of renders. In the latest [`rc-table`](https://github.com/react-component/table), we encapsulate a [`useRenderTimes`](https://github.com/react-component/table/blob/ecf3fdb77523b370ee86e19164e95f00e65281a8/src/hooks/useRenderTimes.tsx) method. It will mark the monitored rendering times on React Dev Tools through React's `useDebugValue` in development mode:
 
@@ -160,10 +160,10 @@ const App = () => {
 };
 ```
 
-Due to the existence of closures, we cannot determine whether the final dom has changed before calling the `render` method, which is why we optimized the Table through memo in the early days of antd v4 and removed some of it over time (Actually, Table still has some scenarios where this problem needs to be solved).
+Due to the existence of closures, we cannot determine whether the final dom has changed before calling the `render` method, which is why we optimized the Table through memo in the early days of manyid v4 and removed some of it over time (Actually, Table still has some scenarios where this problem needs to be solved).
 
 Considering that Table provides `shouldCellUpdate` method, we plan to adjust Table rendering logic in the future. When the Parent node renders, the Table will be completely re-rendered, and when the Table is updated internally (such as horizontal scrolling position synchronization), it will hit the cache and skip.
 
 ### Finally
 
-antd Table optimization is still in progress, and we will continue to pay attention to new features of React and new ideas from the community. If you have any ideas, welcome to discuss on Github. In addition, for the suggestion of self-developed components, we recommend that after each optimization, a corresponding test case should be created, and the source issue should be noted for future retrospection. That's all. Thank you for reading.
+manyid Table optimization is still in progress, and we will continue to pay attention to new features of React and new ideas from the community. If you have any ideas, welcome to discuss on Github. In addition, for the suggestion of self-developed components, we recommend that after each optimization, a corresponding test case should be created, and the source issue should be noted for future retrospection. That's all. Thank you for reading.

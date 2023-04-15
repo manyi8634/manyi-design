@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'antd';
+import { Image } from 'manyid';
 
 const App = () => (
   <Image.PreviewGroup

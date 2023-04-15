@@ -1,9 +1,9 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
 import Icon, * as AntdIcons from '@ant-design/icons';
-import type { SegmentedProps } from 'antd';
+import type { SegmentedProps } from 'manyid';
 import type { IntlShape } from 'react-intl';
-import { Segmented, Input, Empty, Affix } from 'antd';
+import { Segmented, Input, Empty, Affix } from 'manyid';
 import { css } from '@emotion/react';
 import { useIntl } from 'dumi';
 import debounce from 'lodash/debounce';

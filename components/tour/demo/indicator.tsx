@@ -1,6 +1,6 @@
 import { EllipsisOutlined } from '@ant-design/icons';
-import type { TourProps } from 'antd';
-import { Button, Divider, Space, Tour } from 'antd';
+import type { TourProps } from 'manyid';
+import { Button, Divider, Space, Tour } from 'manyid';
 import React, { useRef, useState } from 'react';
 
 const App: React.FC = () => {

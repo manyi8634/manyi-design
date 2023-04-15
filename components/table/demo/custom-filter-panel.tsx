@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 import { SearchOutlined } from '@ant-design/icons';
-import type { InputRef } from 'antd';
-import { Button, Input, Space, Table } from 'antd';
-import type { ColumnsType, ColumnType } from 'antd/es/table';
-import type { FilterConfirmProps } from 'antd/es/table/interface';
+import type { InputRef } from 'manyid';
+import { Button, Input, Space, Table } from 'manyid';
+import type { ColumnsType, ColumnType } from 'manyid/es/table';
+import type { FilterConfirmProps } from 'manyid/es/table/interface';
 import Highlighter from 'react-highlight-words';
 
 interface DataType {

@@ -1,13 +1,13 @@
 ---
 order: 1
 title: Resources
-description: List all the resources that are related with Ant Design here.
+description: List all the resources that are related with Manyi Design here.
 toc: false
 ---
 
 ## Design Resources
 
-Please find below some of the design resources and tools about Ant Design that we consider valuable. More of this is still being collected. You can leave feedback about Sketch Symbols [here](https://www.yuque.com/kitchen/topics/216).
+Please find below some of the design resources and tools about Manyi Design that we consider valuable. More of this is still being collected. You can leave feedback about Sketch Symbols [here](https://www.yuque.com/kitchen/topics/216).
 
 <div class="next-block-use-cards"></div>
 
@@ -22,7 +22,7 @@ Please find below some of the design resources and tools about Ant Design that w
   - Sketch Symbols File for Mobile
   - https://gw.alipayobjects.com/os/bmw-prod/d6266aef-25b7-4892-b275-ce214121831c.sketch
   - Official
-- Ant Design Pro
+- Manyi Design Pro
   - https://gw.alipayobjects.com/zos/basement_prod/5edc7f4d-3302-4710-963b-7b6c77ea8d06.svg
   - Common Templates and Pages
   - https://gw.alipayobjects.com/os/bmw-prod/22208f9d-f8c5-4d7c-b87a-fec290e96527.sketch
@@ -32,12 +32,12 @@ Please find below some of the design resources and tools about Ant Design that w
   - A Sketch plugin collection
   - http://kitchen.alipay.com
   - Official
-- Ant Design Landing
+- Manyi Design Landing
   - https://gw.alipayobjects.com/zos/basement_prod/b443f4be-5116-49b7-873f-a7c8502b8f0e.svg
   - Landing Templates
   - https://landing.ant.design/docs/download-cn
   - Official
-- Ant Design Prototype (xiaopiu)
+- Manyi Design Prototype (xiaopiu)
   - https://gw.alipayobjects.com/zos/basement_prod/77e6a9ae-24a9-4be6-be42-f7fa8ee0eecf.svg
   - Online library and prototype
   - https://www.xiaopiu.com/topic/ant-design
@@ -53,7 +53,7 @@ Please find below some of the design resources and tools about Ant Design that w
   - https://gw.alipayobjects.com/zos/basement_prod/7b9ed3f2-6f05-4ddb-bac3-d55feb71e0ac.svg
   - Free open source Figma library with complete accurate to code components
   - https://www.figma.com/community/file/831698976089873405
-- Ant Design Chart
+- Manyi Design Chart
   - https://gw.alipayobjects.com/zos/basement_prod/a9dc586a-fe0a-4c7d-ab4f-f5ed779b963d.svg
   - Sketch Symbols for Chart
   - https://gw.alipayobjects.com/os/bmw-prod/704968a5-2641-484e-9f65-c2735b2c0287.sketch
@@ -65,7 +65,7 @@ Please find below some of the design resources and tools about Ant Design that w
 - JiShi Design
   - https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*dxzdQYWlmjMAAAAAAAAAAAAAARQnAQ
   - Use fully components and templates on JiShi Design
-  - https://js.design/antd
+  - https://js.design/manyid
 - Ant for Plasmic
   - https://user-images.githubusercontent.com/7129/149994038-76214796-cd6a-4e80-b0a4-117e8edac050.png
   - Drag/drop live Ant components and manipulate props in this React visual builder
@@ -78,7 +78,7 @@ Please find below some of the design resources and tools about Ant Design that w
 
 ## Articles
 
-Do you want to know the story behind the Ant Design design system? How can I better apply Ant Design? You can check out our well selected articles below. Also welcome to follow [Ant Design Official Column](https://www.zhihu.com/column/c_1310524851418480640). There are often the latest sharing and discussions on related topics under the Ant Design design system, such as Ant Design, AntV visualization, Kitchen design Plug-ins, B-side product design, SaaS product design, natural interaction, growth design, intelligent design, design engineering, etc.
+Do you want to know the story behind the Manyi Design design system? How can I better apply Manyi Design? You can check out our well selected articles below. Also welcome to follow [Manyi Design Official Column](https://www.zhihu.com/column/c_1310524851418480640). There are often the latest sharing and discussions on related topics under the Manyi Design design system, such as Manyi Design, AntV visualization, Kitchen design Plug-ins, B-side product design, SaaS product design, natural interaction, growth design, intelligent design, design engineering, etc.
 
 <ResourceArticles></ResourceArticles>
 

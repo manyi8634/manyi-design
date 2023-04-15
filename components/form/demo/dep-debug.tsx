@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input } from 'antd';
+import { Form, Input } from 'manyid';
 
 let acc = 0;
 

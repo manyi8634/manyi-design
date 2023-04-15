@@ -35,7 +35,7 @@ describe('Switch', () => {
     const props = { value: true } as any;
     render(<Switch {...props} />);
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Switch] `value` is not a valid prop, do you mean `checked`?',
+      'Warning: [manyid: Switch] `value` is not a valid prop, do you mean `checked`?',
     );
     errorSpy.mockRestore();
   });

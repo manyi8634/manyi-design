@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useContext } from 'react';
-import { Typography } from 'antd';
+import { Typography } from 'manyid';
 import useSiteToken from '../../../hooks/useSiteToken';
 import SiteContext from '../../../theme/slots/SiteContext';
 

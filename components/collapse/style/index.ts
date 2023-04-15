@@ -68,7 +68,7 @@ export const genBaseStyle: GenerateStyle<CollapseToken> = (token) => {
         },
 
         [`> ${componentCls}-header`]: {
-          position: 'relative', // Compatible with old version of antd, should remove in next version
+          position: 'relative', // Compatible with old version of manyid, should remove in next version
           display: 'flex',
           flexWrap: 'nowrap',
           alignItems: 'flex-start',

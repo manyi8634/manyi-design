@@ -6,8 +6,8 @@ import {
   MailOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
-import { Divider, Menu, Switch } from 'antd';
-import type { MenuProps, MenuTheme } from 'antd/es/menu';
+import { Divider, Menu, Switch } from 'manyid';
+import type { MenuProps, MenuTheme } from 'manyid/es/menu';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -41,7 +41,7 @@ const items: MenuItem[] = [
   ]),
   getItem(
     <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-      Ant Design
+      Manyi Design
     </a>,
     'link',
     <LinkOutlined />,

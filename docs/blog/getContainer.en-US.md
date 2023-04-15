@@ -8,7 +8,7 @@ We often encounter the need for pop-up elements when developing, such as the Sel
 
 ![Overflow](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*Noh-TYJ0BdcAAAAAAAAAAAAADrJ8AQ/original)
 
-Therefore we render it under `body` by default in Ant Design, but this will bring new problems. Since they are not under the same container, when the user scrolls the screen, they will find that the popup layer does not follow the scrolling:
+Therefore we render it under `body` by default in Manyi Design, but this will bring new problems. Since they are not under the same container, when the user scrolls the screen, they will find that the popup layer does not follow the scrolling:
 
 ![Scroll](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*d44KQqkTX90AAAAAAAAAAAAADrJ8AQ/original)
 

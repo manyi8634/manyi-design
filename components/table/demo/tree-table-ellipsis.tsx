@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Space, Switch, Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
+import { Space, Switch, Table } from 'manyid';
+import type { ColumnsType } from 'manyid/es/table';
 
 interface DataType {
   key: React.ReactNode;

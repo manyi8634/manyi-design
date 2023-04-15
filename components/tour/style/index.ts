@@ -56,7 +56,7 @@ const genBaseStyle: GenerateStyle<TourToken> = (token) => {
         fontSize,
         lineHeight,
         width: 520,
-        '--antd-arrow-background-color': colorBgContainer,
+        '--manyid-arrow-background-color': colorBgContainer,
 
         '&-pure': {
           maxWidth: '100%',
@@ -158,7 +158,7 @@ const genBaseStyle: GenerateStyle<TourToken> = (token) => {
         // =============================  primary type  ===========================
         // `$` for panel, `&$` for pure panel
         [`${componentCls}-primary, &${componentCls}-primary`]: {
-          '--antd-arrow-background-color': colorPrimary,
+          '--manyid-arrow-background-color': colorPrimary,
         },
 
         [`${componentCls}-primary`]: {
@@ -231,7 +231,7 @@ const genBaseStyle: GenerateStyle<TourToken> = (token) => {
 
     // ============================= Arrow ===========================
     getArrowStyle<TourToken>(token, {
-      colorBg: 'var(--antd-arrow-background-color)',
+      colorBg: 'var(--manyid-arrow-background-color)',
       contentRadius: tourBorderRadius,
       limitVerticalRadius: true,
     }),

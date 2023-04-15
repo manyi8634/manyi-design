@@ -13,7 +13,7 @@ import {
   Switch,
   Checkbox,
   Upload,
-} from 'antd';
+} from 'manyid';
 
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;

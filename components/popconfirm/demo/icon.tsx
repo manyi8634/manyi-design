@@ -1,6 +1,6 @@
 import React from 'react';
 import { QuestionCircleOutlined } from '@ant-design/icons';
-import { Popconfirm } from 'antd';
+import { Popconfirm } from 'manyid';
 
 const App: React.FC = () => (
   <Popconfirm

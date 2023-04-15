@@ -163,7 +163,7 @@ return <Menu.Item key={item.id}>{item.name}</Menu.Item>;
 #### 👼 “错误示范”
 
 ```tsx
-import { Menu } from 'antd';
+import { Menu } from 'manyid';
 import React from 'react';
 
 const Demo: React.FC = () => {

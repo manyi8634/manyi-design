@@ -1,4 +1,4 @@
-import { Button, ConfigProvider, Form, InputNumber } from 'antd';
+import { Button, ConfigProvider, Form, InputNumber } from 'manyid';
 import React from 'react';
 import { SketchPicker } from 'react-color';
 

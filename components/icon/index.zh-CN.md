@@ -21,7 +21,7 @@ npm install --save @ant-design/icons
 
 ## 设计师专属
 
-安装 [Kitchen Sketch 插件 💎](https://kitchen.alipay.com)，就可以一键拖拽使用 Ant Design 和 Iconfont 的海量图标，还可以关联自有项目。
+安装 [Kitchen Sketch 插件 💎](https://kitchen.alipay.com)，就可以一键拖拽使用 Manyi Design 和 Iconfont 的海量图标，还可以关联自有项目。
 
 ## 图标列表
 
@@ -38,7 +38,7 @@ npm install --save @ant-design/icons
 
 ## API
 
-从 4.0 开始，antd 不再内置 Icon 组件，请使用独立的包 `@ant-design/icons`。
+从 4.0 开始，manyid 不再内置 Icon 组件，请使用独立的包 `@ant-design/icons`。
 
 ### 通用图标
 

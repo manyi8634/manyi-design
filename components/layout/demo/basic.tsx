@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Space } from 'antd';
+import { Layout, Space } from 'manyid';
 
 const { Header, Footer, Sider, Content } = Layout;
 

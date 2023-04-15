@@ -1,5 +1,5 @@
-import { Calendar, theme } from 'antd';
-import type { CalendarMode } from 'antd/es/calendar/generateCalendar';
+import { Calendar, theme } from 'manyid';
+import type { CalendarMode } from 'manyid/es/calendar/generateCalendar';
 import type { Dayjs } from 'dayjs';
 import React from 'react';
 

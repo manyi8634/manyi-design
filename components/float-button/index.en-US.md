@@ -30,7 +30,7 @@ FloatButton. Available since `5.0.0`.
 
 ## API
 
-> This component is available since `antd@5.0.0`.
+> This component is available since `manyid@5.0.0`.
 
 ### common API
 

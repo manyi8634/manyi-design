@@ -39,7 +39,7 @@ Form.create = () => {
   warning(
     false,
     'Form',
-    'antd v4 removed `Form.create`. Please remove or use `@ant-design/compatible` instead.',
+    'manyid v4 removed `Form.create`. Please remove or use `@ant-design/compatible` instead.',
   );
 };
 

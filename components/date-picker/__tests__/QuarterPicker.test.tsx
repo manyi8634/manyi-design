@@ -14,7 +14,7 @@ describe('QuarterPicker', () => {
     expect(container.firstChild).toMatchSnapshot();
 
     expect(warnSpy).toHaveBeenCalledWith(
-      "Warning: [antd: QuarterPicker] DatePicker.QuarterPicker is legacy usage. Please use DatePicker[picker='quarter'] directly.",
+      "Warning: [manyid: QuarterPicker] DatePicker.QuarterPicker is legacy usage. Please use DatePicker[picker='quarter'] directly.",
     );
 
     warnSpy.mockRestore();

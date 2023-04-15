@@ -1,16 +1,16 @@
 ---
-title: antd 测试库迁移的那些事儿
+title: manyid 测试库迁移的那些事儿
 date: 2022-12-20
 author: li-jia-nan,zombieJ
 ---
 
-大家好，我是 **[@li-jia-nan](https://github.com/li-jia-nan)**。也是前几个月新加入 antd 的 Collaborator, 有幸作为 Collaborators 之一，我开发了 **[FloatButton](/components/float-button-cn)** 组件和 **[QRCode](/components/qrcode-cn)** 组件，以及一些其它维护工作，下面分享一下 antd 测试库迁移的那些事儿～
+大家好，我是 **[@li-jia-nan](https://github.com/li-jia-nan)**。也是前几个月新加入 manyid 的 Collaborator, 有幸作为 Collaborators 之一，我开发了 **[FloatButton](/components/float-button-cn)** 组件和 **[QRCode](/components/qrcode-cn)** 组件，以及一些其它维护工作，下面分享一下 manyid 测试库迁移的那些事儿～
 
 ## 引言
 
-在 `antd@4.x` 中，使用 **[enzyme](https://enzymejs.github.io/enzyme)** 作为测试框架，然而由于 enzyme 缺乏维护，到了 React 18 时代已经很难⽀持。也因此不得不开始为 antd 开启漫⻓的 **[@testing-lib](https://testing-library.com/docs/react-testing-library/intro)** 迁移之路。
+在 `manyid@4.x` 中，使用 **[enzyme](https://enzymejs.github.io/enzyme)** 作为测试框架，然而由于 enzyme 缺乏维护，到了 React 18 时代已经很难⽀持。也因此不得不开始为 manyid 开启漫⻓的 **[@testing-lib](https://testing-library.com/docs/react-testing-library/intro)** 迁移之路。
 
-在迁移过程中，我承担了大概 antd 四分之一的工作量，这里主要记录一下迁移过程中遇到的问题。
+在迁移过程中，我承担了大概 manyid 四分之一的工作量，这里主要记录一下迁移过程中遇到的问题。
 
 > 感谢在此期间 [@zombieJ](https://github.com/zombieJ) [@MadCcc](https://github.com/MadCcc) [@miracles1919](https://github.com/miracles1919) 提供的帮助。
 
@@ -40,7 +40,7 @@ author: li-jia-nan,zombieJ
 
 - mount: 完全渲染，它将组件渲染加载成一个真实的 DOM 节点，用来测试 DOM API 的交互和组件的生命周期，用到了 jsdom 来模拟浏览器环境。
 
-为了贴近浏览器现实场景，`antd@4.x` 选用 `mount` 来进行渲染，而在 `@testing-library` 中对应的则是 `render` 方法：
+为了贴近浏览器现实场景，`manyid@4.x` 选用 `mount` 来进行渲染，而在 `@testing-library` 中对应的则是 `render` 方法：
 
 ```diff
 --  import { mount } from 'enzyme';
@@ -94,7 +94,7 @@ author: li-jia-nan,zombieJ
 
 ### 四、兼容性测试
 
-在大版本升级的同时，废弃了部分组件，但是并没有在 antd 中移除，比如 BackTop 组件，需要在组件中加入 warning 以保证兼容性，所以还需要对 warning 编写专门的单元测试:
+在大版本升级的同时，废弃了部分组件，但是并没有在 manyid 中移除，比如 BackTop 组件，需要在组件中加入 warning 以保证兼容性，所以还需要对 warning 编写专门的单元测试:
 
 ```diff
     describe('BackTop', () => {
@@ -102,7 +102,7 @@ author: li-jia-nan,zombieJ
 ++        const errSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
 ++        render(<BackTop />);
 ++        expect(errSpy).toHaveBeenCalledWith(
-++          'Warning: [antd: BackTop] `BackTop` is deprecated, please use `FloatButton.BackTop` instead.',
+++          'Warning: [manyid: BackTop] `BackTop` is deprecated, please use `FloatButton.BackTop` instead.',
 ++        );
 ++      errSpy.mockRestore();
 ++    });
@@ -255,12 +255,12 @@ export default App;
 
 ## ⼀个解法
 
-antd 需要对 React16、17、18 都进⾏测试，如果 snapshot 不可⾏会造成太⼤成本。所以我们需要对 jest 进⾏改造。`enzyme-to-json` 则给了我灵感，我们可以修改 snapshot ⽣成逻辑来抹平 React 不同版本之间的 diff：
+manyid 需要对 React16、17、18 都进⾏测试，如果 snapshot 不可⾏会造成太⼤成本。所以我们需要对 jest 进⾏改造。`enzyme-to-json` 则给了我灵感，我们可以修改 snapshot ⽣成逻辑来抹平 React 不同版本之间的 diff：
 
 ```ts
 expect.addSnapshotSerializer({
   // 判断⼀下是否是 dom 元素，如果是的就⾛我们⾃⼰的序列化逻辑
-  // 代码简化过，真实判断需要更多逻辑，可以参考 antd 的 setupAfterEnv.ts
+  // 代码简化过，真实判断需要更多逻辑，可以参考 manyid 的 setupAfterEnv.ts
   test: (element) => element instanceof HTMLElement,
   // ...
 });
@@ -288,4 +288,4 @@ expect.addSnapshotSerializer({
 
 ## 收工
 
-以上，是 antd 测试框架迁移时遇到的一些问题，希望对于需要迁移或者尚未开始编写测试用例的同学提供帮助。也欢迎大家加入 antd 社区，共同为开源奉献自己的力量。
+以上，是 manyid 测试框架迁移时遇到的一些问题，希望对于需要迁移或者尚未开始编写测试用例的同学提供帮助。也欢迎大家加入 manyid 社区，共同为开源奉献自己的力量。

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Space, Switch } from 'antd';
+import { Button, Space, Switch } from 'manyid';
 
 const App: React.FC = () => {
   const [disabled, setDisabled] = useState(true);

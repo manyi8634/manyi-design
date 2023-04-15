@@ -84,7 +84,7 @@ Select component to select value from options.
 | notFoundContent | Specify content to show when no result matches | ReactNode | `Not Found` |  |
 | open | Controlled open state of dropdown | boolean | - |  |
 | optionFilterProp | Which prop value of option will be used for filter if filterOption is true. If `options` is set, it should be set to `label` | string | `value` |  |
-| optionLabelProp | Which prop value of option will render as content of select. [Example](https://codesandbox.io/s/antd-reproduction-template-tk678) | string | `children` |  |
+| optionLabelProp | Which prop value of option will render as content of select. [Example](https://codesandbox.io/s/manyid-reproduction-template-tk678) | string | `children` |  |
 | options | Select options. Will get better perf than jsx definition | { label, value }\[] | - |  |
 | placeholder | Placeholder of select | ReactNode | - |  |
 | placement | The position where the selection box pops up | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft |  |
@@ -145,7 +145,7 @@ It's caused by option with different `label` and `value`. You can use `optionFil
 
 ### When I click elements in dropdownRender, the select dropdown will not be closed?
 
-You can control it by `open` prop: [codesandbox](https://codesandbox.io/s/ji-ben-shi-yong-antd-4-21-7-forked-gnp4cy?file=/demo.js).
+You can control it by `open` prop: [codesandbox](https://codesandbox.io/s/ji-ben-shi-yong-manyid-4-21-7-forked-gnp4cy?file=/demo.js).
 
 ### I don't want dropdown close when click inside `dropdownRender`?
 

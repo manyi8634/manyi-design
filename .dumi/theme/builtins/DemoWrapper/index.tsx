@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { DumiDemoGrid, FormattedMessage } from 'dumi';
-import { Tooltip } from 'antd';
+import { Tooltip } from 'manyid';
 import { BugFilled, BugOutlined, CodeFilled, CodeOutlined } from '@ant-design/icons';
 import classNames from 'classnames';
 import DemoContext from '../../slots/DemoContext';
@@ -38,7 +38,7 @@ const DemoWrapper: typeof DumiDemoGrid = ({ items }) => {
             // always override debug property, because dumi will hide debug demo in production
             debug: false,
             /**
-             * antd extra marker for the original debug
+             * manyid extra marker for the original debug
              * @see https://github.com/ant-design/ant-design/pull/40130#issuecomment-1380208762
              */
             originDebug: debug,

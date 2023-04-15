@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Segmented, Button, Space } from 'antd';
+import { Segmented, Button, Space } from 'manyid';
 
 const Demo: React.FC = () => {
   const [options, setOptions] = useState(['Daily', 'Weekly', 'Monthly']);

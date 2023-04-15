@@ -1,5 +1,5 @@
 import React from 'react';
-import { message, Popconfirm } from 'antd';
+import { message, Popconfirm } from 'manyid';
 
 const confirm = (e: React.MouseEvent<HTMLElement>) => {
   console.log(e);

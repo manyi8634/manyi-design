@@ -12,7 +12,7 @@ import {
   Drawer,
   InputNumber,
   DatePicker,
-} from 'antd';
+} from 'manyid';
 
 const { Option } = Select;
 

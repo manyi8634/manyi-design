@@ -1,4 +1,4 @@
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from 'manyid';
 import React, { useRef } from 'react';
 import type { TableProps } from '..';
 import Table from '..';
@@ -253,7 +253,7 @@ describe('Table', () => {
     ];
     render(<Table columns={columns} rowKey={(record, index) => record + index} />);
     expect(warnSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Table] `index` parameter of `rowKey` function is deprecated. There is no guarantee that it will work as expected.',
+      'Warning: [manyid: Table] `index` parameter of `rowKey` function is deprecated. There is no guarantee that it will work as expected.',
     );
   });
   it('not warn about rowKey', () => {

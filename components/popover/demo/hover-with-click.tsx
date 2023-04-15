@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Popover } from 'antd';
+import { Button, Popover } from 'manyid';
 
 const App: React.FC = () => {
   const [clicked, setClicked] = useState(false);

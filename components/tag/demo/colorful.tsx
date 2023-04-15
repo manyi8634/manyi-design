@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Space, Tag } from 'antd';
+import { Divider, Space, Tag } from 'manyid';
 
 const App: React.FC = () => (
   <>

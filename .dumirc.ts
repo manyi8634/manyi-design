@@ -27,11 +27,11 @@ export default defineConfig({
     antdReproduceVersion: version,
   },
   alias: {
-    'antd/lib': path.join(__dirname, 'components'),
-    'antd/es': path.join(__dirname, 'components'),
-    'antd/locale': path.join(__dirname, 'components/locale'),
-    // Change antd from `index.js` to `.dumi/theme/antd.js` to remove deps of root style
-    antd: require.resolve('./.dumi/theme/antd.js'),
+    'manyid/lib': path.join(__dirname, 'components'),
+    'manyid/es': path.join(__dirname, 'components'),
+    'manyid/locale': path.join(__dirname, 'components/locale'),
+    // Change manyid from `index.js` to `.dumi/theme/antd.js` to remove deps of root style
+    manyid: require.resolve('./.dumi/theme/antd.js'),
   },
   extraRehypePlugins: [rehypeAntd],
   extraRemarkPlugins: [remarkAntd],

@@ -60,7 +60,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*ylFATY6w-ygAAA
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | colon | 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) | boolean | true |  |
-| disabled | 设置表单组件禁用，仅对 antd 组件有效 | boolean | false | 4.21.0 |
+| disabled | 设置表单组件禁用，仅对 manyid 组件有效 | boolean | false | 4.21.0 |
 | component | 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | form |  |
 | fields | 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state) | [FieldData](#fielddata)\[] | - |  |
 | form | 经 `Form.useForm()` 创建的 form 控制实例，不提供时会自动创建 | [FormInstance](#forminstance) | - |  |
@@ -73,7 +73,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*ylFATY6w-ygAAA
 | preserve | 当字段被删除时保留字段值 | boolean | true | 4.4.0 |
 | requiredMark | 必选样式，可以切换为必选或者可选展示样式。此为 Form 配置，Form.Item 无法单独配置 | boolean \| `optional` | true | 4.6.0 |
 | scrollToFirstError | 提交失败自动滚动到第一个错误字段 | boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) | false |  |
-| size | 设置字段组件的尺寸（仅限 antd 组件） | `small` \| `middle` \| `large` | - |  |
+| size | 设置字段组件的尺寸（仅限 manyid 组件） | `small` \| `middle` \| `large` | - |  |
 | validateMessages | 验证提示模板，说明[见下](#validatemessages) | [ValidateMessages](https://github.com/ant-design/ant-design/blob/6234509d18bac1ac60fbb3f92a5b2c6a6361295a/components/locale/en_US.ts#L88-L134) | - |  |
 | validateTrigger | 统一设置字段触发验证的时机 | string \| string\[] | `onChange` | 4.3.0 |
 | wrapperCol | 需要为输入控件设置布局样式时，使用该属性，用法同 labelCol | [object](/components/grid-cn#col) | - |  |
@@ -472,7 +472,7 @@ validator(rule, value, callback) => {
 
 > Warning: Instance created by `useForm` is not connect to any Form element. Forget to pass `form` prop?
 
-这是因为你在调用 form 方法时，Modal 还未初始化导致 form 没有关联任何 Form 组件。你可以通过给 Modal 设置 `forceRender` 将其预渲染。示例点击[此处](https://codesandbox.io/s/antd-reproduction-template-ibu5c)。
+这是因为你在调用 form 方法时，Modal 还未初始化导致 form 没有关联任何 Form 组件。你可以通过给 Modal 设置 `forceRender` 将其预渲染。示例点击[此处](https://codesandbox.io/s/manyid-reproduction-template-ibu5c)。
 
 ### 为什么 Form.Item 下的子组件 `defaultValue` 不生效？
 
@@ -505,7 +505,7 @@ validator(rule, value, callback) => {
 
 ### 为什么 Form.List 不支持 `label` 还需要使用 ErrorList 展示错误？
 
-Form.List 本身是 renderProps，内部样式非常自由。因而默认配置 `label` 和 `error` 节点很难与之配合。如果你需要 antd 样式的 `label`，可以通过外部包裹 Form.Item 来实现。
+Form.List 本身是 renderProps，内部样式非常自由。因而默认配置 `label` 和 `error` 节点很难与之配合。如果你需要 manyid 样式的 `label`，可以通过外部包裹 Form.Item 来实现。
 
 ### 为什么 Form.Item 的 `dependencies` 对 Form.List 下的字段没有效果？
 
@@ -540,7 +540,7 @@ React 中异步更新会导致受控组件交互行为异常。当用户交互�
 
 类似问题：[#28370](https://github.com/ant-design/ant-design/issues/28370) [#27994](https://github.com/ant-design/ant-design/issues/27994)
 
-滚动依赖于表单控件元素上绑定的 `id` 字段，如果自定义控件没有将 `id` 赋到正确的元素上，这个功能将失效。你可以参考这个 [codesandbox](https://codesandbox.io/s/antd-reproduction-template-forked-25nul?file=/index.js)。
+滚动依赖于表单控件元素上绑定的 `id` 字段，如果自定义控件没有将 `id` 赋到正确的元素上，这个功能将失效。你可以参考这个 [codesandbox](https://codesandbox.io/s/manyid-reproduction-template-forked-25nul?file=/index.js)。
 
 ### `setFieldsValue` 不会触发 `onFieldsChange` 和 `onValuesChange`？
 
@@ -548,6 +548,6 @@ React 中异步更新会导致受控组件交互行为异常。当用户交互�
 
 ### 有更多参考文档吗？
 
-- 你可以阅读[《antd v4 Form 使用心得》](https://zhuanlan.zhihu.com/p/375753910)获得一些使用帮助以及建议。
+- 你可以阅读[《manyid v4 Form 使用心得》](https://zhuanlan.zhihu.com/p/375753910)获得一些使用帮助以及建议。
 - 想在 DatePicker、Switch 也使用 before、after？可以参考[《如何优雅的对 Form.Item 的 children 增加 before、after》](https://zhuanlan.zhihu.com/p/422752055)。
 - 优雅的 Form + Modal 结合使用方案[《如何优雅的使用 Form + Modal》](https://zhuanlan.zhihu.com/p/388222294)。

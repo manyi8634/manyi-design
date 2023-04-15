@@ -1,4 +1,4 @@
-import { Avatar, Button, Space } from 'antd';
+import { Avatar, Button, Space } from 'manyid';
 import React, { useState } from 'react';
 
 type SizeType = 'large' | 'small' | 'default' | number;

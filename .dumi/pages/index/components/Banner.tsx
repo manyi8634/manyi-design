@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Button, Space, Typography } from 'antd';
+import { Button, Space, Typography } from 'manyid';
 import { Link, useLocation } from 'dumi';
 import * as React from 'react';
 import useLocale from '../../../hooks/useLocale';
@@ -123,7 +123,7 @@ export default function Banner({ children }: BannerProps) {
         <img
           style={{ position: 'absolute', right: 0, top: 240, width: 240 }}
           src="https://gw.alipayobjects.com/zos/bmw-prod/b3b8dc41-dce8-471f-9d81-9a0204f27d03.svg"
-          alt="Ant Design"
+          alt="Manyi Design"
         />
 
         <GroupMask
@@ -147,7 +147,7 @@ export default function Banner({ children }: BannerProps) {
           />
 
           <Typography.Title level={1} css={[styles.titleBase, styles.title]}>
-            Ant Design 5.0
+            Manyi Design 5.0
           </Typography.Title>
           <Typography.Paragraph
             style={{

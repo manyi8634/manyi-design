@@ -102,7 +102,7 @@ describe('Steps', () => {
     expect(container.querySelectorAll('.ant-steps-item')).toHaveLength(1);
 
     expect(errorSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Steps] Step is deprecated. Please use `items` directly.',
+      'Warning: [manyid: Steps] Step is deprecated. Please use `items` directly.',
     );
     errorSpy.mockRestore();
   });

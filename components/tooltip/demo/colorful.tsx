@@ -1,4 +1,4 @@
-import { Button, Divider, Space, Tooltip } from 'antd';
+import { Button, Divider, Space, Tooltip } from 'manyid';
 import React from 'react';
 
 const colors = [

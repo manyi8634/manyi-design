@@ -109,7 +109,7 @@ describe('Modal', () => {
 
     render(<Modal visible />);
     expect(errSpy).toHaveBeenCalledWith(
-      'Warning: [antd: Modal] `visible` is deprecated, please use `open` instead.',
+      'Warning: [manyid: Modal] `visible` is deprecated, please use `open` instead.',
     );
 
     expect(document.querySelector('.ant-modal')).toBeTruthy();

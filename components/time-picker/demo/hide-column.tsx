@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimePicker } from 'antd';
+import { TimePicker } from 'manyid';
 import dayjs from 'dayjs';
 
 const format = 'HH:mm';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConfigProvider, Pagination } from 'antd';
+import { ConfigProvider, Pagination } from 'manyid';
 
 const App: React.FC = () => (
   <ConfigProvider theme={{ token: { wireframe: true } }}>

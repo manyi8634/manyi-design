@@ -1,8 +1,8 @@
 import React from 'react';
-import { Watermark } from 'antd';
+import { Watermark } from 'manyid';
 
 const App: React.FC = () => (
-  <Watermark content="Ant Design">
+  <Watermark content="Manyi Design">
     <div style={{ height: 500 }} />
   </Watermark>
 );

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-shadow */
 import React from 'react';
-import type { TreeProps } from 'antd';
-import { Tree, Switch } from 'antd';
+import type { TreeProps } from 'manyid';
+import { Tree, Switch } from 'manyid';
 import { CarryOutOutlined } from '@ant-design/icons';
 import type { DataNode } from 'rc-tree/lib/interface';
 

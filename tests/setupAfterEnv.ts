@@ -8,11 +8,11 @@ import { defaultConfig } from '../components/theme/internal';
 defaultConfig.hashed = false;
 
 if (process.env.LIB_DIR === 'dist') {
-  jest.mock('../dist/antd', () => {
-    const antd = jest.requireActual('../dist/antd');
-    antd.theme.defaultConfig.hashed = false;
+  jest.mock('../dist/manyid', () => {
+    const manyid = jest.requireActual('../dist/manyid');
+    manyid.theme.defaultConfig.hashed = false;
 
-    return antd;
+    return manyid;
   });
 } else if (process.env.LIB_DIR === 'es') {
   jest.mock('../es/theme/internal', () => {

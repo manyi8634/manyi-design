@@ -1,6 +1,6 @@
 import React from 'react';
-import { DatePicker, Space } from 'antd';
-import type { RangePickerProps } from 'antd/es/date-picker';
+import { DatePicker, Space } from 'manyid';
+import type { RangePickerProps } from 'manyid/es/date-picker';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 

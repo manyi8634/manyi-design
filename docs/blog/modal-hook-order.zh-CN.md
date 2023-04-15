@@ -8,7 +8,7 @@ author: zombieJ
 
 ```tsx
 import React from 'react';
-import { Button, Modal } from 'antd';
+import { Button, Modal } from 'manyid';
 
 export default () => {
   const [modal, contextHolder] = Modal.useModal();
@@ -47,7 +47,7 @@ export default () => {
 
 ### 思路整理
 
-antd 的 Modal 底层调用的是 `rc-dialog` 组件库，其接受一个 `mousePosition` 属性，用于控制弹出位置（[Dialog/Content/index.tsx](https://github.com/react-component/dialog/blob/79649e187ee512be6b3eb3b76e4a6b618b67ebc7/src/Dialog/Content/index.tsx#L43)）：
+manyid 的 Modal 底层调用的是 `rc-dialog` 组件库，其接受一个 `mousePosition` 属性，用于控制弹出位置（[Dialog/Content/index.tsx](https://github.com/react-component/dialog/blob/79649e187ee512be6b3eb3b76e4a6b618b67ebc7/src/Dialog/Content/index.tsx#L43)）：
 
 ```tsx
 // pseudocode

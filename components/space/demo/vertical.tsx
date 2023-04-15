@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Space } from 'antd';
+import { Card, Space } from 'manyid';
 
 const App: React.FC = () => (
   <Space direction="vertical" size="middle" style={{ display: 'flex' }}>

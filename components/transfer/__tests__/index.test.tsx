@@ -282,7 +282,7 @@ describe('Transfer', () => {
     expect(getAllByText('new1')).toHaveLength(2);
 
     expect(consoleErrorSpy).not.toHaveBeenCalledWith(
-      'Warning: [antd: Transfer] `notFoundContent` and `searchPlaceholder` will be removed, please use `locale` instead.',
+      'Warning: [manyid: Transfer] `notFoundContent` and `searchPlaceholder` will be removed, please use `locale` instead.',
     );
     consoleErrorSpy.mockRestore();
   });

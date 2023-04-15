@@ -14,7 +14,7 @@ demo:
 ## 何时使用
 
 - 提供可消费 React context 的 `message.xxx`、`Modal.xxx`、`notification.xxx` 的静态方法，可以简化 useMessage 等方法需要手动植入 `contextHolder` 的问题。
-- 提供基于 `.ant-app` 的默认重置样式，解决原生元素没有 antd 规范样式的问题。
+- 提供基于 `.ant-app` 的默认重置样式，解决原生元素没有 manyid 规范样式的问题。
 
 ## 代码演示
 
@@ -28,7 +28,7 @@ demo:
 App 组件通过 `Context` 提供上下文方法调用，因而 useApp 需要作为子组件才能使用，我们推荐在应用中顶层包裹 App。
 
 ```tsx
-import { App } from 'antd';
+import { App } from 'manyid';
 import React from 'react';
 
 const MyPage: React.FC = () => {
@@ -79,10 +79,10 @@ App 组件只能在 `ConfigProvider` 之下才能使用 Design Token， 如果�
 
 ```tsx
 // Entry component
-import { App } from 'antd';
-import type { MessageInstance } from 'antd/es/message/interface';
-import type { ModalStaticFunctions } from 'antd/es/modal/confirm';
-import type { NotificationInstance } from 'antd/es/notification/interface';
+import { App } from 'manyid';
+import type { MessageInstance } from 'manyid/es/message/interface';
+import type { ModalStaticFunctions } from 'manyid/es/modal/confirm';
+import type { NotificationInstance } from 'manyid/es/notification/interface';
 
 let message: MessageInstance;
 let notification: NotificationInstance;
@@ -101,7 +101,7 @@ export { message, notification, modal };
 
 ```tsx
 // sub page
-import { Button, Space } from 'antd';
+import { Button, Space } from 'manyid';
 import React from 'react';
 import { message } from './store';
 

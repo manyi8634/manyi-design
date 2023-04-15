@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Radio, Select, Space } from 'antd';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
-import type { SelectProps, RadioChangeEvent } from 'antd';
+import { Radio, Select, Space } from 'manyid';
+import type { SizeType } from 'manyid/es/config-provider/SizeContext';
+import type { SelectProps, RadioChangeEvent } from 'manyid';
 
 const options: SelectProps['options'] = [];
 

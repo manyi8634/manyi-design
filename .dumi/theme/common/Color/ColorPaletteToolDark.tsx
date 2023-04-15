@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import type { ChangeEvent } from 'react';
 import { FormattedMessage } from 'dumi';
-import { Row, Col } from 'antd';
+import { Row, Col } from 'manyid';
 import ColorPicker from './ColorPicker';
 import ColorPatterns from './ColorPatterns';
 

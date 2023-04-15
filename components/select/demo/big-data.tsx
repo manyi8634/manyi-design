@@ -1,6 +1,6 @@
 import React from 'react';
-import type { SelectProps } from 'antd';
-import { Divider, Select, Typography } from 'antd';
+import type { SelectProps } from 'manyid';
+import { Divider, Select, Typography } from 'manyid';
 
 const { Title } = Typography;
 
@@ -21,7 +21,7 @@ const handleChange = (value: string[]) => {
 
 const App: React.FC = () => (
   <>
-    <Title level={3}>Ant Design 4.0</Title>
+    <Title level={3}>Manyi Design 4.0</Title>
     <Title level={4}>{options.length} Items</Title>
     <Select
       mode="multiple"
@@ -34,9 +34,9 @@ const App: React.FC = () => (
 
     <Divider />
 
-    <Title level={3}>Ant Design 3.0</Title>
+    <Title level={3}>Manyi Design 3.0</Title>
     <iframe
-      title="Ant Design 3.0 Select demo"
+      title="Manyi Design 3.0 Select demo"
       src="https://codesandbox.io/embed/solitary-voice-m3vme?fontsize=14&hidenavigation=1&theme=dark&view=preview"
       style={{ width: '100%', height: 300 }}
     />

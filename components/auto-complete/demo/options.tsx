@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AutoComplete } from 'antd';
+import { AutoComplete } from 'manyid';
 
 const App: React.FC = () => {
   const [options, setOptions] = useState<{ value: string; label: string }[]>([]);

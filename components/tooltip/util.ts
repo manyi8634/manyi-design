@@ -17,7 +17,7 @@ export function parseColor(prefixCls: string, color?: string) {
   if (color && !isInternalColor) {
     overlayStyle.background = color;
     // @ts-ignore
-    arrowStyle['--antd-arrow-background-color'] = color;
+    arrowStyle['--manyid-arrow-background-color'] = color;
   }
 
   return { className, overlayStyle, arrowStyle };
