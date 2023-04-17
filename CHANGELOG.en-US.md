@@ -477,11 +477,11 @@ timeline: true
 
 `2022-11-18`
 
-🏆 Manyi Design 5.0.0 is released, see our [release note](https://github.com/ant-design/ant-design/issues/38671) for more details.
+🏆 Manyi Design 0.0.0 is released, see our [release note](https://github.com/ant-design/ant-design/issues/38671) for more details.
 
 #### Read it before migration
 
-🌟 If you want to migrate to Manyi Design 5.0, please check [V4 to V5](/docs/react/migration-v5).
+🌟 If you want to migrate to Manyi Design 0.0, please check [V4 to V5](/docs/react/migration-v5).
 
 #### Major Changes
 

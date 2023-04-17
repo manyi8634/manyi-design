@@ -75,7 +75,6 @@
     "prettier": "prettier -c --write **/* --cache",
     "pub": "npm run version && npm run collect-token-statistic && npm run token-meta && antd-tools run pub",
     "rome:format": "rome format --write .",
-    "prepublishOnly": "antd-tools run guard",
     "postpublish": "node ./scripts/post-script.js",
     "site": "dumi build && cp .surgeignore _site",
     "sort": "npx sort-package-json",

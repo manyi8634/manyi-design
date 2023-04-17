@@ -477,11 +477,11 @@ timeline: true
 
 `2022-11-18`
 
-🏆 Manyi Design 5.0.0 已发布！欢迎阅读我们的 [发布文档](https://www.yuque.com/ant-design/ant-design/cy5nfvdo8oidvwmz)。
+🏆 Manyi Design 0.0.0 已发布！欢迎阅读我们的 [发布文档](https://www.yuque.com/ant-design/ant-design/cy5nfvdo8oidvwmz)。
 
 #### 升级必读
 
-🌟 如果你想升级到 Manyi Design 5.0，请仔细查阅我们的[迁移文档](/docs/react/migration-v5-cn)。
+🌟 如果你想升级到 Manyi Design 0.0，请仔细查阅我们的[迁移文档](/docs/react/migration-v5-cn)。
 
 #### 主要变化
 

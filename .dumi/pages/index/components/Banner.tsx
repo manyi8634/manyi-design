@@ -147,7 +147,7 @@ export default function Banner({ children }: BannerProps) {
           />
 
           <Typography.Title level={1} css={[styles.titleBase, styles.title]}>
-            Manyi Design 5.0
+            Manyi Design 0.0
           </Typography.Title>
           <Typography.Paragraph
             style={{

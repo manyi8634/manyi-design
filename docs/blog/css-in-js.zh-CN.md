@@ -4,7 +4,7 @@ date: 2022-11-25
 author: MadCcc
 ---
 
-在 2022 年 11 月 18 日，我们发布了 Manyi Design 5.0 的正式版本，同时带入大家视野中的还有 Manyi Design 独特的 CSS-in-JS 方案。通过这个方案，Manyi Design 获得了相较于其他 CSS-in-JS 库更高的性能，但代价则是牺牲了其在应用中自由使用的灵活性。所以我们把它称为“组件级”的 CSS-in-JS 方案。
+在 2022 年 11 月 18 日，我们发布了 Manyi Design 0.0 的正式版本，同时带入大家视野中的还有 Manyi Design 独特的 CSS-in-JS 方案。通过这个方案，Manyi Design 获得了相较于其他 CSS-in-JS 库更高的性能，但代价则是牺牲了其在应用中自由使用的灵活性。所以我们把它称为“组件级”的 CSS-in-JS 方案。
 
 ## CSS-in-JS 的困境
 
@@ -34,7 +34,7 @@ author: MadCcc
 
 ## Benchmark
 
-在 Manyi Design 5.0 的发布会上，我们简单地做了一次 benchmark，在这里可以做一些补充说明：
+在 Manyi Design 0.0 的发布会上，我们简单地做了一次 benchmark，在这里可以做一些补充说明：
 
 ![image.png](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*upmYSqZ5FwsAAAAAAAAAAAAADrJ8AQ/original)
 

@@ -4,7 +4,7 @@ date: 2022-11-25
 author: MadCcc
 ---
 
-On November 18, 2022, we released Manyi Design 5.0. At the same time, Manyi Design's unique CSS-in-JS solution was brought into everyone's view. Through this solution, Manyi Design achieves higher performance than other CSS-in-JS libraries, but at the cost of sacrificing its flexibility for free use in applications. So we call it a "component-level" CSS-in-JS solution. <a name="W668Z"></a>
+On November 18, 2022, we released Manyi Design 0.0. At the same time, Manyi Design's unique CSS-in-JS solution was brought into everyone's view. Through this solution, Manyi Design achieves higher performance than other CSS-in-JS libraries, but at the cost of sacrificing its flexibility for free use in applications. So we call it a "component-level" CSS-in-JS solution. <a name="W668Z"></a>
 
 ## Dilemma of CSS-in-JS
 
@@ -20,7 +20,7 @@ In the above way, we have taken the first step of "component level" CSS-in-JS, b
 
 ## Benchmark
 
-At the release of Manyi Design 5.0, we simply made a benchmark, and here are some supplementary instructions:<br />![image.png](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*upmYSqZ5FwsAAAAAAAAAAAAADrJ8AQ/original)<br />The benchmark is based on generating a very long unchanging style to test the performance of basic usage of the three libraries. It can be seen that under the "component level" usage scenario of Manyi Design, @ant-design/cssinjs has a performance advantage whether it is the first rendering or the second rendering. Since styled has certain optimizations when dealing with stable styles, the performance of secondary rendering in this benchmark is better, but it will still be affected by recalculation like emotion when props participate in style calculation. <a name="JOmkZ"></a>
+At the release of Manyi Design 0.0, we simply made a benchmark, and here are some supplementary instructions:<br />![image.png](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*upmYSqZ5FwsAAAAAAAAAAAAADrJ8AQ/original)<br />The benchmark is based on generating a very long unchanging style to test the performance of basic usage of the three libraries. It can be seen that under the "component level" usage scenario of Manyi Design, @ant-design/cssinjs has a performance advantage whether it is the first rendering or the second rendering. Since styled has certain optimizations when dealing with stable styles, the performance of secondary rendering in this benchmark is better, but it will still be affected by recalculation like emotion when props participate in style calculation. <a name="JOmkZ"></a>
 
 ## Limitation
 

@@ -21,10 +21,10 @@ import SiteContext from '../../../theme/slots/SiteContext';
 import { useCarouselStyle } from './util';
 
 const SAMPLE_CONTENT_EN =
-  'Manyi Design 5.0 use CSS-in-JS technology to provide dynamic & mix theme ability. And which use component level CSS-in-JS solution get your application a better performance.';
+  'Manyi Design 0.0 use CSS-in-JS technology to provide dynamic & mix theme ability. And which use component level CSS-in-JS solution get your application a better performance.';
 
 const SAMPLE_CONTENT_CN =
-  'Manyi Design 5.0 使用 CSS-in-JS 技术以提供动态与混合主题的能力。与此同时，我们使用组件级别的 CSS-in-JS 解决方案，让你的应用获得更好的性能。';
+  'Manyi Design 0.0 使用 CSS-in-JS 技术以提供动态与混合主题的能力。与此同时，我们使用组件级别的 CSS-in-JS 解决方案，让你的应用获得更好的性能。';
 
 const locales = {
   cn: {
@@ -114,7 +114,7 @@ export default function ComponentsList() {
         title: 'Modal',
         type: 'update',
         node: (
-          <Modal._InternalPanelDoNotUseOrYouWillBeFired title="Manyi Design 5.0" width={300}>
+          <Modal._InternalPanelDoNotUseOrYouWillBeFired title="Manyi Design 0.0" width={300}>
             {locale.sampleContent}
           </Modal._InternalPanelDoNotUseOrYouWillBeFired>
         ),
@@ -167,7 +167,7 @@ export default function ComponentsList() {
         type: 'new',
         node: (
           <Tour._InternalPanelDoNotUseOrYouWillBeFired
-            title="Manyi Design 5.0"
+            title="Manyi Design 0.0"
             description={locale.tour}
             style={{ width: isMobile ? 'auto' : 350 }}
             current={3}
@@ -224,7 +224,7 @@ export default function ComponentsList() {
         node: (
           <Alert
             style={{ width: 400 }}
-            message="Manyi Design 5.0"
+            message="Manyi Design 0.0"
             description={locale.sampleContent}
             closable
           />
