@@ -1,8 +1,6 @@
 
 <h1 align="center">Manyi Design</h1>
 
-<div align="center">
-
 一套企业级 UI 设计语言和 React 组件库。
 
 ## 使用文档
@@ -11,11 +9,7 @@
 ## 📦 安装
 
 ```bash
-npm install manyid --save
-```
-
-```bash
-yarn add manyid
+npm i manyid / yarn add manyid / ...
 ```
 
 ## 🔨 示例
