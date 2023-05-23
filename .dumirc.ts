@@ -5,6 +5,8 @@ import remarkAntd from './.dumi/remarkAntd';
 import { version } from './package.json';
 
 export default defineConfig({
+  base:'/manyi-design-doc/',
+  publicPath:'/manyi-design-doc/',
   conventionRoutes: {
     // to avoid generate routes for .dumi/pages/index/components/xx
     exclude: [new RegExp('index/components/')],
@@ -12,7 +14,7 @@ export default defineConfig({
   ssr: process.env.NODE_ENV === 'production' ? {} : false,
   hash: true,
   crossorigin: {},
-  outputPath: '_site',
+  outputPath: 'manyi-design-doc',
   favicons: ['https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png'],
   resolve: {
     docDirs: [{ type: 'doc', dir: 'docs' }],

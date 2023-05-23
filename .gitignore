@@ -23,6 +23,7 @@ node_modules/
 npm-debug.log
 nohup.out
 _site
+manyi-design-doc
 _data
 dist
 report.html

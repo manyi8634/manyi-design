@@ -1,6 +1,6 @@
 {
   "name": "manyid",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1",
   "description": "An enterprise-class UI design language and React components implementation",
   "title": "Manyi Design",
   "keywords": [
@@ -15,7 +15,7 @@
     "react-component",
     "ui"
   ],
-  "homepage": "https://gitee.com/manyi863412757/manyi-design.git",
+  "homepage": "https://manyi8634.github.io/manyi-design-doc",
   "bugs": {
     "url": "https://gitee.com/manyi863412757/manyi-design/issues"
   },
@@ -76,7 +76,7 @@
     "pub": "npm run version && npm run collect-token-statistic && npm run token-meta && antd-tools run pub",
     "rome:format": "rome format --write .",
     "postpublish": "node ./scripts/post-script.js",
-    "site": "dumi build && cp .surgeignore _site",
+    "site": "dumi build",
     "sort": "npx sort-package-json",
     "sort-api": "antd-tools run sort-api-table",
     "start": "cross-env PORT=8001 dumi dev",

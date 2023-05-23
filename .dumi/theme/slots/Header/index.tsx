@@ -213,18 +213,20 @@ const Header: React.FC = () => {
   }, []);
 
   const onLangChange = useCallback(() => {
-    const currentProtocol = `${window.location.protocol}//`;
-    const currentHref = window.location.href.slice(currentProtocol.length);
+    // const currentProtocol = `${window.location.protocol}//`;
+    // const currentHref = window.location.href.slice(currentProtocol.length);
 
     if (utils.isLocalStorageNameSupported()) {
       localStorage.setItem('locale', utils.isZhCN(pathname) ? 'en-US' : 'zh-CN');
     }
-    window.location.href =
-      currentProtocol +
-      currentHref.replace(
-        window.location.pathname,
-        utils.getLocalizedPathname(pathname, !utils.isZhCN(pathname), search).pathname,
-      );
+    const foo = window.location.origin
+    window.location.href = `${foo}/manyi-design-doc/${utils.isZhCN(pathname) ? '':'/index-cn'}`
+    // window.location.href =
+    //   currentProtocol +
+    //   currentHref.replace(
+    //     window.location.pathname,
+    //     utils.getLocalizedPathname(pathname, !utils.isZhCN(pathname), search).pathname,
+    //   );
   }, [location]);
 
   const nextDirectionText = useMemo<string>(
